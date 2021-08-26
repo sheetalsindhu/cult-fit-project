@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home Page</title>
+    <style>
+         /*model box*/
+         #modal {
+                display: none; 
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 60px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+                #modal-content {
+                    border-radius:30px;
+                    position: relative;
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 30%;
+                    /* height: 600px; */
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                    -webkit-animation-name: animatetop;
+                    -webkit-animation-duration: 0.4s;
+                    animation-name: animatetop;
+                    animation-duration: 0.4s
+                    }
+                /* Add Animation */
+                    @-webkit-keyframes animatetop {
+                    from {top:-300px; opacity:0} 
+                    to {top:0; opacity:1}
+                    }
+
+                    @keyframes animatetop {
+                    from {top:-300px; opacity:0}
+                    to {top:0; opacity:1}
+                    }
+                    .close {
+                    color: gray;
+                    float: right;
+                    font-size: 40px;
+                    font-weight: bold;
+                    }
+
+                    .close:hover,
+                    .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                    }
+                    #model-header {
+                        width: 100%;
+                        height:10px;
+                    }
+                    #model-header  span {
+                        float:right;
+                    }
+                    .model-body {
+                        
+                        display: flex;
+                        flex-direction:column;
+                        text-align: center;
+                    }
+                    .model-body .image {
+                        margin-top:30px;
+                        margin-left:100px;
+                        width:130px;
+
+                        height:130px;
+                        /* border:2px solid black; */
+                    }
+                    .image > img {
+                        width:100%;
+                        height:100%;
+                    }
+                    .input {
+                        margin-top:40px;
+                        margin-left:40px;
+                    }
+                    .input input {
+                        width:250px;
+                        height:40px;
+                        border-bottom: 5px solid black;
+                        border-top:0px solid black;
+                        border-left:0px solid black;
+                        border-right:0px solid black;
+
+                    }
+                    .model-body div:nth-child(2) {
+                        font-size:30px;
+                        font-weight: 800;
+                        margin-left:16px;
+                    }
+                    .button {
+                        margin:25px;
+                        border-radius:20px;
+                        height:40px;
+                        align-items: center;
+
+                    }
+                    .button button {
+                        width:100%;
+                        margin-left:10px;
+                        border-radius:20px;
+                        height:100%;
+                        background-color:rgb(189, 171, 171);
+                        color:white;
+                    }
+                    #create {
+                        width:170px;
+                        height:30px;
+                        margin-top:20px;
+                        background-color:white;
+                        border-radius:20px;
+                    }
+                    #password {
+                        width:240px;
+                        height:40px;
+                        margin-top:10px;
+                        margin-left:20px;
+                        padding-left:20px;
+                        border-bottom:5px solid black;
+                        border-top: 0px;
+                        border-left:0px;
+                        border-right:0px;
+                    }
+                    /*modal end*/
+          .dropbtn {
+                        background-color: #4CAF50;
+                        color: white;
+                        padding: 16px;
+                        font-size: 16px;
+                        border: none;
+                        cursor: pointer;
+                        }
+
+                        .dropdown {
+                        position: relative;
+                        display: inline-block;
+                        }
+
+                        .dropdown-content {
+                        display: none;
+                        position: absolute;
+                        background-color: #f9f9f9;
+                        min-width: 160px;
+                        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                        z-index: 1;
+                        }
+
+                        .dropdown-content a {
+                        color: black;
+                        padding: 12px 16px;
+                        text-decoration: none;
+                        display: block;
+                        }
+
+                        .dropdown-content a:hover {background-color: #f1f1f1}
+
+                        .dropdown:hover .dropdown-content {
+                        display: block;
+                        }
+
+                        .dropdown:hover .dropbtn {
+                        background-color: #3e8e41;
+                        }
+                        #dropdown {
+                          display:none;
+                        }
+                        .dropdown-content > a > span {
+                          width:25px;
+                        }
+
+                        #dropdown > img {
+                            width:40px;
+                            height:40px;
+                            border-radius:40px;
+                            background-color:white;
+                        }
+                        #dropdown > span {
+                            /* float:left;  */
+                            width:30px;
+                            height:30px;
+                            background-color:white;
+                        }
+                        #dropdown > span > img {
+                            width:100%;
+                            height:100%;
+                        }
+                        .dropbtna {
+                            width:10px;
+                            height:10px;
+                        }
+                        #login {
+                            cursor: pointer;
+                        }
+                        .dropdown {
+                            display:block;
+                        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <div id="navBar">
+
+        <div class="nav-CultFit-Logo">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+        </div>
+
+
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+
+            <div class="nav-live-Logo">
+                <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                <p class="navText">LIVE</p>
+            </div>
+
+            <div class="nav-cult-Logo">
+                <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                <p class="navText">CULT</p>
+            </div>
+
+            <div class="nav-mind-Logo">
+                <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                <p class="navText">MIND</p>
+            </div>
+
+            <div class="nav-care-Logo">
+                <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                <p class="navText">CARE</p>
+            </div>
+
+            <div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" alt="" />
+                <p class="navText">STORE</p>
+            </div>
+        </div>
+        <!--nav right-->
+        <div class="nav-right">
+            <div class="location">
+                <p class="navText">Delhi, INDIA</p>
+            </div>
+
+            <div onclick = "call()" id = "login" class="nav-login-Logo">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <p onclick = "call()" class="navText">LOGIN</p>
+                <div id = "dropdown" class="dropdown">
+                    <img src = "https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" class="dropbtn"><span><img class = "dropbtna" src = "https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"></span>
+                        <div class="dropdown-content">
+                            <a href="profile.html"><span><img src = "https://static.cure.fit/assets/images/profile-icon.svg"></span>  Profile</a>
+                            <a href="order.html"><span><img src = "https://static.cure.fit/assets/images/cart-black.svg"></span>Orders</a>
+                            <a href="#"><span><img src = "https://static.cure.fit/assets/images/health-profile-black.svg"></span>Medical Records</a>
+                            <a href="#"><span><img src = "https://static.cure.fit/assets/images/combined-shape-black.svg"></span>Active Packs</a>
+                            <a href="reedem.html"><span><img src = "https://static.cure.fit/assets/images/coupon-black.svg"></span>Redeem Voucher</a>
+                            <a href="#"><span><img src = "https://static.cure.fit/assets/images/settings-black.svg"></span>Account</a>
+                            <a href="support.html"><span><img src = "https://static.cure.fit/assets/images/support-black.svg"></span>Support</a>
+                            <a href="logout.html"><span><img src = "https://static.cure.fit/assets/images/logout-black.svg"></span>Logout</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+            </div>
+        </div>
+
+
+        <!--dropdown-->
+        <!-- <div id = "dropdown" class="dropdown">
+            <img src = "https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" class="dropbtn"><span><img class = "dropbtna" src = "https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"></span>
+                <div class="dropdown-content">
+                    <a href="profile.html"><span><img src = "https://static.cure.fit/assets/images/profile-icon.svg"></span>  Profile</a>
+                    <a href="order.html"><span><img src = "https://static.cure.fit/assets/images/cart-black.svg"></span>Orders</a>
+                    <a href="#"><span><img src = "https://static.cure.fit/assets/images/health-profile-black.svg"></span>Medical Records</a>
+                    <a href="#"><span><img src = "https://static.cure.fit/assets/images/combined-shape-black.svg"></span>Active Packs</a>
+                    <a href="reedem.html"><span><img src = "https://static.cure.fit/assets/images/coupon-black.svg"></span>Redeem Voucher</a>
+                    <a href="#"><span><img src = "https://static.cure.fit/assets/images/settings-black.svg"></span>Account</a>
+                    <a href="support.html"><span><img src = "https://static.cure.fit/assets/images/support-black.svg"></span>Support</a>
+                    <a href="logout.html"><span><img src = "https://static.cure.fit/assets/images/logout-black.svg"></span>Logout</a>
+                </div>
+            </div> -->
+    </div>
+
+
+
+
+    
+
+    
+    <!--Footor -->
+    <div id="footer">
+        <div class="logo-footer">
+            <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
+    
+            <p class="text-Footer-P">
+                At cult.fit, we make group workouts fun, daily food healthy & tasty,
+                mental fitness easy with yoga & meditation, and medical & lifestyle
+                care hassle-free. #BeBetterEveryDay
+            </p>
+        </div>
+    
+        <div class="right">
+            <div class="links1">
+                <p class="fText">CONTACT</p>
+                <p class="fText">US</p>
+                <p class="fText">BLOG</p>
+                <p class="fText">TALKS</p>
+                <p class="fText">CAREER</p>
+            </div>
+    
+            <div class="links2">
+                <p class="fText">CULTFIT FOR BUSINESSES</p>
+                <p class="fText">CULT PASS</p>
+                <p class="fText">NETWORK</p>
+                <p class="fText">CORPORATE</p>
+                <p class="fText">PARTNERSHIPS</p>
+            </div>
+    
+            <div class="playStore">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="">
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="">
+            </div>
+            
+        </div>
+    </div>
+    <div id = "modal">
+        <div id = "modal-content">
+            <div id = "model-header">
+                <span onclick = "clos()" class = "close">&times;</span>
+            </div>
+            <div id = "modal-body" class = "model-body">
+                <div class = "image">
+                    <img src = "https://static.cure.fit/assets/images/curefit_login_logo.svg">
+                
+                </div>
+                <div>
+                    Cult fit
+                </div>
+                <div class = "input">
+                    <input type = "text" id = "mobile" placeholder = "Enter the mobile number">
+                </div>
+                <div class = "pass">
+                    <input type = "text" id = "password" placeholder = "Enter the password">
+                </div>
+                <div class = "button">
+                    <button onclick = "submit()">
+                        Continue
+                    </button>
+                </div>
+                <div>
+                    <li>
+                        By Continuing you agree to the
+                        <em style = "color: red">Terms of Services</em> and <em style = "color:red"> Privacy policy.</em>
+                    </li>  
+                </div>
+                <div>
+                    <button onclick = "create()" id = "create">Create new Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+     function create() {
+        window.location = "signup.html";
+    }
+    
+    function submit() {
+        var mobilea = document.getElementById("mobile").value;
+        var passworda = document.getElementById("password").value;
+        var get = JSON.parse(localStorage.getItem("user")); 
+        // console.log(get);
+        get.forEach(function(p) {
+           
+            if(p.number == mobilea && p.password == passworda) {
+              document.getElementById("modal-body").innerHTML = "";
+              var pa = document.createElement("p");
+              pa.innerHTML  = "Login successful";
+              pa.style.color = "green";
+            //   p.style.font-size = "30px";
+                let obj = {
+                    n: p.number,
+                    pass : p.password
+                }; 
+               
+            //     var third = document.getElementById("logina");
+            //     // var drop = document.getElementById("dropdown");
+            //    var drop =  dropdown();
+            //     // drop.style.display = "block";
+            //     third.append(drop);
+            // document.getElementsByClassName("navText").style.display = "none";
+            
+            // var drop = dropdown();
+            var dropd = document.getElementById("dropdown");
+            dropd.style.display = "block";
+                
+                localStorage.setItem("logedin", JSON.stringify(obj));
+              document.getElementById("modal-body").append(pa);
+              
+
+            }
+        })
+
+    }
+    // function d() {
+        // document.getElementById("login").innerHTML = "";
+            //     document.getElementById("logina").innerHTML = "";
+            // document.getElementsByClassName("navText").style.display = "none";
+            
+            // // var drop = dropdown();
+            // var dropd = document.getElementById("dropdown");
+            // dropd.style.display = "block";
+            // parent.append(dropd);
+    // }
+    // if(localStorage.getItem("logedin") == null) {
+    //     alert("good");
+    // } else {
+    //     document.getElementById("login").innerHTML = "";
+    //         //     document.getElementById("logina").innerHTML = "";
+    //         var parent = document.getElementById("login");
+            
+    //         // var drop = dropdown();
+    //         var dropd = document.getElementById("dropdown");
+    //         // dropd.style.display = "block";
+    //         parent.append(dropd);
+    // }
+    
+    // function dropdown() {
+    //     document.getElementById("dropdown").style.display = "block";
+    //     console.log("This is fun");
+    // }
+
+
+
+    function call() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "block";
+    }
+    function clos() {
+        var modal = document.getElementById("modal");
+
+        modal.style.display = "none";
+
+    }
+</script>
