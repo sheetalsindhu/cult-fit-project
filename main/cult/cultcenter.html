@@ -6,11 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="cult_center.css">
+    <link rel="stylesheet" href="cultcenter.css">
 </head>
 
 
 <body>
+
+<!-- nav bar -->
+
+<div id="navBar">
+    <div class="nav-CultFit-Logo">
+        <div class="logo">
+            <!-- id clickto home  -->
+            <img onclick="gotohome()" src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+
+        </div>
+
+
+    </div>
+    <div class="cult-center"><img
+            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/header-web/cult2.svg" alt="">
+    </div>
+    ​
+    <!-- Nav Middle items -->
+    <div class="nav-middle">
+        <div class="nav-live-Logo">
+           <p onclick="cultcentral()" class="logo-cont-cult">Cult </p>
+           <p class="logo-cont-cult" onclick="cultcentral()">Centers</p>
+        </div>
+        ​
+        <div class="nav-cult-Logo">
+          
+            <p  onclick="gotogym()" class="logo-cont-cult">Gyms</p>
+        </div>
+        ​
+        <div class="nav-mind-Logo">
+           
+            <p  onclick="gotoonline()" class="logo-cont-cult">Online</p>
+            <p onclick="gotoonline()" class="logo-cont-cult">PT</p>
+        </div>
+        ​
+       
+        ​
+    
+    </div>
+    ​
+    <div class="nav-right">
+        <div class="location">
+            <p class="navText">Delhi, INDIA</p>
+        </div>
+        ​
+        <div class="nav-login-Logo">
+            <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+            <p class="navText">LOGIN</p>
+        </div>
+        ​
+        <div class="nav-cart-Logo">
+            <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+        </div>
+
+    </div>
+</div>
+
+
     <div class="cultcenterimg">
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/8a7c7a02-333c-4056-8633-6e34d26a20f7.png"
             alt="">
@@ -228,9 +286,34 @@
         <h1 class="D">FEARLESS</h1>
         <h2 class="L">AN EVERYDAY ATHLETE<h2>
     </div>
-<div class="workouts">
-    <p class="workouts">WORKOUTS</p>
-</div>
-</body>
+    <script>
+        function gotohome()
+        {
+            var logo = document.getElementsByClassName("logo-cont-cult");
+            
+            for(var i = 0 ;i<logo.length;i++)
+            {
+                logo[i].style.color="pink";
+            }
+            
+            window.location.pathname="\mindfull.html"
+        }
+        function cultcentral()
+        {
+         window.location.pathname="\cult_center.html"
+ 
+        }
+        function gotogym()
+        {
+         window.location.pathname="\gyms.html"
+ 
+ 
+        }
+        function gotoonline()
+        {
+         window.location.pathname="\opt.html"
+        }
+        </script>
+
 
 </html>
