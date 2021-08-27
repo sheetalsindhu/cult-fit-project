@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+
+            /*modal start*/
+            #modal {
+                display: none; 
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                padding-top: 60px; /* Location of the box */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+                #modal-content {
+                    border-radius:30px;
+                    position: relative;
+                    background-color: #fefefe;
+                    margin: auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 30%;
+                    /* height: 600px; */
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+                    -webkit-animation-name: animatetop;
+                    -webkit-animation-duration: 0.4s;
+                    animation-name: animatetop;
+                    animation-duration: 0.4s
+                    }
+                /* Add Animation */
+                    @-webkit-keyframes animatetop {
+                    from {top:-300px; opacity:0} 
+                    to {top:0; opacity:1}
+                    }
+
+                    @keyframes animatetop {
+                    from {top:-300px; opacity:0}
+                    to {top:0; opacity:1}
+                    }
+                    .close {
+                    color: gray;
+                    float: right;
+                    font-size: 40px;
+                    font-weight: bold;
+                    }
+
+                    .close:hover,
+                    .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                    }
+                    #model-header {
+                        width: 100%;
+                        height:20px;
+                    }
+                    #model-header  span {
+                        float:right;
+                    }
+                    .model-body {
+                        
+                        /* display: flex;
+                        flex-direction:column;*/
+                        text-align: center; 
+                    }
+                    /* .model-body .image {
+                        margin-top:30px;
+                        margin-left:100px;
+                        width:130px;
+
+                        height:130px;
+                        /* border:2px solid black; */
+                   /* } */
+                    
+                   #model-left {
+                       float:left;
+                       font-size:20px;
+                   }
+                    
+                   #modal-body > button {
+                       margin-top:30px;
+                       color:white;
+                       font-size:20px;
+                       background-color:orangered;
+                       width:100%;
+                       wid
+                   }
+                    #button {
+                        clear:both;
+                    }
+                    #addbtn {
+                        width:200px;
+                        height:40px;
+                        background-color:orangered;
+                        border-radius:20px;
+                    }
+                   
+                    /*End modal*/
+
+
+
+            #container {
+                width:70%;
+                margin:auto;
+                /* border: 1px solid black; */
+                display:grid;
+                grid-template-columns: 48% 48%;
+                grid-gap:10px;
+                /* height:300px; */
+                
+            }
+            #container > div {
+                /* border:2px solid red; */
+            }
+
+           
+           #container > #order-content > #one_content {
+                /* display:grid;
+                grid-template-columns: 40% 58%;
+                grid-gap:2px;
+                border:1px solid black; */
+                display:flex;
+                flex-direction:row;
+           }
+           .one_content > div {
+               /* border:1px solid green; */
+           }
+           .image_container {
+               width:30px;
+               height:30px;
+               /* border:2px solid black; */
+           }
+           .image_container > img {
+               width:100%;
+               height: 100%;
+           }
+           
+          
+           #first {
+               display:grid;
+               grid-template-columns: 100% 100%;
+               /* grid-gap:5px; */
+               margin-top:20px;
+               height:20px;
+           }
+           #name_right {
+               float:left;
+               margin-left:30px;
+           }
+           #cross {
+               float:right;
+               width:30px;
+               margin-left:-15px;
+               color:gray;
+               cursor: pointer;
+           }
+           #cross:hover {
+               font-size:14px;
+               color:red;
+           }
+           #image_div {
+               width:100px;
+               height:180px;
+           }
+           #image {
+               width: 100%;
+               height:100%;
+           }
+           #band, #size {
+               margin-left:30px;
+               font-size:17px;
+               color:gray;
+
+           }
+           #size {
+               margin-top:-15px;
+                height:20px;
+           }
+           #priceQuantity {
+               /* height:10px;
+                */
+                margin-top:-30px;
+               margin-left:30px;
+               display:flex;
+               flex-direction:row;
+           }
+           #quantity {
+               width:80px;
+               height:25px;
+               margin-top:10px;
+               margin-left:80px;
+               border:1px solid red;
+               border-radius:20px;
+               display:flex;
+               align-items: center;
+               flex-direction:row;
+               /* flex-grow:auto; */
+           }
+           #p_minus {
+               float:left;
+               text-align:center;
+               margin:0px;
+               font-size:30px;
+               margin-left:14px;
+               cursor: pointer;
+               color:red;
+               /* width:30%;
+               height:100%; */
+               /* border-right:2px solid red; */
+           }
+           #p_quantity {
+               float:left;
+               margin-left:10px;
+               margin-right:10px;
+               margin-top:20px;
+           }
+           #p_plus {
+                float:left;
+                /* margin-right:px;
+                 */
+                 font-weight: bold;
+                 font-size:20px;
+                cursor: pointer;
+                color:red;
+
+           }
+
+           /* Address part*/
+
+           #address {
+               /* display:flex; */
+           }
+
+           #selectAddress {
+                cursor: pointer;
+           }
+           #addleft {
+               float:left;
+               margin-left:20px;
+           }
+           #addleft > span > img{
+               margin-bottom:-10px;
+           }
+           #addright {
+               float:right;
+               margin-right: 20px;
+               color:red;
+           }
+           hr {
+               clear : both;
+           }
+           #top {
+               font-size:17px;
+               font-weight:bold;
+           }
+           #pricePart {
+               display:grid;
+               grid-template-rows: 30px 30px 30px 30px;
+               grid-gap:4px;
+               /* border:1px solid black; */
+           }
+           #totalPrice > p:nth-child(1), #totalPayble > p:nth-child(1), #discount > p:nth-child(1), #voucher > p:nth-child(1){
+                float:left;
+                margin-left:30px;
+                color:gray;
+                hight:20px;
+           }
+           #totalPrice > p:nth-child(2), #totalPayble > p:nth-child(2), #discount > p:nth-child(2),  #voucher > button {
+               float:right;
+               margin-right:40px;
+               color:gray;
+           }
+           #voucher > button {
+               margin-top:10px;
+           }
+           #totalPayble > p:nth-child(1),  #totalPayble > p:nth-child(2) {
+               font-size:30px;
+               font-weight: bold;
+               color:black;
+           } 
+           #addCity {
+               display:none;
+               height:50px;
+           }
+           #saveAddress {
+               width:250px;
+               height:30px;
+
+           }
+           #saveAddress:hover {
+               font-size:30px;
+               cursor:pointer;
+           }
+           #cityname {
+               width:150px;
+               height:30px;
+               border-radius:10px;
+           }
+           #addressselectbutton, #checkoutbutton {
+                margin-top:40px;
+                height:40px;
+                margin-left:300px;
+                background-color:orangered;
+                border-radius:10px;
+           }
+           #checkoutbutton {
+            /* display:none; */
+           }
+        </style>
+    </head>
+    <body>
+        <div id = "container">
+            <!-- <h2 id = "one">Cultgear Order Summary</h2> -->
+            <div id = "order-content">
+                <div id = "top">Cultgear Order Summary</div>
+            </div>
+            <div id = "address">
+                <div oncilck = "call()" id = "selectAddress">
+                    <p oncilck = "call()" id = "addleft"><span><img src = "https://static.cure.fit/assets/images/locationPink.svg"></span> Please Add Addresses</p>
+                    <p oncilck = "call()" id = "addright">Add/Modify</p>
+                <hr>
+
+                </div>
+                <div id = "pricePart"> 
+                    <div id = "totalPrice">
+                        <p>Total Price</p>
+                        <p id = "showTotalPrice"> ₹ 0</p>
+                    </div>
+                    <div id = "discount">
+                        <p>(-) Discount</p>
+                        <p id= "showTotalDiscount"> ₹ 0</p>
+                    </div>
+                    <div id = "voucher">
+                        <p>implement voucher</p>
+                        <button>Check</button>
+                    </div>
+                    <div id = "totalPayble">
+                        <p>Total Payble</p>
+                        <p id = "showTotalPaybleAmount"> ₹ 0</p>
+                    </div>
+                </div>
+                <div id = "addressbutton">
+                    <button onclick = "call()" id = "addressselectbutton">SelectAddress</button>
+                    <button id = "checkoutbutton">Checkout</button>
+                </div>
+            </div>
+        </div>
+
+        <!--Modal box-->
+
+
+        <div id = "modal">
+            <div id = "modal-content">
+                <div id = "model-header">
+                    <p id = "model-left">Choose Delivery Address</p>
+                    <span onclick = "clos()" class = "close">&times;</span>
+                </div>
+                <hr>
+                <div id = "modal-body" class = "model-body">
+                    <div id = "addCity">
+                        <input type = "text" id = "cityname" placeholder = "Enter your full address....">
+                    </div>
+                   <div id = "button">
+                       <button onclick = "addressAdd()" id = "addbtn">Add New Address</button>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+        <!--End modal box-->
+
+    </body>
+</html>
+<script>
+
+function addressAdd() {
+    var parent = document.getElementById("modal-body");
+    var get = JSON.parse(localStorage.getItem("user"));
+    var citya = document.getElementById("cityname").value;
+    get.forEach(function(q) {
+        q.city = citya;
+
+        localStorage.setItem("user", JSON.stringify(get));
+    })
+
+}
+
+    //right div 
+
+function PriceAddress() {
+    var parent = document.getElementById("address");
+    var get_data = JSON.parse(localStorage.getItem("orders"));
+    
+}
+
+
+//Address modal 
+// function addressModal() {
+//     var modal = document.getElementById("modal");
+//         modal.style.display = "block";
+// }
+
+function call() {
+        var modal = document.getElementById("modal");
+        modal.style.display = "block";
+        // if(localStorage.getItem("address") == null) {
+        //     localStorage.setItem("address", JSON.stringify([]));
+
+        // } else {
+            var logedin_user = JSON.parse(localStorage.getItem("logedin"));
+            var get_user = JSON.parse(localStorage.getItem("user"));
+            get_user.forEach(function(p) {
+                    // p.address = {city: "khirpai"}
+                    p.address = "Khirpai";
+                    if(p.number == logedin_user.n) {
+                        // console.log(p.address);
+                        // console.log(p.address.city);
+                        if(p.address == undefined) {
+                            // alert("Add new address");
+                            document.getElementById("addCity").style.display = "block";
+                            document.getElementById("addbtn").addEventListener("click",function() {
+                                var cityName = document.getElementById("cityname").value;
+                                p.address = cityName;
+                                document.getElementById("model-left").innerHTML = p.address;
+                                document.getElementById("addleft").innerHTML = "<span><img src = 'https://static.cure.fit/assets/images/locationPink.svg'></span>" +  p.address;
+                                document.getElementById("addressselectbutton").style.display = "none";
+                                document.getElementById("checkoutbutton").style.display = "block";
+                                clos();
+
+                            });
+
+                        } else {
+                            // document.getElementById("addCity").style = "";
+                            let showAddress = document.createElement('div');
+                            // var str = "";
+                            // for (x in p.address) {
+                            //     str += p[address[x]];
+                            // }
+                            // console.log(p.address.city)
+                            showAddress.innerText = p.address;
+                            showAddress.id = "saveAddress";
+                            showAddress.addEventListener("click", function() {
+                                document.getElementById("model-left").innerHTML = p.address;
+                                showAddress.style.display = "none";
+                                document.getElementById("model-left").innerHTML = p.address;
+                                document.getElementById("addleft").innerHTML = "<span><img src = 'https://static.cure.fit/assets/images/locationPink.svg'></span>" +  p.address;
+                                clos();
+                            });
+
+                            document.getElementById("modal-body").insertBefore(showAddress, document.getElementById("button"));
+                        }
+                    }
+                
+            })
+
+        // }
+    }
+    // call();
+    document.getElementById("selectAddress").addEventListener("click", call);
+    function clos() {
+        var modal = document.getElementById("modal");
+
+        modal.style.display = "none";
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //left div
+
+    function order() {
+        var all_orders = JSON.parse(localStorage.getItem("orders"));
+        var parent = document.getElementById("order-content");
+        // let h2 = document.createElement("h2");
+        //     h2.innerText = "Cultgear Order Summary";
+        all_orders.forEach(function(p) {
+           let total_div = document.createElement("div");
+           total_div.id = "one_content";
+            // let product_content = document.createElement("div");
+            let left_div = document.createElement("div");
+            left_div.id = "image_div";
+            let imagea = document.createElement("img");
+            imagea.src = p.image;
+            imagea.id = "image";
+            // left_div.class = "image_container;"
+            left_div.append(imagea);
+            let right_div = document.createElement("div");
+            
+            
+            //name
+            
+            let cross = document.createElement("p");
+            cross.innerText = "X";
+            cross.id = "cross";
+            let name_right = document.createElement("p");
+            name_right.innerText = p.name;
+            name_right.id = "name_right";
+            let first = document.createElement("div");
+            first.append(name_right, cross);
+
+            first.id= "first";
+            
+
+
+
+            //band name
+            let band = document.createElement("p");
+            band.innerText = p.band;
+            band.id = "band";
+
+
+
+            //size 
+            let size = document.createElement("p");
+            size.innerText = "Size: " + p.size;
+            size.id = "size";
+
+
+
+            let priceQuantity = document.createElement("div");
+            priceQuantity.id = "priceQuantity";
+
+            let priceP = document.createElement("p");
+            priceP.innerText = "₹" + p.price;
+
+            let quantity = document.createElement("div");
+            quantity.id = "quantity";
+
+            let p_minus = document.createElement("p");
+            p_minus.innerText = "-";
+            p_minus.id = "p_minus";
+            
+
+            let p_plus = document.createElement("p");
+            p_plus.innerText = "+";
+            p_plus.id = "p_plus";
+            
+            //Only for test purposes
+            p.discount = 1000;
+            
+
+            let p_quantity = document.createElement("p");
+            p_quantity.innerText = 1;
+            p_quantity.id = "p_quantity";
+            // var count = Number(document.getElementById("p_quantity").innerHTML);
+            var total_price = document.getElementById("showTotalPrice");
+                total_price.innerText ="₹ " + Number(p.price);
+                var total_discount = document.getElementById("showTotalDiscount");
+                total_discount.innerText = "₹" + Number(Number(p.discount));
+                var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+                total_payble_amount.innerText = "₹" + Number(Number(p.price) - Number(p.discount));
+
+
+
+            p_plus.addEventListener("click", function() {
+                var count = Number(document.getElementById("p_quantity").innerHTML);
+                
+                count = count + 1;
+                p_quantity.innerHTML = count;
+                var total_price = document.getElementById("showTotalPrice");
+                total_price.innerText = "₹" +Number(p.price * count);
+                var total_discount = document.getElementById("showTotalDiscount");
+                total_discount.innerText = "₹" + Number(Number(p.discount) * count);
+
+                var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+                total_payble_amount.innerText ="₹ " + Number((Number(p.price) * count) - Number(Number(p.discount) * count));
+
+                
+           
+           
+           
+            });
+
+
+            p_minus.addEventListener("click", function() {
+                var count = Number(document.getElementById("p_quantity").innerHTML);
+                if(count >= 1) {
+                    count = count - 1;
+                    p_quantity.innerText = count;
+                    var total_price = document.getElementById("showTotalPrice");
+                     total_price.innerText = "₹" + Number(p.price * count);
+                     var total_discount = document.getElementById("showTotalDiscount");
+                          total_discount.innerText = "₹" + Number(Number(p.discount) * count);
+                          var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+                            total_payble_amount.innerText = "₹" + Number((Number(p.price) * count) - Number(Number(p.discount) * count));
+
+                     if(count == 0) {
+                        
+                    window.location = "home.html";
+                     }
+
+                }
+            });
+
+
+            let br = document.createElement("br");
+            let hr = document.createElement("hr");
+            quantity.append(p_minus, p_quantity, p_plus);
+            priceQuantity.append(priceP, quantity);
+            right_div.append(first,br, band, br, size, br, priceQuantity);
+            total_div.append(left_div, right_div);
+            parent.append(total_div, hr);
+        });
+    }
+    order();
+    function increment() {
+        console.log("This is the name of the file");
+    }
+    function decrement() {
+
+    }
+
+    if(localStorage.getItem("orders") == null) {
+        window.location = "store.html";
+    } else {
+
+    }
+</script>
