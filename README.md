@@ -21,4 +21,4 @@ Team members
 Roles and Responsibilities 
 
 
-We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcomed by team work.
+We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcame by team work.
