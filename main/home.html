@@ -39,8 +39,8 @@
             </div>
 
             <div class="nav-store-Logo">
-                <img src="https://static.cure.fit/assets/images/store-icon.svg" alt="" />
-                <p class="navText">STORE</p>
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
             </div>
         </div>
 
@@ -52,7 +52,7 @@
             <!-- Login page -->
             <div class="nav-login-Logo" onclick="call()" id="login">
                 <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
-                <p onclick="call()" class="navText">LOGIN</p>
+                <p onclick="call()" class="navText login-text">LOGIN</p>
 
                 <!-- Dropdown Div -->
                 <div id="dropdown" class="dropdown">
@@ -65,25 +65,32 @@
                     </span>
 
                     <div class="dropdown-content">
-                        <a href="profile.html"><span><img
-                                    src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
+                        <a href="settings/profile.html"><span>
+                                <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
                             Profile</a>
-                        <a href="order.html"><span><img
+
+                        <a href="settings/order.html"><span><img
                                     src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
+
                         <a href="#"><span><img
                                     src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
                             Records</a>
-                        <a href="#"><span><img
+
+                        <a href="settings/subscription.html"><span><img
                                     src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
                             Packs</a>
-                        <a href="reedem.html"><span><img
+
+                        <a href="settings/reedem.html"><span><img
                                     src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
                             Voucher</a>
+
                         <a href="#"><span><img
                                     src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
-                        <a href="support.html"><span><img
+
+                        <a href="settings/support.html"><span><img
                                     src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
-                        <a href="logout.html"><span><img
+
+                        <a href="settings/logout.html"><span><img
                                     src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
                     </div>
                 </div>
@@ -101,8 +108,17 @@
         <div id="video-cont">
             <div class="video-text-container">
                 <h1 class="home-main-meading">
-                    For the love <br />
-                    Of Fit.
+                    For the
+                    <span class="animated-words">
+                        <span class="item-words">
+                            <span style="color: #29b9ed">Fun</span>
+                        </span>
+                        <span class="item-words">
+                            <span style="color: #29b9ed">Love</span>
+                        </span>
+                    </span>
+                    <br />
+                    of Fit.
                 </h1>
 
                 <p class="home-main-subheading">
@@ -147,34 +163,8 @@
         </div>
 
         <!-- Slider 1 -->
-        <div class="slider__container">
+        <div class="slider__container1">
             <div class="slider" data-js="sslide">
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
                     alt="" />
 
@@ -206,34 +196,8 @@
             </p>
         </div>
 
-        <div class="slider__container">
+        <div class="slider__container2">
             <div class="slider" data-js="sslide">
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
                     alt="" />
 
@@ -264,41 +228,15 @@
             </p>
         </div>
 
-        <div class="slider__container">
+        <div class="slider__container3">
             <div class="slider" data-js="sslide">
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
                     alt="" />
 
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
                     alt="" />
 
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
                     alt="" />
             </div>
         </div>
@@ -322,92 +260,8 @@
             </p>
         </div>
 
-        <div class="slider__container">
+        <div class="slider__container4">
             <div class="slider" data-js="sslide">
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-            </div>
-        </div>
-
-        <!-- sixth Part of home page  -->
-        <div class="sixth-Part">
-            <img src="https://static.cure.fit/assets/images/mind-title.svg" class="img-section" />
-
-            <div class="part-middle">
-                <div class="heading-middle">
-                    <h1 class="part-Heading">Mind and Body fitness</h1>
-                </div>
-
-                <div class="explore-link">
-                    <p class="explore-Btn">Explore</p>
-                    <p class="arrow-Sign">></p>
-                </div>
-            </div>
-            <p class="part-subheading">
-                Browse through our collection to help you ace your workouts in style
-            </p>
-        </div>
-
-        <div class="slider__container">
-            <div class="slider" data-js="sslide">
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/0fedd809-8ebf-4c79-8306-0207522155fe.png"
-                    alt="" />
-
-                <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/4041957e-947a-4cba-b9ac-940316910888.png"
-                    alt="" />
                 <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/w_600,h_470,fl_progressive,f_auto,q_auto:eco/dpr_2/image/vm/d2ceda2f-0362-43f6-9a5a-d1c57f54e7f9.png"
                     alt="" />
 
@@ -419,32 +273,33 @@
             </div>
         </div>
     </div>
-
 
     <!-- Static part of home page -->
 
     <div class="lower-part">
-        <div class="banner-1"><img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/business-cult.png"
-                alt=""></div>
-        
-        <div class="banner-2"><img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/careers-cult.png"
-                alt=""></div>
+        <div class="banner-1">
+            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/business-cult.png"
+                alt="" />
+        </div>
+
+        <div class="banner-2">
+            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/clp/careers-cult.png"
+                alt="" />
+        </div>
     </div>
 
     <!--Footor -->
-    <!-- <div id="footer">
+    <div id="footer">
         <div class="logo-footer">
             <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
-    
+
             <p class="text-Footer-P">
                 At cult.fit, we make group workouts fun, daily food healthy & tasty,
                 mental fitness easy with yoga & meditation, and medical & lifestyle
                 care hassle-free. #BeBetterEveryDay
             </p>
         </div>
-    
+
         <div class="right">
             <div class="links1">
                 <p class="fText">CONTACT</p>
@@ -453,7 +308,7 @@
                 <p class="fText">TALKS</p>
                 <p class="fText">CAREER</p>
             </div>
-    
+
             <div class="links2">
                 <p class="fText">CULTFIT FOR BUSINESSES</p>
                 <p class="fText">CULT PASS</p>
@@ -461,14 +316,13 @@
                 <p class="fText">CORPORATE</p>
                 <p class="fText">PARTNERSHIPS</p>
             </div>
-    
+
             <div class="playStore">
-                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="">
-                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="" />
             </div>
-            
         </div>
-    </div>  -->
+    </div>
 
     <!-- Modal -->
     <div id="modal">
@@ -487,17 +341,16 @@
                 <div class="logo-name">Cult fit</div>
 
                 <!-- Login with number -->
-             <div class="login-details">
+                <div class="login-details">
                     <div class="input">
                         <input type="text" id="mobile" placeholder="Enter the mobile number" />
                     </div>
-                    
+
                     <!-- PAssword -->
                     <div class="pass">
-                        <input type="text" id="password"
-                        placeholder="Enter the password" />
+                        <input type="text" id="password" placeholder="Enter the password" />
                     </div>
-             </div>
+                </div>
 
                 <!-- countinoue button -->
                 <div class="button-continoue">
@@ -508,7 +361,10 @@
                 <div class="terms-and-conditons">
                     <li class="tandc-text">
                         By Continuing you agree to the
-                        <em style="color: red" class="privacy"> <br> Terms of Services</em>  and
+                        <em style="color: red" class="privacy">
+                            <br />
+                            Terms of Services</em>
+                        and
                         <em style="color: red" class="privacy"> Privacy policy.</em>
                     </li>
                 </div>
@@ -587,12 +443,9 @@
         sslider();
     });
 
-
-
-    // Modal login logout 
-
+    // Modal login logout
     function create() {
-        window.pathname.location = "main/signup.html";
+        window.location.pathname = "main/profile/signUp.html";
     }
 
     function submit() {
@@ -605,28 +458,25 @@
 
         get.forEach(function (p) {
             if (p.number == mobilea && p.password == passworda) {
-
                 document.getElementById("modal-body").innerHTML = "";
-                var pa = document.createElement("p");
-                pa.setAttribute("class", "login-alert")
-        
-                pa.innerHTML = "Login successful";
 
+                var pa = document.createElement("p");
+                pa.setAttribute("class", "login-alert");
+
+                pa.innerHTML = "Login successful";
                 pa.style.color = "green";
                 //   p.style.font-size = "30px";
+                
                 let obj = {
                     n: p.number,
                     pass: p.password,
                 };
 
-                //     var third = document.getElementById("logina");
-                //     // var drop = document.getElementById("dropdown");
-                //    var drop =  dropdown();
-                //     // drop.style.display = "block";
-                //     third.append(drop);
-                // document.getElementsByClassName("navText").style.display = "none";
+                // Login text null after login
+                document.getElementsByClassName("login-text").innerHTML = "";
 
-                // var drop = dropdown();
+
+
                 var dropd = document.getElementById("dropdown");
                 dropd.style.display = "block";
 
@@ -635,33 +485,6 @@
             }
         });
     }
-    // function d() {
-    // document.getElementById("login").innerHTML = "";
-    //     document.getElementById("logina").innerHTML = "";
-    // document.getElementsByClassName("navText").style.display = "none";
-
-    // // var drop = dropdown();
-    // var dropd = document.getElementById("dropdown");
-    // dropd.style.display = "block";
-    // parent.append(dropd);
-    // }
-    // if(localStorage.getItem("logedin") == null) {
-    //     alert("good");
-    // } else {
-    //     document.getElementById("login").innerHTML = "";
-    //         //     document.getElementById("logina").innerHTML = "";
-    //         var parent = document.getElementById("login");
-
-    //         // var drop = dropdown();
-    //         var dropd = document.getElementById("dropdown");
-    //         // dropd.style.display = "block";
-    //         parent.append(dropd);
-    // }
-
-    // function dropdown() {
-    //     document.getElementById("dropdown").style.display = "block";
-    //     console.log("This is fun");
-    // }
 
     function call() {
         var modal = document.getElementById("modal");
@@ -673,4 +496,9 @@
         modal.style.display = "none";
     }
 
+    let locateToStorePage = document.getElementsByClassName("store");
+    
+    function storePage() {
+        window.location.pathname = "main/store/store.html";
+    }
 </script>

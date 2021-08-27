@@ -1,0 +1,229 @@
+:root {
+  --primary-text: #000000;
+  --secondary-text: #fff;
+  --blue: #29b9ed;
+  --background: #fff;
+  --text-hover: #b2b2b2;
+  --button: #ff306e;
+  --main-btn: linear-gradient(to left, #fa6359, #ff437c);
+}
+
+* {
+  /* font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif; */
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+
+
+/* nav-bar styling */
+#navBar {
+  width: 1540px;
+  height: 60px;
+  position: fixed;
+  background-color: var(--secondary-text);
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+/* cult-logo */
+
+
+.nav-CultFit-Logo > img {
+  width: 100%;
+ 
+  margin-left: 10px;
+}
+.cultText{
+  font-size: 14px;
+  color: var(--button);
+  cursor: pointer;
+  text-align: center;
+}
+
+.cultText > h1 {
+  text-align: center;
+}
+.nav-middle {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 640px;
+}
+
+
+
+/* Nav right section */
+.nav-right {
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  height: 60px;
+  align-items: center;
+  gap: 25px;
+  margin-left: 600px;
+  margin-right: 5px;
+}
+
+.navText {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.nav-login-Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-cart-Logo > img {
+  width: 20px;
+}
+.nav-login-Logo > img {
+  width: 15px;
+}
+
+
+/*  Main Sports Page */
+
+#main-container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* Data of mens gear */
+#data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#data > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cultGearMenDiv {
+  width: 400px;
+  text-align: left;
+  
+}
+
+.productImage {
+  width: 100%;
+  cursor: pointer;
+}
+
+.productName {
+  font-size: 14px;
+  color: var(--text-hover);
+  font-weight: 300;
+  margin-top: 3px;
+
+  
+}
+
+.productBrand{
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.productDiscount{
+  color: var(--button);
+  font-weight: 400;
+
+}
+
+.productDiscountPrice{
+  text-decoration: line-through;
+  color: var(--text-hover);
+}
+
+.productPrice{
+  font-weight: 500;
+}
+
+.productPrice,
+.productDiscountPrice,
+.productDiscount {
+   font-size: 14px;
+   display: inline-block;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* Footer section */
+#footer {
+  background-color: black;
+  display: flex;
+  gap: 200px;
+  padding: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 250px;
+}
+
+.logo-footer {
+  width: 400px;
+  margin-left: 140px;
+}
+
+.text-Footer-P {
+  color: rgb(172, 172, 172);
+  text-align: left;
+  line-height: 20px;
+}
+
+.logo-footer > img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.fText {
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  line-height: 30px;
+}
+
+.right {
+  display: flex;
+  gap: 50px;
+}
+
+.playStore {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 60px;
+}
+
+.playStore > img {
+  width: 120px;
+}

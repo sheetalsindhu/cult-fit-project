@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <style>
+        :root {
+            --primary-text: #000000;
+            --secondary-text: #fff;
+            --blue: #29b9ed;
+            --background: #fff;
+            --text-hover: #b2b2b2;
+            --button: #ff306e;
+            --main-btn: linear-gradient(to left, #f84336, #ff306e);
+        }
+
+        * {
+            font-family: poppins, sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            position: relative;
+            margin: 0;
+            padding-bottom: 6rem;
+            min-height: 100%;
+        }
+
+        /* nav-bar styling */
+        #navBar {
+            width: 1540px;
+            height: 60px;
+            position: fixed;
+            background-color: var(--secondary-text);
+            box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+            display: flex;
+            align-items: center;
+            top: 0;
+        }
+
+        /* cult-logo */
+
+        .nav-middle {
+            display: flex;
+            gap: 100px;
+            align-items: center;
+            justify-content: center;
+            margin-left: 400px;
+        }
+
+        .nav-CultFit-Logo>img {
+            width: 100%;
+            padding: 10px;
+            margin-left: 10px;
+        }
+
+        .nav-store-Logo,
+        .nav-live-Logo,
+        .nav-cult-Logo,
+        .nav-mind-Logo,
+        .nav-care-Logo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+        }
+
+        .nav-live-Logo>img {
+            width: 30px;
+        }
+
+        .nav-cult-Logo>img {
+            width: 30px;
+        }
+
+        .nav-mind-Logo>img {
+            width: 30px;
+        }
+
+        .nav-store-Logo>img {
+            width: 30px;
+        }
+
+        .nav-care-Logo>img {
+            width: 30px;
+        }
+
+        .navText {
+            font-size: 13px;
+            font-weight: 400;
+        }
+
+        /* Nav right section */
+        .nav-right {
+            display: flex;
+            width: 250px;
+            padding: 4px;
+            height: 60px;
+            align-items: center;
+            gap: 25px;
+            margin-left: 220px;
+            margin-right: 5px;
+        }
+
+        .nav-login-Logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-cart-Logo>img {
+            width: 20px;
+        }
+
+        .nav-login-Logo>img {
+            width: 15px;
+        }
+
+
+
+        /*model box*/
+        #modal {
+            display: none;
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        #modal-content {
+            border-radius: 30px;
+            position: relative;
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+            height: 500px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            -webkit-animation-name: animatetop;
+            -webkit-animation-duration: 0.4s;
+            animation-name: animatetop;
+            animation-duration: 0.4s;
+        }
+
+
+
+        /* Add Animation */
+        @-webkit-keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes animatetop {
+            from {
+                top: -300px;
+                opacity: 0;
+            }
+
+            to {
+                top: 0;
+                opacity: 1;
+            }
+        }
+
+        .close {
+            color: gray;
+            float: right;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        #model-header {
+            width: 100%;
+            height: 10px;
+        }
+
+        #model-header span {
+            float: right;
+        }
+
+        .model-body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .model-body .image {
+            margin-top: 30px;
+            margin-left: 100px;
+            width: 130px;
+
+            height: 130px;
+            /* border:2px solid black; */
+        }
+
+        .image>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .input {
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .input input {
+            width: 250px;
+            height: 40px;
+            border-bottom: 5px solid black;
+            border-top: 0px solid black;
+            border-left: 0px solid black;
+            border-right: 0px solid black;
+        }
+
+        .model-body div:nth-child(2) {
+            font-size: 30px;
+            font-weight: 800;
+            margin-left: 23px;
+        }
+
+        .button {
+            margin: 25px;
+            border-radius: 20px;
+            height: 40px;
+            align-items: center;
+        }
+
+        .button button {
+            width: 100%;
+            margin-left: 10px;
+            border-radius: 20px;
+            height: 100%;
+            background-color: rgb(189, 171, 171);
+            color: white;
+        }
+
+        /*modal end*/
+
+
+
+        /* Profile page */
+        #profile-sidebar {
+            display: flex;
+            height: 1000px;
+            gap: 100px;
+            margin-top: 30px;
+            background-color: #ff306e;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        #profile-sidebar {
+            width: 400px;
+            background-color: white;
+            padding: 40px;
+        }
+
+
+        /* Lower part */
+        .profile-section {
+            width: 400px;
+            height: 100px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            margin-top: 0px;
+        }
+
+        .profile-photo {
+            background-color: var(--button);
+            width: 60px;
+            height: 60px;
+            border-radius: 40px;
+        }
+
+        /* name */
+        #profilename {
+            font-size: 14px;
+            text-transform: uppercase;
+
+        }
+
+        .view-profile-text {
+            color: var(--button);
+            font-size: 12px;
+        }
+
+        hr {
+            width: 300px;
+            height: 0.5px;
+            background-color: rgb(207, 207, 207);
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+
+        .sidebar-div {
+            display: grid;
+            grid-template-columns: repeat(2, 220px);
+            margin-bottom: 30px;
+
+        }
+
+        .sidebar-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar-text {
+            font-size: 12px;
+        }
+
+        .sidebar-text:hover,
+        .sidebar-icon:hover {
+            color: var(--text-hover);
+        }
+
+
+        #data {
+            /* margin-top:15px;
+                        */
+            padding-top: 15px;
+            display: grid;
+            grid-template-columns: repeat(2, 46%);
+        }
+
+        #data div {
+            height: 60px;
+        }
+
+        #data>div>#name,
+        #data>div>#number,
+        #data>div>#date,
+        #data>div>#email,
+        #data>div>#work-email {
+            width: 80%;
+            height: 25px;
+            border-radius: 20px;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+        }
+
+        /* #btn {
+            height: 50px;
+            align-items: center;
+        }
+
+        #btn button {
+            width: 200px;
+            height: 100%;
+            background-color: rgb(243, 108, 30);
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+ */
+
+        #content-inside-profile {
+            width: 100%;
+            margin-top: 100px;
+            padding: 20px;
+
+        }
+
+        #profile-data {
+            /* background-color: chocolate; */
+            width: 800px;
+            height: 400px;
+            margin: auto;
+
+        }
+
+        /* .b-bt-s {
+            border: 4px #ba55d3;
+            border-bottom-style: solid;
+        } */
+
+        input {
+            width: 100%;
+            border: 1px grey;
+            border-bottom-style: solid;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+
+        .gender-div{
+            background-color: hotpink;
+            margin: 0px;
+        }
+
+        #female{
+            font-size: 12px;
+        }
+
+        .heading-profile {
+            font-size: 24px;
+            margin-bottom: 25px;
+            font-weight: 600;
+            color: var(--button);
+        }
+
+        .label-name,
+        .label-gender,
+        .label-number,
+        .label-dob,
+        .label-email,
+        .label-workEmail {
+            font-size: 12px;
+        }
+
+
+
+
+        /*dropdown*/
+        .dropdown-arrow {
+            background-color: #4caf50;
+            color: white;
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+            border: black;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 5px;
+        }
+
+        /* 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        } */
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            width: 400px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.103);
+            z-index: 1;
+            margin-right: 70px;
+            /* margin-top: 400px; */
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            font-size: 12px;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f8f8f8;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+            background-color: #3e8e41;
+        }
+
+        #dropdown {
+            display: none;
+        }
+
+        /* dropdown icons */
+        .dropdown-content>a>span {
+            width: 500px;
+            margin-right: 5px;
+        }
+
+
+        /* dropdown profile image */
+        #dropdown>img {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: white;
+        }
+
+        #profile-page-style {
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="profile-page-style">
+        <!-- nav bar -->
+        <div id="navBar">
+            <div class="nav-CultFit-Logo">
+                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+            </div>
+
+            <!-- Nav Middle items -->
+            <div class="nav-middle">
+                <div class="nav-live-Logo">
+                    <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                    <p class="navText">LIVE</p>
+                </div>
+
+                <div class="nav-cult-Logo">
+                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                    <p class="navText">CULT</p>
+                </div>
+
+                <div class="nav-mind-Logo">
+                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                    <p class="navText">MIND</p>
+                </div>
+
+                <div class="nav-care-Logo">
+                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                    <p class="navText">CARE</p>
+                </div>
+
+                <div class="nav-store-Logo">
+                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                    <p class="navText" id="store" onclick="storePage()">STORE</p>
+                </div>
+            </div>
+
+            <div class="nav-right">
+                <div class="location">
+                    <p class="navText">Delhi, INDIA</p>
+                </div>
+
+                <!-- Login page -->
+                <div class="nav-login-Logo" onclick="call()" id="login">
+                    <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                    <p onclick="call()" class="navText login-text">LOGIN</p>
+
+
+
+                    <!-- Dropdown Div -->
+                    <div id="dropdown" class="dropdown">
+                        <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                            class="dropbtn" />
+
+                        <span>
+                            <img class="dropbtna"
+                                src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+                        </span>
+
+                        <div class="dropdown-content">
+                            <a href="settings/profile.html"><span>
+                                    <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
+                                Profile</a>
+
+                            <a href="settings/order.html"><span><img
+                                        src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
+
+                            <a href="#"><span><img
+                                        src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
+                                Records</a>
+
+                            <a href="settings/subscription.html"><span><img
+                                        src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
+                                Packs</a>
+
+                            <a href="settings/reedem.html"><span><img
+                                        src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
+                                Voucher</a>
+
+                            <a href="#"><span><img
+                                        src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
+
+                            <a href="settings/support.html"><span><img
+                                        src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
+
+                            <a href="settings/logout.html"><span><img
+                                        src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart button -->
+                <div class="nav-cart-Logo">
+                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Dropdown -->
+        <div id="dropdown" class="dropdown">
+            <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                class="profie-icon" />
+
+
+            <!-- arrow icon -->
+            <span>
+                <img class="dropdown-arrow"
+                    src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+            </span>
+
+
+            <div class="dropdown-content">
+                <!-- profile-->
+                <a href="profile.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/profile-icon.svg" />
+                    </span>
+                    Profile
+                </a>
+
+                <!-- orders -->
+                <a href="order.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/cart-black.svg" />
+                    </span>Orders
+                </a>
+
+                <!-- medical records -->
+                <a href="#">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/health-profile-black.svg">
+                    </span>Medical
+                    Records
+                </a>
+
+                <!-- subscrption -->
+                <a href="subscription.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/combined-shape-black.svg" />
+                    </span>Active
+                    Packs
+                </a>
+
+                <!-- redeem -->
+                <a href="reedem.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/coupon-black.svg" />
+                    </span>Redeem Voucher
+                </a>
+
+                <!-- account -->
+                <a href="#">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/settings-black.svg" />
+                    </span>Account
+                </a>
+
+                <!-- support -->
+                <a href="support.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/support-black.svg" />
+                    </span>Support
+                </a>
+
+                <!-- logout -->
+                <a href="logout.html">
+                    <span>
+                        <img src="https://static.cure.fit/assets/images/logout-black.svg" />
+                    </span>Logout
+                </a>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- info section after nav -->
+
+        <div id="profile-sidebar">
+            <!-- sidebar -->
+            <div class="left-sidebar-profile">
+                <!-- upper profile section of sidebar -->
+                <div onclick="profile()" class="profile-section">
+                    <div class="profile-photo">
+                        <!-- <img
+                        src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" /> -->
+                    </div>
+
+                    <!-- name and link of view profile -->
+                    <div class="name-section-profile">
+                        <h3 id="profilename"></h3>
+
+                        <p class="view-profile-text">VIEW PROFILE</p>
+                    </div>
+                </div>
+
+                <hr class="line">
+
+
+                <!--order section -->
+                <div onclick="redirect()" class="sidebar-div">
+                    <div class="sidebar-text">Orders</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/cart-black.svg" />
+                    </div>
+                </div>
+
+                <!-- medical records -->
+                <div class="sidebar-div">
+                    <div class="sidebar-text">Medical Records</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/health-profile-black.svg" />
+                    </div>
+                </div>
+
+                <!-- sucsrption -->
+                <div onclick="subscription()" class="sidebar-div">
+                    <div class="sidebar-text">Active Packs and Subscription</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/combined-shape-black.svg" />
+                    </div>
+                </div>
+                <!-- redeem voucher -->
+                <div onclick="govoucher()" class="sidebar-div">
+                    <div class="sidebar-text">Redeem Voucher</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/coupon-black.svg" />
+                    </div>
+                </div>
+
+
+                <!-- account -->
+
+                <div class="sidebar-div">
+                    <div class="sidebar-text">Account</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/settings-black.svg" />
+                    </div>
+                </div>
+
+                <!-- support -->
+                <div onclick="support()" class="sidebar-div">
+                    <div class="sidebar-text">Support</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/support-black.svg" />
+                    </div>
+                </div>
+
+                <!-- logout -->
+                <div onclick="logout()" class="sidebar-div">
+                    <div class="sidebar-text">Logout</div>
+                    <div class="sidebar-icon">
+                        <img src="https://static.cure.fit/assets/images/logout-black.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div id="content-inside-profile">
+
+            <div id="profile">
+
+                <div id="image">
+                    <!-- <img
+                            src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" /> -->
+                </div>
+
+                <div>
+
+
+                    <div id="profile-data">
+                        <p class="heading-profile">PROFILE</p>
+
+                        <div class="name-div">
+                            <label class="label-name">NAME</label>
+                            <input type="text" id="name" placeholder="Enter your name" />
+                        </div>
+
+                        <div class="number-div">
+                            <label class="label-number">PHONE NUMBER</label>
+                            <input type="number" id="number" placeholder="Add phone number" />
+                        </div>
+
+                        <!-- <div class="gender-div">
+                            <label class="label-gender">GENDER</label>
+
+                            <label class="label-name">Male</label>
+
+                            <input type="checkbox" id="male" value="M" />
+
+                            <label class="label-female">Female</label>
+
+                            <input type="checkbox" id="female" value="F" />
+
+                        </div> -->
+
+                        <div>
+                            <label class="label-dob">Date Of Birth</label>
+                            <input type="date" id="date" placeholder="MM/DD/YYYY" />
+                        </div>
+
+                        <div>
+                            <label class="label-email">EMAIL</label>
+                            <input type="text" id="email" placeholder="Enter Your Email" />
+                        </div>
+
+
+                        <!-- <div>
+                            <label class="label-workEmail">WORK EMAIL</label>
+                            <input type="text" id="work-email" placeholder="Add Work Email" />
+                        </div> -->
+                    </div>
+
+                    <!-- 
+                    <div id="savechanges-btn">
+                        <button onclick="saveChange()">Save Changes</button>
+                    </div> -->
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    //redirection
+    function subscription() {
+        window.location.pathname = "settings/subscription.html";
+    }
+    function support() {
+        window.location.pathname = "support.html";
+    }
+    function logout() {
+        window.location.pathname = "logout.html";
+    }
+    function govoucher() {
+        window.location.pathname = "reedem.html";
+    }
+    function profile() {
+        window.location.pathname = "profile.html";
+    }
+    function redirect() {
+        window.location.pathname = "order.html";
+    }
+
+    if (localStorage.getItem("logedin") == null) {
+        window.location.pathname = "main/home.html";
+    } else {
+        document.getElementById("login").innerHTML = "";
+        var third = document.getElementById("login");
+        var drop = document.getElementById("dropdown");
+        drop.style.display = "block";
+        third.append(drop);
+    }
+
+    // var hold;
+    function fetching() {
+        var check = JSON.parse(localStorage.getItem("logedin"));
+        var all_users = JSON.parse(localStorage.getItem("user"));
+        var obj = {};
+        all_users.forEach(function (p) {
+            // for(x in check) {
+            if (check.n == p.number && check.pass == p.password) {
+                var namee = p.name;
+                var numbere = p.number;
+                var emaile = p.email;
+                var passworde = p.password;
+
+                obj = {
+                    name: namee,
+                    number: numbere,
+                    email: emaile,
+                    password: passworde,
+                };
+            }
+            // }
+        });
+
+
+        // console.log(obj);
+        document.getElementById("profilename").innerHTML = obj.name;
+        document.getElementById("name").value = obj.name;
+        document.getElementById("email").value = obj.email;
+        document.getElementById("number").value = obj.number;
+        document.getElementById("date").value = obj.date;
+
+        // document.getElementById("name").value = obj.name;
+        // hold = obj;
+    }
+    function saveChange() {
+        var namea = document.getElementById("name").value;
+        var emaila = document.getElementById("email").value;
+        var numbera = document.getElementById("number").value;
+        var datea = document.getElementById("date").value;
+        var gendera = document.getElementById("male").value;
+        // hold.name = namea;
+        // hold.email = emaila;
+        // hold.number = numbera;
+        // hold.date = datea;
+        // hold.gender = gendera;
+        var check = JSON.parse(localStorage.getItem("logedin"));
+
+        var all_user = JSON.parse(localStorage.getItem("user"));
+        all_user.forEach(function (p) {
+            // for(x in check) {
+            if (check.n == p.number && check.pass == p.password) {
+                p.name = namea;
+                p.email = emaila;
+                p.number = numbera;
+                p.date = datea;
+                p.gender = gendera;
+                all_user.push(p);
+            }
+            // }
+        });
+        localStorage.setItem("user", JSON.stringify(all_user));
+    }
+
+    fetching();
+</script>

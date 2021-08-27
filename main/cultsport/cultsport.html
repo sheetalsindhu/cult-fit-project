@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="cultsport.css" />
+    <title>CultSport</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo" onclick="homePage()">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo"
+                onclick="homePage()" />
+        </div>
+
+
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+        </div>
+
+        <!-- right -->
+        <div class="nav-right">
+            <div class="nav-login-Logo">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <p class="navText">LOGIN</p>
+            </div>
+
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+            </div>
+        </div>
+    </div>
+    <!-- Content -->
+    <div id="data"></div>
+    <!-- <button>Add to Cart</button> -->
+
+    <!--Footor -->
+    <div id="footer">
+        <div class="logo-footer">
+            <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
+
+            <p class="text-Footer-P">
+                At cult.fit, we make group workouts fun, daily food healthy & tasty,
+                mental fitness easy with yoga & meditation, and medical & lifestyle
+                care hassle-free. #BeBetterEveryDay
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="links1">
+                <p class="fText">CONTACT</p>
+                <p class="fText">US</p>
+                <p class="fText">BLOG</p>
+                <p class="fText">TALKS</p>
+                <p class="fText">CAREER</p>
+            </div>
+
+            <div class="links2">
+                <p class="fText">CULTFIT FOR BUSINESSES</p>
+                <p class="fText">CULT PASS</p>
+                <p class="fText">NETWORK</p>
+                <p class="fText">CORPORATE</p>
+                <p class="fText">PARTNERSHIPS</p>
+            </div>
+
+            <div class="playStore">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    let product = JSON.parse(localStorage.getItem("pdetails"));
+    console.log(product);
+
+    let dataDiv = document.getElementById("data");
+    console.log(dataDiv);
+
+    function renderDetails() {
+        // Main Div
+        let div = document.createElement("div");
+        div.setAttribute("id", "mainDiv");
+
+        let cultSportDiv = document.createElement("div");
+        cultSportDiv.setAttribute("id", "cultSport");
+
+        // // Image
+        let cultSportImages = document.createElement("div");
+        cultSportImages.setAttribute("class", "cultSport-images");
+
+        for (let i = 0; i < product.image.length; i++) {
+            let productImage = document.createElement("img");
+            productImage.src = product.image[i];
+            console.log(product.image[i]);
+            console.log(productImage);
+
+            cultSportImages.appendChild(productImage);
+        }
+
+        // Content div
+        let cultSportContent = document.createElement("div");
+        cultSportContent.setAttribute("class", "cultSport-content");
+
+        // Name
+        let productName = document.createElement("h1");
+        productName.setAttribute("class", "nameTag");
+        productName.innerHTML = product.name;
+
+        // Brand
+        let productBrand = document.createElement("p");
+        productBrand.setAttribute("class", "brandTag");
+        productBrand.textContent = product.brand;
+
+        // div
+        let discountDiv = document.createElement("div");
+        discountDiv.setAttribute("class", "discountDiv");
+
+        // price tag
+        let productPrice = document.createElement("p");
+        productPrice.setAttribute("class", "priceTag");
+        productPrice.innerHTML = product.price;
+
+        // discount price Tag
+        let productDiscountPrice = document.createElement("p");
+        productDiscountPrice.setAttribute("class", "discountPriceTag");
+        productDiscountPrice.innerHTML = product.discountPrice;
+
+        // discount Tag
+        let productDiscount = document.createElement("p");
+        productDiscount.setAttribute("class", "discountTag");
+        productDiscount.innerHTML = product.discount;
+
+        // Description tag
+        let productDescription = document.createElement("p");
+        productDescription.setAttribute("class", "descriptionTag");
+        productDescription.innerHTML = product.description;
+
+
+
+        // -----------------------//
+        // Size buttons //
+        let sizeButtons = document.createElement("div");
+        sizeButtons.setAttribute("class", "size-buttons");
+
+        // Small size button
+        let smallSizeBtn = document.createElement("button");
+        smallSizeBtn.innerText = "S";
+        smallSizeBtn.setAttribute("class", "small-size-Btn");
+
+         // Medium size button
+        let mediumSizeBtn = document.createElement("button");
+        mediumSizeBtn.innerText = "M";
+        mediumSizeBtn.setAttribute("class", "medium-size-Btn");
+
+         // Large button
+        let largeSizeBtn = document.createElement("button");
+        largeSizeBtn.innerText = "L";
+        largeSizeBtn.setAttribute("class", "large-size-Btn");
+
+         // XL button
+        let XLSizeBtn = document.createElement("button");
+        XLSizeBtn.innerText = "XL";
+        XLSizeBtn.setAttribute("class", "XL-size-Btn");
+
+         // XLL size button
+        let XLLSizeBtn = document.createElement("button");
+        XLLSizeBtn.innerText = "XLL";
+        XLLSizeBtn.setAttribute("class", "XLL-size-Btn");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // Buttons
+        // div
+        let cultSportButtons = document.createElement("div");
+        cultSportButtons.setAttribute("class", "cultSport-buttons");
+
+        // Add to cart
+        let addToCartBtn = document.createElement("button");
+        addToCartBtn.innerText = "Add to Cart";
+        addToCartBtn.setAttribute("class", "addToCartBtn");
+
+        addToCartBtn.onclick = function () {
+            const cartJSON = JSON.stringify(product);
+            window.localStorage.setItem("cart", product);
+        };
+
+        // Buy Now
+        let buyNowBtn = document.createElement("button");
+        buyNowBtn.innerText = "Buy Now";
+        buyNowBtn.setAttribute("class", "buyNowBtn");
+
+        buyNowBtn.onclick = function () {
+            const cartJSON = JSON.stringify(product);
+            window.localStorage.setItem("cart", product);
+        };
+
+        // Horizontal line
+        let line = document.createElement("hr");
+        line.setAttribute("class", "line");
+
+        /*  Other details section */
+
+        /*  cultSport-Product details */
+
+        // Main Unorderded list
+        let cultSportPdetails = document.createElement("div");
+        cultSportPdetails.setAttribute("class", "cultSport-Pdetails");
+
+        // Product Deatils
+        let ulProductDetails = document.createElement("ul");
+        ulProductDetails.setAttribute("class", "p-unorderded-List");
+
+        // Product Deatils Heading
+        let ProductDetailsHeading = document.createElement("h1");
+        ProductDetailsHeading.setAttribute("class", "p-details-heading");
+        ProductDetailsHeading.innerHTML = product.productDetailsHeading;
+
+        for (let i = 0; i < product.productDetails.length; i++) {
+            let listProductD = document.createElement("li");
+            listProductD.textContent = product.productDetails[i];
+
+            ulProductDetails.appendChild(listProductD);
+        }
+
+        // material Deatils
+        let ulMaterialDetails = document.createElement("ul");
+        ulMaterialDetails.setAttribute("class", "m-unorderded-List");
+
+        // material Deatils Heading
+        let materialDetailsHeading = document.createElement("h1");
+        materialDetailsHeading.setAttribute("class", "m-details-heading");
+        materialDetailsHeading.innerHTML = product.materialDetailsHeading;
+
+        for (let i = 0; i < product.MaterialCare.length; i++) {
+            let listMaterialD = document.createElement("li");
+            listMaterialD.textContent = product.MaterialCare[i];
+
+            ulMaterialDetails.appendChild(listMaterialD);
+        }
+
+        // fabric Deatils
+        let ulFabricDetails = document.createElement("ul");
+        ulFabricDetails.setAttribute("class", "f-unorderded-List");
+
+        // fabric Deatils Heading
+        let fabricDetailsHeading = document.createElement("h1");
+        fabricDetailsHeading.setAttribute("class", "f-details-heading");
+        fabricDetailsHeading.innerHTML = product.fabricDetailsHeading;
+
+        for (let i = 0; i < product.fabric.length; i++) {
+            let listFabricD = document.createElement("li");
+            listFabricD.textContent = product.fabric[i];
+
+            ulFabricDetails.appendChild(listFabricD);
+        }
+
+        // specifcations Deatils
+        let ulSpecificationsDetails = document.createElement("ul");
+        ulSpecificationsDetails.setAttribute("class", "s-unorderded-List");
+
+        // specifcations Deatils Heading
+        let specificationsHeading = document.createElement("h1");
+        specificationsHeading.setAttribute("class", "s-details-heading");
+        specificationsHeading.innerHTML = product.specificationsHeading;
+
+        let specifications = document.createElement("h1");
+        specifications.setAttribute("class", "s-detail-heading");
+        specifications.innerHTML = product.specifications;
+
+        // Append Data
+
+        // div.appendChild()
+        div.append(cultSportImages, cultSportDiv);
+
+        cultSportDiv.append(
+            productBrand,
+            productName,
+            discountDiv,
+            productDescription,
+            cultSportButtons,
+            cultSportPdetails
+        );
+
+        discountDiv.append(productPrice, productDiscountPrice, productDiscount);
+
+        cultSportButtons.append(addToCartBtn, buyNowBtn);
+
+        cultSportPdetails.append(
+            ProductDetailsHeading,
+            ulProductDetails,
+
+            fabricDetailsHeading,
+            ulFabricDetails,
+
+            materialDetailsHeading,
+            ulMaterialDetails,
+
+            specificationsHeading,
+            specifications
+        );
+
+
+
+        dataDiv.append(div);
+    }
+
+    renderDetails();
+
+
+    // back to home
+    let backToHomePagewithLogo = document.getElementsByClassName("nav-CultFit-Logo");
+
+    function homePage() {
+        window.location.pathname = "main/home.html"
+    }
+
+    // backToHomePagewithLogo.addEventListener("click", homePage)
+
+
+    let backToStore = document.getElementsByClassName("cultText");
+
+    function backToStorePage() {
+        window.location.pathname = "main/store/store.html";
+    }
+
+    // backToStore.addEventListener("click", backToStorePage);
+</script>

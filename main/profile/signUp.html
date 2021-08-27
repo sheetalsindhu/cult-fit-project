@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signUp.css" />
+    <title>SignUp</title>
+    
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+        </div>
+
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <div class="nav-live-Logo">
+                <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                <p class="navText">LIVE</p>
+            </div>
+
+            <div class="nav-cult-Logo">
+                <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                <p class="navText">CULT</p>
+            </div>
+
+            <div class="nav-mind-Logo">
+                <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                <p class="navText">MIND</p>
+            </div>
+
+            <div class="nav-care-Logo">
+                <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                <p class="navText">CARE</p>
+            </div>
+
+            <div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="location">
+                <p class="navText">Delhi, INDIA</p>
+            </div>
+
+            <!-- Login page -->
+            <div class="nav-login-Logo" onclick="call()" id="login">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <p onclick="call()" class="navText">LOGIN</p>
+
+                <!-- Cart button -->
+                <div class="nav-cart-Logo">
+                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Sign UP caontainer -->
+
+    <div id="container-signup">
+        <div class="fill-all">
+            <p id="fill-all-details" style="color: red"></p>
+        </div>
+    
+        <form id="form-signup">
+            <!-- nname -->
+            <label>NAME</label>
+            <input type="text" id="name" placeholder="Enter your fullname" />
+    
+            <!-- email -->
+            <label>Email</label>
+            <input type="text" id="email" placeholder="Enter your Email address" />
+    
+            <!-- phone no -->
+            <label>Phone Number</label>
+            <input type="number" id="number" placeholder="Enter your Phone numger" />
+    
+            <!-- password -->
+            <label>PASSWORD</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+    
+            <!-- re-enter password -->
+            <label>Re enter the password</label>
+            <input type="password" id="re-password" placeholder="Enter your password" />
+    
+            <span id="message-re-enter" style="color: red"></span>
+    
+            <!-- Button of create new account -->
+            <input onclick="signup()" type="submit" id="submit" value="Create account" />
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+
+    // empty storage
+    if (localStorage.getItem("user") == null) {
+        localStorage.setItem("user", JSON.stringify([]));
+    }
+
+    // else {
+    //     var all_users = JSON.stringify(localStorage.getItem("user"));
+
+    // }
+
+
+    function signup() {
+        var users = JSON.parse(localStorage.getItem("user"));
+        let namea = document.getElementById("name").value;
+        let emaila = document.getElementById("email").value;
+        let numbera = document.getElementById("number").value;
+        let passa = document.getElementById("password").value;
+        let rePassa = document.getElementById("re-password").value;
+
+        // var all_users = JSON.stringify(localStorage.getItem("user"));
+        // all_users.forEach(function (p) {
+        //     if (emaila == p.email) {
+        //         alert("Already have an account.");
+        //     }
+        // })
+
+        if (
+            passa != "" &&
+            rePassa != "" &&
+            namea != "" &&
+            emaila != "" &&
+            numbera != ""
+        ) {
+            if (passa == rePassa) {
+                var obj = {};
+                obj.name = namea;
+                obj.email = emaila;
+                obj.number = numbera;
+                // console.log(obj);
+
+                obj.password = passa;
+                users.push(obj);
+
+                localStorage.setItem("user", JSON.stringify(users));
+                window.location.pathname = "main//home.html";
+
+            } else {
+                document.getElementById("message").innerHTML = "Password is not match";
+            }
+        } else {
+            document.getElementById("m").innerHTML = "Please fill all the blanks";
+        }
+    }
+
+
+    // Form prevent default 
+    var form = document.getElementById("form-signup");
+
+    form.addEventListener("click", function (e) {
+        e.preventDefault();
+    });
+
+
+
+</script>
