@@ -6,7 +6,7 @@ At Cult, we make fitness fun and easy. We have best-in-class trainers & offer gr
 
 In this project we have tried to enhance the the cloning of "cult.fit" website. We had builded up some efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
 
-Team members
+# Team members
 
 1.Sheetal Sindhu
 
@@ -18,7 +18,7 @@ Team members
 
 
 
-Roles and Responsibilities 
+# Roles and Responsibilities 
 
 
 We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcame by team work.
