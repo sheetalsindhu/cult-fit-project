@@ -5,7 +5,7 @@ At Cult, we make fitness fun and easy. We have best-in-class trainers & offer gr
 
 In this project we have tried to enhance the the cloning of "cult.fit" website. We had builded up some efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
 
-# Technology We Used
+# Technology We Used :computer:
 In this project we have used the following tech stack.
 
 1. HTML5
