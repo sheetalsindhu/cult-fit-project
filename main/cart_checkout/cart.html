@@ -162,10 +162,31 @@
     }
 
 
-
     //voucher implement test
     function voucher() {
-        console.log("This");
+        var get_voucher = JSON.parse(localStorage.getItem("user"));
+        var logedin = JSON.parse(localStorage.getItem("logedin"));
+        get_voucher.forEach(function (p) {
+            if (p.number == "8250248991") {
+
+                if (p.voucher.length == 0) {
+                    alert("You have no voucher");
+                    //  console.log("work");
+
+                } else {
+                    var voucherApply = document.getElementById("showTotalPaybleAmount");
+                    voucherApply.innerText = "";
+                    var all_orders = JSON.parse(localStorage.getItem("orders"));
+                    var price;
+                    all_orders.forEach(function (p) {
+                        price = Number(Number(p.discountPrice) - Number(Number(p.discountPrice) * Number(Number(p.discount) / 100)));
+
+                    })
+                    voucherApply.innerText = "₹" + Number(price - Number(p.voucher[0]));
+
+                }
+            }
+        });
     }
 
 

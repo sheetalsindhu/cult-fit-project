@@ -1,13 +1,4 @@
-<<<<<<< HEAD
-:root {
-  --primary-text: #000000;
-  --secondary-text: #fff;
-  --blue: #29b9ed;
-  --background: #fff;
-  --text-hover: #b2b2b2;
-  --button: #ff306e;
-  --main-btn: linear-gradient(to left, #f84336, #ff306e);
-=======
+
 
 /* nav-bar */
 :root {
@@ -242,10 +233,6 @@
 .container-pt div{
     display: flex;
     justify-content: center;
-}
-.at-home{
-    
->>>>>>> 7978444a4cf401634f0cacea408f9661afe7c010
 }
 
 * {
@@ -693,7 +680,7 @@ body {
   font-size: 50px;
   color: rgb(180, 179, 179);
 }
-<<<<<<< HEAD
+
 .wholediv {
   padding: 40px 0px;
   background-color: rgb(242, 244, 248);
@@ -703,7 +690,8 @@ body {
   padding: 30px;
   margin-bottom: 20px;
   margin-left: 63px;
-=======
+}
+
 .D{
 font-size: 80px;
 color: rgb(146, 145, 145);
@@ -713,7 +701,7 @@ margin-top: 57px
 font-size: 50px;
 color: rgb(180, 179, 179);
 margin-top: 53px;
->>>>>>> 7978444a4cf401634f0cacea408f9661afe7c010
+
 }
 details {
   padding: 20px;
@@ -733,12 +721,226 @@ details {
 .container-mind {
   margin-top: 60px;
 }
-<<<<<<< HEAD
-=======
+
 .ques{
 font-size:20px ;
 color: grey;
 margin-left: -129px;
 margin-top: 6px;
 }
->>>>>>> 7978444a4cf401634f0cacea408f9661afe7c010
+
+
+/*dropdown*/
+
+.dropbtn-image {
+  width: 20px;
+  height: 20px;
+}
+.dropdown-arrow {
+  background-color: #4caf50;
+  color: white;
+  font-size: 12px;
+  border: none;
+  cursor: pointer;
+  border: black;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+ 
+}
+
+.after-login {
+  display: flex;
+  align-items: center;
+}
+/* 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        } */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.103);
+  z-index: 1;
+  margin-right: 70px;
+  /* margin-top: 400px; */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8f8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#dropdown {
+  display: none;
+}
+
+/* dropdown icons */
+.dropdown-content > a > span {
+  width: 500px;
+  margin-right: 5px;
+}
+
+/* dropdown profile image */
+#dropdown > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
+}
+
+
+
+
+
+:root {
+  --primary-text: #000000;
+  --secondary-text: #fff;
+  --blue: #29b9ed;
+  --background: #fff;
+  --text-hover: #b2b2b2;
+  --button: #ff306e;
+  --main-btn: linear-gradient(to left, #f84336, #ff306e);
+}
+
+* {
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* position: relative; */
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+/* nav-bar styling */
+#navBar {
+  width: 1540px;
+  height: 60px;
+  position: fixed;
+  background-color: var(--secondary-text);
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+  top: 0;
+}
+
+/* cult-logo */
+
+.nav-middle {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.nav-CultFit-Logo > img {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.nav-store-Logo,
+.nav-live-Logo,
+.nav-cult-Logo,
+.nav-mind-Logo,
+.nav-care-Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+.nav-live-Logo > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-cult-Logo > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-mind-Logo > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-store-Logo > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.nav-care-Logo > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.navText {
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* Nav right section */
+.nav-right {
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  height: 60px;
+  align-items: center;
+  gap: 25px;
+  margin-left: 220px;
+  margin-right: 5px;
+  /* background-color: aqua; */
+}
+
+.login-text {
+  background-color: bisque;
+  cursor: pointer;
+}
+.nav-login-Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-cart-Logo > img {
+  width: 20px;
+  cursor: pointer;
+}
+.nav-login-Logo > img {
+  width: 15px;
+  cursor: pointer;
+}
+
+
+.mind-cont{
+  margin-top: 60px;
+}

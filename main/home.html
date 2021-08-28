@@ -13,7 +13,7 @@
     <!-- nav bar -->
     <div id="navBar">
         <div class="nav-CultFit-Logo">
-            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()"/>
         </div>
 
         <!-- Nav Middle items -->
@@ -104,18 +104,11 @@
 
             <!-- Cart button -->
             <div class="nav-cart-Logo">
-                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()"/>
             </div>
         </div>
     </div>
 
-
-    <!-- Cart button -->
-    <div class="nav-cart-Logo">
-        <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
-    </div>
-    </div>
-    </div>
 
     <!-- Upper Conatiner -->
     <div id="home-container">
@@ -579,7 +572,7 @@
     }
 
     function toCare() {
-        window.location.pathname = " ";
+        window.location.pathname = "main/care/cares.html";
     }
 
     function toCult() {
@@ -588,6 +581,10 @@
 
     function toLive() {
         window.location.pathname = "main/live/live.html";
+    }
+
+    function toCart(){
+        window.location.pathname = "main/cart_checkout/cart.html"
     }
 
 

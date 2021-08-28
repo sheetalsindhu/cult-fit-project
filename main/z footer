@@ -1,0 +1,118 @@
+/* Footer section */
+
+#footer {
+  background-color: black;
+  display: flex;
+  gap: 200px;
+  padding: 40px;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+}
+
+.logo-footer {
+  width: 400px;
+  margin-left: 140px;
+}
+
+.text-Footer-P {
+  color: rgb(172, 172, 172);
+  text-align: left;
+  line-height: 20px;
+}
+
+.logo-footer > img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.fText {
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  line-height: 30px;
+}
+
+.right {
+  display: flex;
+  gap: 50px;
+}
+
+.playStore {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 60px;
+}
+
+.playStore > img {
+  width: 120px;
+}
+
+
+
+    <!--Footor -->
+    <div id="footer">
+        <div class="logo-footer">
+            <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
+
+            <p class="text-Footer-P">
+                At cult.fit, we make group workouts fun, daily food healthy & tasty,
+                mental fitness easy with yoga & meditation, and medical & lifestyle
+                care hassle-free. #BeBetterEveryDay
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="links1">
+                <p class="fText">CONTACT</p>
+                <p class="fText">US</p>
+                <p class="fText">BLOG</p>
+                <p class="fText">TALKS</p>
+                <p class="fText">CAREER</p>
+            </div>
+
+            <div class="links2">
+                <p class="fText">CULTFIT FOR BUSINESSES</p>
+                <p class="fText">CULT PASS</p>
+                <p class="fText">NETWORK</p>
+                <p class="fText">CORPORATE</p>
+                <p class="fText">PARTNERSHIPS</p>
+            </div>
+
+            <div class="playStore">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="" />
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    // Path location
+    function storePage() {
+        window.location.pathname = "main/store/store.html";
+    }
+
+    function toMind() {
+        window.location.pathname = "main/mindfull/mindfull.html";
+    }
+
+    function toCare() {
+        window.location.pathname = "main/care/cares.html";
+    }
+
+    function toCult() {
+        window.location.pathname = "main/cult/cult.html";
+    }
+
+    function toLive() {
+        window.location.pathname = "main/live/live.html";
+    }
+
+    function toCart(){
+        window.location.pathname = "main/cart_checkout/cart.html"
+    }

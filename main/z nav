@@ -1,106 +1,79 @@
-body {
-	background: #f7f7f7;
-}
-.container {
-	width: 400px;
-	margin: 20px auto;
-	border-radius: 5px;
-	border: 1px solid #95A5A6;
-	color: #515751;
-  -webkit-box-shadow: 4px 4px 6px 0px rgba(150, 150, 150, 0.301);
-  -moz-box-shadow: 4px 4px 6px 0px rgba(175, 175, 175, 0.445);
-  box-shadow: 4px 4px 6px 0px rgba(75, 75, 75, 0.308);
-  padding: 20px;
-  
-}
 
-h1 {
-	color: var(--button);
-	/* margin:0; */
-	padding: 10px 20px;
-	font-size: 24px;
-	font-weight:normal;
+/*dropdown*/
+
+.dropbtn-image {
+  width: 20px;
+  height: 20px;
 }
-
-.form-top {
-	padding-top:20px;
-   text-align: left;
-   font-weight: 600;
-}
-
-.logo{
-  display: flex;
-}
-
-.input-hide {
-	float:right;
-	cursor:pointer;
-}
-
-select.form-control:hover{
-  background: #F8F9F9;
-}
-
-option select.form-control :hover {
-  background: #F8F9F9;
-}
-
-input {
-	font-size: 14px;
-	color:black;
-	background-color: #ececec;
-	width:100%;
-	padding:13px 13px 13px 20px;
-	box-sizing: border-box;
-	border: 1px solid rgba(0,0,0,0);
-    border: none;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    
-}
-.form-group{
-  margin-top: 10px;
-}
-
-select{
-  width: 100px;
-  margin-top: 5px;
-  height: 40px;
-  margin-bottom: 10px;
-}
-
-
-.row{
-  display: flex;
-  gap: 10px;
-}
-
-
-#pay-now {
-	font-size: 20px;
-	color:#f7f7f7;
-	background: var(--main-btn);
-	width:100%;
-	padding:10px 10px 10px 20px;
-	/* box-sizing: border-box; */
-	/* border: 3px solid rgba(0,0,0,0); */
-  transition: all .3s linear;
-  border-radius: 5px;
-  box-shadow: rgba(22, 22, 22, 0.582);
+.dropdown-arrow {
+  background-color: #4caf50;
+  color: white;
+  font-size: 12px;
   border: none;
-}
-
-#pay-now a {
-	text-decoration: none;
-	color: #ff306e;
-}
-
-#pay-now:hover {
-	color: #f7f7f7;
-	background: linear-gradient(to right, #f84336, #ff306e);
-	outline: none;
-  transition: all .3s linear;
+  cursor: pointer;
+  border: black;
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
  
+}
+
+.after-login {
+  display: flex;
+  align-items: center;
+}
+/* 
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        } */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.103);
+  z-index: 1;
+  margin-right: 70px;
+  /* margin-top: 400px; */
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f8f8f8;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+#dropdown {
+  display: none;
+}
+
+/* dropdown icons */
+.dropdown-content > a > span {
+  width: 500px;
+  margin-right: 5px;
+}
+
+/* dropdown profile image */
+#dropdown > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: white;
 }
 
 
@@ -157,6 +130,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .nav-store-Logo,
@@ -169,30 +143,37 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  cursor: pointer;
 }
 .nav-live-Logo > img {
   width: 30px;
+  cursor: pointer;
 }
 
 .nav-cult-Logo > img {
   width: 30px;
+  cursor: pointer;
 }
 
 .nav-mind-Logo > img {
   width: 30px;
+  cursor: pointer;
 }
 
 .nav-store-Logo > img {
   width: 30px;
+  cursor: pointer;
 }
 
 .nav-care-Logo > img {
   width: 30px;
+  cursor: pointer;
 }
 
 .navText {
   font-size: 13px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 /* Nav right section */
@@ -210,23 +191,20 @@ body {
 
 .login-text {
   background-color: bisque;
+  cursor: pointer;
 }
 .nav-login-Logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
 }
 
 .nav-cart-Logo > img {
   width: 20px;
+  cursor: pointer;
 }
 .nav-login-Logo > img {
   width: 15px;
-}
-
-
-.background-image{
-  width: 100%;
-  background: url(https://static.cure.fit/assets/images/curefit-v-man.svg);
-  background: no-repeat;
+  cursor: pointer;
 }

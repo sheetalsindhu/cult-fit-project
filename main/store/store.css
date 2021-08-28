@@ -41,16 +41,19 @@ body{
 .nav-CultFit-Logo > img {
   width: 100%;
   margin-left: 30px;
+   cursor: pointer;
 }
 .cultText {
   font-size: 14px;
   color: var(--button);
   cursor: pointer;
   text-align: center;
+   cursor: pointer;
 }
 
 .cultText > h1 {
   text-align: center;
+   cursor: pointer;
 }
 .nav-middle {
   display: flex;
@@ -70,24 +73,29 @@ body{
   gap: 25px;
   margin-left: 680px;
   margin-right: 5px;
+
 }
 
 .navText {
   font-size: 13px;
   font-weight: 400;
+   cursor: pointer;
 }
 
 .nav-login-Logo {
   display: flex;
   align-items: center;
   gap: 10px;
+   cursor: pointer;
 }
 
 .nav-cart-Logo > img {
   width: 20px;
+   cursor: pointer;
 }
 .nav-login-Logo > img {
   width: 15px;
+   cursor: pointer;
 }
 
 /* Upper Banner Image */
@@ -103,6 +111,7 @@ body{
   margin: auto;
   /* background-color: #e9fcff; */
   padding: 5px;
+  margin-bottom: 100px;
 }
 
 /* categories */

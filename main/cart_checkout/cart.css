@@ -1,4 +1,4 @@
-  :root {
+:root {
   --primary-text: #000000;
   --secondary-text: #fff;
   --blue: #29b9ed;
@@ -17,15 +17,12 @@
   padding: 0;
 }
 
-
-body{
+body {
   position: relative;
   margin: 0;
   padding-bottom: 6rem;
   min-height: 100%;
 }
-
-
 
 /* nav-bar styling */
 #navBar {
@@ -41,13 +38,12 @@ body{
 
 /* cult-logo */
 
-
 .nav-CultFit-Logo > img {
   width: 50%;
   margin-left: 30px;
   cursor: pointer;
 }
-.cultText{
+.cultText {
   font-size: 14px;
   color: var(--button);
   cursor: pointer;
@@ -57,7 +53,6 @@ body{
 .cultText > h1 {
   text-align: center;
 }
-
 
 .nav-login-Logo {
   display: flex;
@@ -76,466 +71,442 @@ body{
   cursor: pointer;
 }
 
-  
-  
-  
-  
-  
-  
-  
-  
-  /*modal start*/
-        #modal1 {
-            display: none;
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 60px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
+/*modal start*/
+#modal1 {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 60px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
 
+#modal {
+  display: none;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 60px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
 
+#modal-content {
+  border-radius: 10px;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  /* height: 600px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  border: none;
+}
 
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
 
-        #modal {
-            display: none;
-            position: fixed;
-            /* Stay in place */
-            z-index: 1;
-            /* Sit on top */
-            padding-top: 60px;
-            /* Location of the box */
-            left: 0;
-            top: 0;
-            width: 100%;
-            /* Full width */
-            height: 100%;
-            /* Full height */
-            overflow: auto;
-            /* Enable scroll if needed */
-            background-color: rgb(0, 0, 0);
-            /* Fallback color */
-            background-color: rgba(0, 0, 0, 0.4);
-            /* Black w/ opacity */
-        }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 
-        #modal-content {
-            border-radius: 10px;
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 20px;
-            border: 1px solid #888;
-            width: 30%;
-            /* height: 600px; */
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            -webkit-animation-name: animatetop;
-            -webkit-animation-duration: 0.4s;
-            animation-name: animatetop;
-            animation-duration: 0.4s;
-            border: none;
-        }
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
 
-        /* Add Animation */
-        @-webkit-keyframes animatetop {
-            from {
-                top: -300px;
-                opacity: 0
-            }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
 
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
+.close {
+  color: gray;
+  float: right;
+  font-size: 20px;
+  font-weight: bold;
+}
 
-        @keyframes animatetop {
-            from {
-                top: -300px;
-                opacity: 0
-            }
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-            to {
-                top: 0;
-                opacity: 1
-            }
-        }
+#model-header {
+  width: 100%;
+  height: 20px;
+}
 
-        .close {
-            color: gray;
-            float: right;
-            font-size: 20px;
-            font-weight: bold;
-        }
+#model-header span {
+  float: right;
+}
 
-        .close:hover,
-        .close:focus {
-            color: #000;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        #model-header {
-            width: 100%;
-            height: 20px;
-        }
-
-        #model-header span {
-            float: right;
-        }
-
-        .model-body {
-
-            /* display: flex;
+.model-body {
+  /* display: flex;
                         flex-direction:column;*/
-            text-align: center;
-        }
+  text-align: center;
+}
 
-        /* .model-body .image {
+/* .model-body .image {
                         margin-top:30px;
                         margin-left:100px;
                         width:130px;
 
                         height:130px;
                         /* border:2px solid black; */
-        /* } */
+/* } */
 
-        #model-left {
-            float: left;
-            font-size: 20px;
-        }
+#model-left {
+  float: left;
+  font-size: 20px;
+}
 
-        #modal-body >button {
-            margin-top: 30px;
-            color: white;
-            font-size: 20px;
-            background: var(--main-btn);
-            width: 100%;
-            cursor: pointer;
+#modal-body > button {
+      margin-top: 20px;
+    color: white;
+    font-size: 12px;
+    background: var(--main-btn);
+    width: 300px;
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
 
-        }
+#button {
+  clear: both;
+}
 
-        #button {
-            clear: both;
-        }
+#addbtn {
+  width: 200px;
+  height: 40px;
+  background-color: var(--button);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  border: none;
+}
 
-        #addbtn {
-            width: 200px;
-            height: 40px;
-            background-color: var(--button);
-            color: white;
-            border-radius: 10px;
-            cursor: pointer;
-            margin-top: 20px;
-        }
+/*End modal*/
 
-        /*End modal*/
+#container {
+  width: 70%;
+  margin: auto;
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 48% 48%;
+  grid-gap: 10px;
+  height: 400px;
 
+  margin-top: 80px;
+  padding: 20px;
+}
 
-
-        #container {
-            width: 70%;
-            margin: auto;
-            /* border: 1px solid black; */
-            display: grid;
-            grid-template-columns: 48% 48%;
-            grid-gap: 10px;
-            height:400px;
-          
-            margin-top: 80px;
-            padding: 20px;
-
-        }
-
-
-
-        #container>#order-content>#one_content {
-            /* display:grid;
+#container > #order-content > #one_content {
+  /* display:grid;
                 grid-template-columns: 40% 58%;
                 grid-gap:2px;
                 border:1px solid black; */
-            display: flex;
-            flex-direction: row;
-        }
+  display: flex;
+  flex-direction: row;
+}
 
-        .image_container {
-            width: 30px;
-            height: 30px;
-            /* border:2px solid black; */
-        }
+.image_container {
+  width: 30px;
+  height: 30px;
+  /* border:2px solid black; */
+}
 
-        .location-icon{
-            width: 8%;
-           
-        }
+.location-icon {
+  width: 8%;
+}
 
-        .line{
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
+.line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-        .modify-address-div{
-            display: flex;
-            margin-left: 20px;
-            gap: 160px;
-            align-items: center;
-            
-        }
+.modify-address-div {
+  display: flex;
+  margin-left: 20px;
+  gap: 160px;
+  align-items: center;
+}
 
-        #addright{
-            color: var(--button);
-        }
-        #addleft{
-            font-size: 14px;
-        }
+#addright {
+  color: var(--button);
+}
+#addleft {
+  font-size: 14px;
+  text-transform: uppercase;
+}
 
-        .total-price,
-        #showTotalPrice,
-        .discount-text,
-        #showTotalDiscount,
-        .implement-voucher{
-            font-size: 14px;
-        }
+.total-price,
+#showTotalPrice,
+.discount-text,
+#showTotalDiscount,
+.implement-voucher {
+  font-size: 14px;
+}
 
+.voucher-btn {
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
+  background: var(--main-btn);
+  color: white;
+}
 
-        .voucher-btn{
-            width: 100px;
-            height: 30px;
-            border: none;
-            border-radius: 8px;
-            background: var(--main-btn);
-            color: white;
-        }
+.total-payable {
+  font-size: 18px;
+}
 
-        .total-payable{
-            font-size: 18px;
-        }
+#addleft > span > img {
+  margin-bottom: -10px;
+}
 
-       
+.image_container > img {
+  width: 100%;
+}
 
-        #addleft>span>img {
-            margin-bottom: -10px;
-        }
+#first {
+  display: grid;
+  grid-template-columns: 100% 100%;
+  /* grid-gap:5px; */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  height: 20px;
+}
 
-        .image_container>img {
-            width: 100%;
-        }
+#name_right {
+  float: left;
+  margin-left: 30px;
+}
 
+#cross {
+  float: right;
+  width: 30px;
+  margin-left: -15px;
+  color: white;
+  cursor: pointer;
+}
 
+#image_div {
+  height: 200px;
+  margin-top: 20px;
+}
 
+#image {
+  width: 100%;
+  height: 100%;
+}
 
-        #first {
-            display: grid;
-            grid-template-columns: 100% 100%;
-            /* grid-gap:5px; */
-            margin-top: 20px;
-            margin-bottom: 10px;
-            height: 20px;
-        
-        }
+#band,
+#size {
+  margin-left: 30px;
+  font-size: 17px;
+  color: gray;
+}
 
-        #name_right {
-            float: left;
-            margin-left: 30px;
-        }
+#size {
+  margin-top: 15px;
+  height: 20px;
+}
 
-        #cross {
-            float: right;
-            width: 30px;
-            margin-left: -15px;
-            color: white;
-            cursor: pointer;
-        }
+#priceQuantity {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
 
+#quantity {
+  width: auto;
+  height: 40px;
+  /* margin-top: 10px; */
+  margin-left: 80px;
+  border: 1px solid #ff306e;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  padding: 10px;
 
-        #image_div {
-            height: 200px;
-            margin-top: 20px;
-        }
+  /* flex-grow:auto; */
+}
 
-        #image {
-            width: 100%;
-            height: 100%;
-        }
+#p_minus {
+  float: left;
+  text-align: center;
+  margin: 0px;
+  font-size: 30px;
+  /* margin-left: 14px; */
+  cursor: pointer;
+  color: var(--button);
+}
 
-        #band,
-        #size {
-            margin-left: 30px;
-            font-size: 17px;
-            color: gray;
+#p_quantity {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: inline;
+}
 
-        }
+#p_plus {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--button);
+}
 
-        #size {
-            margin-top: 15px;
-            height: 20px;
-        }
+/* Address part*/
+#selectAddress {
+  cursor: pointer;
+}
 
-        #priceQuantity {
-            margin-top: 20px;
-            margin-left: 30px;
-            display: flex;
-            flex-direction: row;
-        }
+hr {
+  clear: both;
+}
 
-        #quantity {
-            width: auto;
-            height: 40px;
-            /* margin-top: 10px; */
-            margin-left: 80px;
-            border: 1px solid #ff306e;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            flex-direction: row;
-            gap: 10px;
-            padding: 10px;
-            
-            /* flex-grow:auto; */
-        }
+#top {
+  font-size: 17px;
+  font-weight: bold;
+}
 
-        #p_minus {
-            float: left;
-            text-align: center;
-            margin: 0px;
-            font-size: 30px;
-            margin-left: 14px;
-            cursor: pointer;
-            color: var(--button);
-        }
+#pricePart {
+  display: grid;
+  grid-template-rows: 30px 30px 30px 30px;
+  grid-gap: 8px;
+  /* border:1px solid black; */
+}
 
-        #p_quantity {
-            margin-left: 10px;
-            margin-right: 10px;
-            margin-top: 20px;
-            display: inline;
-        }
+#totalPrice > p:nth-child(1),
+#totalPayble > p:nth-child(1),
+#discount > p:nth-child(1),
+#voucher > p:nth-child(1) {
+  float: left;
+  margin-left: 30px;
+  color: gray;
+  height: 20px;
+}
 
-        #p_plus {
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-            color: var(--button);
+#totalPrice > p:nth-child(2),
+#totalPayble > p:nth-child(2),
+#discount > p:nth-child(2),
+#voucher > button {
+  float: right;
+  margin-right: 40px;
+  color: gray;
+}
 
-        }
+#voucher > button {
+  color: white;
+  cursor: pointer;
+}
 
-        /* Address part*/
-        #selectAddress {
-            cursor: pointer;
-        }
-        
-        hr {
-            clear: both;
-        }
+#totalPayble > p:nth-child(1),
+#totalPayble > p:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+  margin-top: 20px;
+}
 
-        #top {
-            font-size: 17px;
-            font-weight: bold;
-        }
+#addCity {
+  display: none;
+  height: 50px;
+}
 
-        #pricePart {
-            display: grid;
-            grid-template-rows: 30px 30px 30px 30px;
-            grid-gap: 8px;
-            /* border:1px solid black; */
-        }
+#saveAddress {
+  width: 250px;
+  height: 30px;
+}
 
-        #totalPrice>p:nth-child(1),
-        #totalPayble>p:nth-child(1),
-        #discount>p:nth-child(1),
-        #voucher>p:nth-child(1) {
-            float: left;
-            margin-left: 30px;
-            color: gray;
-            height: 20px;
-        }
+#saveAddress:hover {
+  font-size: 30px;
+  cursor: pointer;
+}
 
-        #totalPrice>p:nth-child(2),
-        #totalPayble>p:nth-child(2),
-        #discount>p:nth-child(2),
-        #voucher>button {
-            float: right;
-            margin-right: 40px;
-            color: gray;
-        }
+#cityname {
+  width: 300px;
+  height: 40px;
+  border-radius: 2px;
+  margin-top: 10px;
+  text-transform: uppercase;
+  padding: 10px;
+}
 
-        #voucher>button {
-            color: white;
-            cursor: pointer;
-        }
+#addressselectbutton,
+#checkoutbutton {
+  margin-top: 40px;
+  height: 40px;
+  margin-left: 300px;
+  background: var(--main-btn);
+  border-radius: 10px;
+  width: 150px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
 
-        #totalPayble>p:nth-child(1),
-        #totalPayble>p:nth-child(2) {
-            font-size: 18px;
-            font-weight: 500;
-            color: black;
-            margin-top: 20px;
-        }
+#addressselectbutton:hover,
+#checkoutbutton:hover {
+  margin-top: 40px;
+  height: 40px;
+  margin-left: 300px;
+  background: var(--button);
+  border-radius: 10px;
+  width: 150px;
+  border: none;
+  color: white;
+}
 
-        #addCity {
-            display: none;
-            height: 50px;
-        }
+#addressselectbutton {
+  display: block;
+}
 
-        #saveAddress {
-            width: 250px;
-            height: 30px;
-
-        }
-
-        #saveAddress:hover {
-            font-size: 30px;
-            cursor: pointer;
-        }
-
-        #cityname {
-            width: 150px;
-            height: 30px;
-            border-radius: 10px;
-        }
-
-        #addressselectbutton,
-        #checkoutbutton {
-            margin-top: 40px;
-            height: 40px;
-            margin-left: 300px;
-            background: var(--main-btn);
-            border-radius: 10px;
-            width: 150px;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-
-        #addressselectbutton:hover,
-        #checkoutbutton:hover {
-            margin-top: 40px;
-            height: 40px;
-            margin-left: 300px;
-            background: var(--button);
-            border-radius: 10px;
-            width: 150px;
-            border: none;
-            color: white;
-        }
-
-        #addressselectbutton {
-            display: block;
-        }
-
-        #checkoutbutton {
-            display: none;
-        }
+#checkoutbutton {
+  display: none;
+}

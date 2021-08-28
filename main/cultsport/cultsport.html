@@ -26,7 +26,7 @@
         <!-- right -->
         <div class="nav-right">
             <div class="nav-login-Logo">
-                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" onclick="toProfile()" />
             </div>
 
             <div class="nav-cart-Logo">
@@ -617,6 +617,10 @@
 
     function backToStorePage() {
         window.location.pathname = "main/store/store.html";
+    }
+
+    function toProfile() {
+        window.location.pathname = "main/settings/profile.html"
     }
 
     // backToStore.addEventListener("click", backToStorePage);

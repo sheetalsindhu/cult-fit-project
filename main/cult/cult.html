@@ -11,57 +11,123 @@
 
 <body>
 
-        <!-- nav bar -->
-        <div id="navBar">
-            <div class="nav-CultFit-Logo">
-                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+        </div>
+    
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <div class="nav-live-Logo">
+                <img src="https://static.cure.fit/assets/images/Livefit.svg" onclick="toLive()" />
+                <p class="navText" onclick="toLive()">LIVE</p>
             </div>
-        
-            <!-- Nav Middle items -->
-            <div class="nav-middle">
-                <div class="nav-live-Logo">
-                    <img src="https://static.cure.fit/assets/images/Livefit.svg" onclick="toLive()" />
-                    <p class="navText" onclick="toLive()">LIVE</p>
-                </div>
-        
-                <div class="nav-cult-Logo">
-                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" onclick="toCult()" />
-                    <p class="navText" onclick="toCult()">CULT</p>
-                </div>
-        
-                <div class="nav-mind-Logo">
-                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" onclick="toMind()" />
-                    <p class="navText" onclick="toMind()">MIND</p>
-                </div>
-        
-                <div class="nav-care-Logo">
-                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" onclick="toCare()" />
-                    <p class="navText" onclick="toCare()">CARE</p>
-                </div>
-        
-                <div class="nav-store-Logo">
-                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
-                    <p class="navText" id="store" onclick="storePage()">STORE</p>
+    
+            <div class="nav-cult-Logo">
+                <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" onclick="toCult()" />
+                <p class="navText" onclick="toCult()">CULT</p>
+            </div>
+    
+            <div class="nav-mind-Logo">
+                <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" onclick="toMind()" />
+                <p class="navText" onclick="toMind()">MIND</p>
+            </div>
+    
+            <div class="nav-care-Logo">
+                <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" onclick="toCare()" />
+                <p class="navText" onclick="toCare()">CARE</p>
+            </div>
+    
+            <div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
+            </div>
+        </div>
+    
+    
+    
+    
+        <div class="nav-right">
+            <div class="location">
+                <p class="navText">Delhi, INDIA</p>
+            </div>
+    
+            <!-- Login page -->
+            <div class="nav-login-Logo" onclick="call()" id="login">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+    
+                <!-- <p onclick="call()" class="navText login-text">LOGIN</p> -->
+    
+                <!-- Dropdown Div -->
+                <div id="dropdown" class="dropdown">
+                    <div class="after-login">
+                        <!-- <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                            class="dropbtn-image" /> -->
+    
+                        <span>
+                            <img class="dropdown-arrow"
+                                src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+                        </span>
+                    </div>
+    
+                    <div class="dropdown-content">
+                        <a href="settings/profile.html"><span>
+                                <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
+                            Profile</a>
+    
+                        <a href="settings/order.html"><span><img
+                                    src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
+    
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
+                            Records</a>
+    
+                        <a href="settings/subscription.html"><span><img
+                                    src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
+                            Packs</a>
+    
+                        <a href="settings/reedem.html"><span><img
+                                    src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
+                            Voucher</a>
+    
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
+    
+                        <a href="settings/support.html"><span><img
+                                    src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
+    
+                        <a href="settings/logout.html"><span><img
+                                    src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
+                    </div>
                 </div>
             </div>
+    
+            <!-- Cart button -->
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()" />
+            </div>
+        </div>
+    </div>
 
+<div class="cult-cont">
     <div class="image1">
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2885:595/dpr_2/image/vm/7e2c774c-cb11-436c-bfa1-40883aae79a2.png"
             alt="">
     </div>
-
+    
     <div class="image2">
-
+    
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_1360:100/dpr_2/image/vm/84544577-584c-459d-b25c-134076c4b4c9.png"
             alt="">
     </div>
-
+    
     <div class="image3">
         <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_1360:100/dpr_2/image/vm/35cb3d36-ef28-4f4d-b481-58f84c705a8c.png"
             alt="">
-
+    
     </div>
-
+    
     <div class="online-pt">
         <div class="heading-opt">Online Personal Training</div>
         <div class="heading-opt-member">MEMBERSHIP</div>
@@ -75,13 +141,13 @@
             </div>
             <div class="personalised">
                 <div class="personalised-img">
-
+    
                     <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/livept/web/cult.png"
                         alt="">
                 </div>
                 <div class="personalised-cont">
                     Personalized Workouts
-
+    
                 </div>
             </div>
             <div class="posture">
@@ -92,17 +158,17 @@
                 <div class="posture-cont">
                     Posture Correction
                 </div>
-
+    
             </div>
-
+    
         </div>
-
+    
         <div class="subscription">
             Choose Your Subscription
         </div>
         <div class="coupon">
-
-
+    
+    
             <!-- html coupon 1 start -->
             <div class="coupon-1">
                 <div class="buy-and-price">
@@ -127,10 +193,10 @@
                     </div>
                 </div>
             </div>
-
-
+    
+    
             <div class="coupon-2">
-
+    
                 <div class="buy-and-price">
                     <div class="sessions-price">
                         <p class="para"> 100+10 sessions</p>
@@ -152,10 +218,10 @@
                         <p>FREE 10-session extension on 100 sessions pack</p>
                     </div>
                 </div>
-
+    
             </div>
             <div class="coupon-3">
-
+    
                 <div class="buy-and-price">
                     <div class="sessions-price">
                         <p class="para"> 100+10 sessions</p>
@@ -177,12 +243,12 @@
                         <p>FREE 10-session extension on 100 sessions pack</p>
                     </div>
                 </div>
-
+    
             </div>
         </div>
-
+    
     </div>
-
+    
     <div class="workout">
         <div class="contain-workout">
             <p class="workouts">WORKOUTS</p>
@@ -200,6 +266,44 @@
             </div>
         </div>
     </div>
+</div>
+
+    <!--Footor -->
+    <div id="footer">
+        <div class="logo-footer">
+            <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
+    
+            <p class="text-Footer-P">
+                At cult.fit, we make group workouts fun, daily food healthy & tasty,
+                mental fitness easy with yoga & meditation, and medical & lifestyle
+                care hassle-free. #BeBetterEveryDay
+            </p>
+        </div>
+    
+        <div class="right">
+            <div class="links1">
+                <p class="fText">CONTACT</p>
+                <p class="fText">US</p>
+                <p class="fText">BLOG</p>
+                <p class="fText">TALKS</p>
+                <p class="fText">CAREER</p>
+            </div>
+    
+            <div class="links2">
+                <p class="fText">CULTFIT FOR BUSINESSES</p>
+                <p class="fText">CULT PASS</p>
+                <p class="fText">NETWORK</p>
+                <p class="fText">CORPORATE</p>
+                <p class="fText">PARTNERSHIPS</p>
+            </div>
+    
+            <div class="playStore">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="" />
+            </div>
+        </div>
+    </div>
+
 
 
 </body>
@@ -219,7 +323,7 @@
         }
 
         function toCare() {
-            window.location.pathname = " ";
+            window.location.pathname = "main/care/cares.html";
         }
 
         function toCult() {
@@ -229,5 +333,10 @@
         function toLive() {
             window.location.pathname = "main/live/live.html";
         }
+
+
+    function toCart() {
+        window.location.pathname = "main/cart_checkout/cart.html";
+    }
 
 </script>
