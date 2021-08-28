@@ -47,7 +47,7 @@ We thoroughly grasped the website and selected the key pages and functionalities
 # Limitations
 
 
-# Team members
+# Team members :innocent:
 
 #### 1. Sheetal Sindhu
 * [Github](https://github.com/sheetalsindhu)
