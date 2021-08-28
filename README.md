@@ -51,13 +51,14 @@ User need to login before purchasing cloths from cult fit. If user's are existin
 ![image](https://user-images.githubusercontent.com/77065070/131214176-f83284e4-e2c3-4add-827e-b8bc160417b5.png)
 
 ### Store Page:
-![image](https://user-images.githubusercontent.com/77065070/131214199-c476956a-4f21-49fd-b407-31ff77467f4d.png)
+![image](https://user-images.githubusercontent.com/77065070/131214264-0fd6499d-a612-4ca0-9175-f3e0e800fb19.png)
 
 ### Cart Page:
-![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
+![image](https://user-images.githubusercontent.com/77065070/131214199-c476956a-4f21-49fd-b407-31ff77467f4d.png)
 
 ### Add Address:
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
+
 
 
 
