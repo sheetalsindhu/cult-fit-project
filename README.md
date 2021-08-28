@@ -46,5 +46,19 @@ User need to login before purchasing cloths from cult fit. If user's are existin
 ##### Sign Up page:
 ![image](https://user-images.githubusercontent.com/77065070/131214077-bb2d2843-b1e3-4c20-8977-89dca2e93678.png)
 
+### Landing Page:
+![image](https://user-images.githubusercontent.com/77065070/131214146-682d67d8-e712-4145-9b7e-fc55f5e1fb9e.png)
+![image](https://user-images.githubusercontent.com/77065070/131214176-f83284e4-e2c3-4add-827e-b8bc160417b5.png)
+
+### Store Page:
+![image](https://user-images.githubusercontent.com/77065070/131214199-c476956a-4f21-49fd-b407-31ff77467f4d.png)
+
+### Cart Page:
+![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
+
+### Add Address:
+![Uploading image.png…]()
+
+
 
 
