@@ -17,7 +17,7 @@ In this project we have used the following tech stack.
 
 
 
-# How to browse through the project?
+# How to browse through the project? 	:roll_eyes:
 
 follow these below steps to go through this project.
 
