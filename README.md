@@ -52,7 +52,7 @@ We thoroughly grasped the website and selected the key pages and functionalities
 #### 1. Sheetal Sindhu
 * [Github](https://github.com/sheetalsindhu)
 
-* [Linkedin]()
+* [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
 
 #### 2. Mansur Devan
 * [Github](https://github.com/mansur3)
