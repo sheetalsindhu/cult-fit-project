@@ -71,6 +71,7 @@ You can enter your location accordingly now and then place the order.
 
 ![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
 
+### Payment page:
 
 
 
