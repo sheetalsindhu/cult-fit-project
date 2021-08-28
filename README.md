@@ -1,5 +1,5 @@
 # Cult Fit Clone 
-*Project link -
+*Project link - https://github.com/sheetalsindhu/cult-fit-project.git
 
 #### About Cult Fit
 > At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Cult.fiuses the best in technology to give you a world-class experience. You can book classes, follow workout videos, order cult mens and women gear, order healthy food.
