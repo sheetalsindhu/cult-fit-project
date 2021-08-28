@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# Cult Fit Clone
-=======
-# Cult Fit Clone :weight_lifting_man:
->>>>>>> bb62786e55e14ef608c12ba37ebee4caf21472e7
+# Cult Fit Clone 
 
 #### About Cult Fit
 At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fiuses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the "cult.fit" app or website. 
@@ -73,10 +69,7 @@ We thoroughly grasped the website and selected the key pages and functionalities
 #### 2. Mansur Devan :boy:
 * [Github](https://github.com/mansur3)
 
-<<<<<<< HEAD
-<!-- # Roles and Responsibilities 
-We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcame by team work. -->
-=======
+
 * [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
 #### 3. Gaurav Maihuria :boy:
 * [Github](https://github.com/gaurav16-lang)
@@ -86,4 +79,4 @@ We thoroughly grasped the website and selected the key pages and functionalities
 * [Github](https://github.com/harishreyya)
 
 * [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
->>>>>>> bb62786e55e14ef608c12ba37ebee4caf21472e7
+
