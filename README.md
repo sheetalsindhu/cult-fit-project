@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-# Cult Fit Clone
-=======
-# Cult Fit Clone :weight_lifting_man:
->>>>>>> bb62786e55e14ef608c12ba37ebee4caf21472e7
+# Cult Fit Clone 
 
 #### About Cult Fit
-At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fiuses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the "cult.fit" app or website. 
+> At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Cult.fiuses the best in technology to give you a world-class experience. You can book classes, follow workout videos, order cult mens and women gear, order healthy food.
 
-In this project we have tried to enhance the the cloning of "cult.fit" website. We had builded up some efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
+> In this project we have tried to enhance the the cloning of cult.fit website. We had builded up all our efforts to do our best in this project. As, the Masai School's Mentorship  was specifically to build up our skills and we also accordingly implemented all that teachings in our project to look it at its best.
 
 # Technology We Used :computer:
 In this project we have used the following tech stack.
@@ -19,71 +15,63 @@ In this project we have used the following tech stack.
    * LocalStorage
 
 
-
-
-# How to browse through the project? 	:roll_eyes:
-
-follow these below steps to go through this project.
-
-1.  open landing.html on live server(in vscode)
-
-
-
-# space for ss of landing page
-
-2. This is our landing page. You can see all the services provided by cult for a while and then click on login on the top right to login.
-
-# space for ss of  login modal
-
-3. Fill the credentials and click to continue button
-
-<!-- # Roles and Responsibilities 
-We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcame by team work. -->
-
-
-
-# End Notes :page_facing_up:
-
-# Video Demo
-[link]()
-
-
-<<<<<<< HEAD
-#### 1. Sheetal Sindhu
-[Github](https://github.com/sheetalsindhu)
-[Linkdin]()
-
-#### 2. Mansur Devan
-
-#### 3. Gaurav Malhuria
-
-#### 4. Reyya Harish
-=======
-# Limitations
-
-
-# Team members :innocent:
+# Team members 
 
 #### 1. Sheetal Sindhu :woman:
 * [Github](https://github.com/sheetalsindhu)
->>>>>>> bb62786e55e14ef608c12ba37ebee4caf21472e7
-
 * [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
 
 #### 2. Mansur Devan :boy:
 * [Github](https://github.com/mansur3)
-
-<<<<<<< HEAD
-<!-- # Roles and Responsibilities 
-We thoroughly grasped the website and selected the key pages and functionalities of website which we will be doing. We accordingly splited our works so as to do the best from our end. Stepping ahead we went through some references like  documentations from MDN and other resources. Sheetal and Mansur took responsibilties of major functionalities, Gaurav and harish took over pages that to be done. Some hurdles were hitting us but we overcame by team work. -->
-=======
 * [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
+
 #### 3. Gaurav Maihuria :boy:
 * [Github](https://github.com/gaurav16-lang)
-
 * [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
+
 #### 4. Reyya Harish :boy:
 * [Github](https://github.com/harishreyya)
-
 * [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
->>>>>>> bb62786e55e14ef608c12ba37ebee4caf21472e7
+
+
+# Roles and Responsibilities
+We went through the website and firstly, we decided to start from landing page. We distributed pages among all of us. We referred to official documentations from MDN documentation and other resources. We were focusing on funcatanlity of website. 
+
+### Login and Sign up Page:
+User need to login before purchasing cloths from cult fit. If user's are existing user they can login and if they are not existing user then they can register using sign up.
+
+##### login page:
+To login User has to enter their username and password to log into the website.
+
+![image](https://user-images.githubusercontent.com/77065070/131214057-2efde000-b44c-4f4f-8dd3-08caf186d1d6.png)
+
+##### Sign Up page:
+To signup User has to register the by entering their name , email, phone number, password and then click on the "create account" button. You are now succesfully logged In.
+
+![image](https://user-images.githubusercontent.com/77065070/131214077-bb2d2843-b1e3-4c20-8977-89dca2e93678.png)
+
+### Landing Page:
+You are on our Landing page now. you get to see what are things our website provides you like exploring live sessions , clothings and many more.
+
+![image](https://user-images.githubusercontent.com/77065070/131214146-682d67d8-e712-4145-9b7e-fc55f5e1fb9e.png)
+![image](https://user-images.githubusercontent.com/77065070/131214176-f83284e4-e2c3-4add-827e-b8bc160417b5.png)
+
+### Store Page:
+You can see the store page by just clicking on the "store icon" on the navigation bar. On store you can get yourself the latest stuff of clothings. click on the item and by selecting the size, just add to cart by clicking on "add cart icon".
+
+![image](https://user-images.githubusercontent.com/77065070/131214264-0fd6499d-a612-4ca0-9175-f3e0e800fb19.png)
+
+### Cart Page:
+Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
+
+![image](https://user-images.githubusercontent.com/77065070/131214199-c476956a-4f21-49fd-b407-31ff77467f4d.png)
+
+### Add Address:
+You can enter your location accordingly now and then place the order.
+
+![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
+
+
+
+
+
