@@ -34,11 +34,15 @@ In this project we have used the following tech stack.
 * [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
 
 
-### Roles and Responsibilities
+# Roles and Responsibilities
 We went through the website and firstly, we decided to start from landing page. We distributed pages among all of us. We referred to official documentations from MDN documentation and other resources. We were focusing on funcatanlity of website. 
 
 ### Login and Sign up Page:
 User need to login before purchasing cloths from cult fit. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
 ##### login page:
+
+![image](https://user-images.githubusercontent.com/77065070/131214038-2d698594-fab4-4614-9ab9-339dfd7ef56f.png)
+![image](https://user-images.githubusercontent.com/77065070/131214036-a75a600b-a87e-4b3f-8475-8670e5a1947b.png)
+
 
