@@ -30,7 +30,7 @@ In this project we have used the following tech stack.
 #### 3. Gaurav Maihuria :boy:
 * [Github](https://github.com/gaurav16-lang)
 * [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
-* 
+
 #### 4. Reyya Harish :boy:
 * [Github](https://github.com/harishreyya)
 * [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
