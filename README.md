@@ -54,15 +54,15 @@ We thoroughly grasped the website and selected the key pages and functionalities
 
 * [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
 
-#### 2. Mansur Devan
+#### 2. Mansur Devan :boy:
 * [Github](https://github.com/mansur3)
 
 * [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
-#### 3. Gaurav Maihuria
+#### 3. Gaurav Maihuria :boy:
 * [Github](https://github.com/gaurav16-lang)
 
 * [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
-#### 4. Reyya Harish
+#### 4. Reyya Harish :boy:
 * [Github](https://github.com/harishreyya)
 
 * [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
