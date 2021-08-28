@@ -21,11 +21,11 @@ In this project we have used the following tech stack.
 [Github](https://github.com/sheetalsindhu)
 
 #### 2. Mansur Devan
-[Github](https://github.com/sheetalsindhu)
+[Github](https://github.com/mansur3)
 #### 3. Gaurav Maihuria
-[Github](https://github.com/sheetalsindhu)
+[Github](https://github.com/gaurav16-lang)
 #### 4. Reyya Harish
-[Github](https://github.com/sheetalsindhu)
+[Github](https://github.com/harishreyya)
 
 
 <!-- # Roles and Responsibilities 
