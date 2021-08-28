@@ -461,27 +461,27 @@
             <!-- Nav Middle items -->
             <div class="nav-middle">
                 <div class="nav-live-Logo">
-                    <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                    <img src="https://static.cure.fit/assets/images/Livefit.svg" onclick="toLive()"/>
                     <p class="navText">LIVE</p>
                 </div>
 
                 <div class="nav-cult-Logo">
-                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" onclick="toCult()" />
                     <p class="navText">CULT</p>
                 </div>
 
                 <div class="nav-mind-Logo">
-                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" onclick="toMind()" />
                     <p class="navText">MIND</p>
                 </div>
 
                 <div class="nav-care-Logo">
-                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" onclick="toCare()"/>
                     <p class="navText">CARE</p>
                 </div>
 
                 <div class="nav-store-Logo">
-                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" onclick="toStore()" alt=""  />
                     <p class="navText" id="store" onclick="storePage()">STORE</p>
                 </div>
             </div>
@@ -542,7 +542,7 @@
 
                 <!-- Cart button -->
                 <div class="nav-cart-Logo">
-                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()" />
                 </div>
             </div>
         </div>
@@ -848,25 +848,45 @@
         drop.style.display = "block";
         third.append(drop);
     }
+    
+    // function totalVoucher() {
+    //     var p = document.getElementById("show");
+    //     var get_data = JSON.parse(localStorage.getItem("voucher"));
+    //     var total = 0;
+    //     for (let i = 0; i < get_data.length; i++) {
+    //         total += get_data[i];
+    //     }
+    //     p.innerHTML = "Total voucher price is :-  " + total;
+    // }
+
     function totalVoucher() {
-        var p = document.getElementById("show");
-        var get_data = JSON.parse(localStorage.getItem("voucher"));
-        var total = 0;
-        for (let i = 0; i < get_data.length; i++) {
-            total += get_data[i];
+            var p = document.getElementById("show");
+            var get_data = JSON.parse(localStorage.getItem("user"));
+            var loged = JSON.parse(localStorage.getItem("logedin"));
+
+            var total = 0;
+            get_data.forEach(function (q) {
+                if (q.number == loged.n) {
+                    for (var i = 0; i < q.voucher.length; i++) {
+                        total += q.voucher[i];
+                    }
+                    loged.voucher = total;
+                    localStorage.setItem("logedin", loged);
+                }
+            })
+            p.innerHTML = "Total voucher price is :-  " + total;
         }
-        p.innerHTML = "Total voucher price is :-  " + total;
-    }
+
     function check() {
         let total_voucher_price = [];
         var code = document.getElementById("voucher").value;
         if (code == "masai30") {
-            alert("you got 3000 rupees");
-            total_voucher_price.push(3000);
+            alert("you got 100 rupees");
+            total_voucher_price.push(100);
             localStorage.setItem("voucher", JSON.stringify(total_voucher_price));
         } else if (code == "sheetal") {
-            total_voucher_price.push(5000);
-            alert("You got 5000 rupees");
+            total_voucher_price.push(200);
+            alert("You got 200 rupees");
             localStorage.setItem("voucher", JSON.stringify(total_voucher_price));
 
         } else if (code == "" || code != "masai30" || code != "sheetal") {
@@ -881,5 +901,8 @@
             window.location.pathname = "main/home.html"
         }
 
+        function toCart(){
+            window.location.pathname = "main/cart_checkout/cart.html"
+        }
 
 </script>

@@ -30,6 +30,7 @@
     width: 100%;
     ;
 
+    z-index: 1;
     position: fixed;
     background-color: var(--secondary-text);
     box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);

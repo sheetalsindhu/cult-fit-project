@@ -34,6 +34,7 @@ body {
   display: flex;
   align-items: center;
   top: 0;
+  z-index: 1;
 }
 
 /* cult-logo */

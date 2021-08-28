@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="men.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
+        rel="stylesheet" />
+
+    <title>Men</title>
+    <style>
+        :root {
+  --primary-text: #000000;
+  --secondary-text: #fff;
+  --blue: #29b9ed;
+  --background: #fff;
+  --text-hover: #b2b2b2;
+  --button: #ff306e;
+  --main-btn: linear-gradient(to left, #fa6359, #ff437c);
+}
+
+* {
+  /* font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif; */
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+
+
+/* nav-bar styling */
+#navBar {
+  width: 1540px;
+  height: 60px;
+  position: fixed;
+  background-color: var(--secondary-text);
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+}
+
+/* cult-logo */
+
+
+.nav-CultFit-Logo > img {
+  width: 100%;
+  margin-left: 30px;
+   cursor: pointer;
+}
+.cultText{
+  font-size: 14px;
+  color: var(--button);
+  cursor: pointer;
+  text-align: center;
+   cursor: pointer;
+}
+
+.cultText > h1 {
+  text-align: center;
+   cursor: pointer;
+}
+.nav-middle {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 640px;
+  
+}
+
+
+
+/* Nav right section */
+.nav-right {
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  height: 60px;
+  align-items: center;
+  gap: 25px;
+  margin-left: 650px;
+  margin-right: 5px;
+}
+
+.navText {
+  font-size: 13px;
+  font-weight: 400;
+   cursor: pointer;
+}
+
+.nav-login-Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+   cursor: pointer;
+}
+
+.nav-cart-Logo > img {
+  width: 20px;
+   cursor: pointer;
+}
+.nav-login-Logo > img {
+  width: 15px;
+  cursor: pointer;
+}
+
+
+/*  Main Sports Page */
+
+#main-container {
+  width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+
+/* Data of mens gear */
+#data {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+#data > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cultGearMenDiv {
+  width: 400px;
+  text-align: left;
+  
+}
+
+.productImage {
+  width: 100%;
+  cursor: pointer;
+}
+
+.productName {
+  font-size: 14px;
+  color: var(--text-hover);
+  font-weight: 300;
+  margin-top: 3px;
+
+  
+}
+
+.productBrand{
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 15px;
+}
+
+.productDiscount{
+  color: var(--button);
+  font-weight: 400;
+
+}
+
+.productDiscountPrice{
+  text-decoration: line-through;
+  color: var(--text-hover);
+}
+
+.productPrice{
+  font-weight: 500;
+}
+
+.productPrice,
+.productDiscountPrice,
+.productDiscount {
+   font-size: 14px;
+   display: inline-block;
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* Footer section */
+#footer {
+  background-color: black;
+  display: flex;
+  gap: 200px;
+  padding: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 250px;
+}
+
+.logo-footer {
+  width: 400px;
+  margin-left: 140px;
+}
+
+.text-Footer-P {
+  color: rgb(172, 172, 172);
+  text-align: left;
+  line-height: 20px;
+}
+
+.logo-footer > img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.fText {
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  line-height: 30px;
+}
+
+.right {
+  display: flex;
+  gap: 50px;
+}
+
+.playStore {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 60px;
+}
+
+.playStore > img {
+  width: 120px;
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo" onclick="homePage()">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo"
+                onclick="homePage()" />
+        </div>
+
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+        </div>
+
+        <!-- right -->
+        <div class="nav-right">
+            <div class="nav-login-Logo">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+            </div>
+
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Sports Page -->
+    <div id="main-container">
+        <p>MEN</p>
+        <!-- Mens Gear Sports Products -->
+        <div id="data"></div>
+    </div>
+
+    <!--Footor -->
+    <div id="footer">
+        <div class="logo-footer">
+            <img src="https://static.cure.fit/assets/images/cult-logo-white.svg" />
+
+            <p class="text-Footer-P">
+                At cult.fit, we make group workouts fun, daily food healthy & tasty,
+                mental fitness easy with yoga & meditation, and medical & lifestyle
+                care hassle-free. #BeBetterEveryDay
+            </p>
+        </div>
+
+        <div class="right">
+            <div class="links1">
+                <p class="fText">CONTACT</p>
+                <p class="fText">US</p>
+                <p class="fText">BLOG</p>
+                <p class="fText">TALKS</p>
+                <p class="fText">CAREER</p>
+            </div>
+
+            <div class="links2">
+                <p class="fText">CULTFIT FOR BUSINESSES</p>
+                <p class="fText">CULT PASS</p>
+                <p class="fText">NETWORK</p>
+                <p class="fText">CORPORATE</p>
+                <p class="fText">PARTNERSHIPS</p>
+            </div>
+
+            <div class="playStore">
+                <img src="https://static.cure.fit/assets/images/app-store.svg" alt="" />
+                <img src="https://static.cure.fit/assets/images/play-store.svg" alt="" />
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    // All Products
+    const mensGear = [
+        // 1
+        {
+            id: 1,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 3439,
+            discountPrice: "₹ 1199",
+            discount: 50,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/ecmafHYkPzMXgdKSzt5pikMp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/L6aYTMVNH9eTRM3zvKPbAQau",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/WgmzagtBr5HmSiYkb3dw4PcD",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/KSZMWmNdLpWnLdZzXCzWGBfH",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/HRnym9uAsGq7wm5W1rRm7QtS",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/iwN2FbtBECNJjUaJ7NNtmaRV",
+            ],
+        },
+
+        // 2
+        {
+            id: 2,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 30,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/TyCCNn6Hzj9gkKbRP3qVFroa",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/uaoyyoaT7rkJYDsY2Y9yJEkD",
+
+                "  https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/qvi7Hc1r4XpjQXed7zXnE9Gs ",
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/5vRVZgEjtpu5NVX52jeDykPk ",
+                "  https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/yQ3ANmFcZv5SbS5E48jpF1JJ ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/dTKyB66WGJfhrnmH27zjEqCX",
+            ],
+        },
+
+        // 3
+
+        {
+            id: 3,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 4589,
+            discountPrice: "₹ 1199",
+            discount: 40,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/dCBv1apDHJRVYn5YKGXLHqn3",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/nFTTCoBE5WAjuBjaQhdddQKe",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jvVAX9xDP9LtKzDQoHkfxtyw",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/zGP1LVCwZ52eXi6H5rPu74Qi",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/N6TiYyVABV9CUX2yNF74SJU4",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/UvTgPcpfb3PT8UH1MSbMKfmM",
+            ],
+        },
+
+        // 4
+
+        {
+            id: 4,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 50,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/U8xzQqqPXoejTQEnEGmKhgkg",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/DeEhmEqMxfbEjcraDeLCUS4C",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/rJUpCbqZ7kmrSRzb1sieg6qh",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/MDrHQ5JcX73yqYTEaBbxyRKY",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VDwVd4W6iVwPbZU7git5nUYN",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/uxxCoBbwZowHn9jh8fFecLZK",
+            ],
+        },
+
+        {
+            id: 5,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 30,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/P7qGC5Q6c5tdZPgNvaCgaXBd",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jUp7xhCzztbLjKGBH6j9pos1",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4 ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mBenTPzGsDS261uQKNwdpcsp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
+            ],
+        },
+
+        {
+            id: 6,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 30,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/vCe2Zfj9T18HgCqJWFNMn8gR",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jUp7xhCzztbLjKGBH6j9pos1",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4 ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mBenTPzGsDS261uQKNwdpcsp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
+            ],
+        },
+
+        {
+            id: 7,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 30,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/2ahBsbo3f32gZED5fyU1SBwp",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jUp7xhCzztbLjKGBH6j9pos1",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4 ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mBenTPzGsDS261uQKNwdpcsp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
+            ],
+        },
+
+        {
+            id: 8,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 40,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            materialDetailsHeading: "Material and Care",
+
+            specifications: "Country of Origin: India",
+            specificationsHeading: "Specifications",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/Lw9GkcLqMatKUqdGswQGU2gf",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jUp7xhCzztbLjKGBH6j9pos1",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4 ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mBenTPzGsDS261uQKNwdpcsp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
+            ],
+        },
+
+        {
+            id: 9,
+            brand: "CULTSPORT",
+            name: "FAB Men's Minimalistic Workout T-shirt",
+            price: 839,
+            discountPrice: "₹ 1199",
+            discount: 30,
+            description:
+                "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
+
+            size: ["M", "S", "Xl"],
+
+            productDetails: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            fabric: ["100% Polyester"],
+
+            fabricDetailsHeading: "Fabric",
+
+            MaterialCare: [
+                "Colour: Black",
+                "Flydry",
+                "Anti Microbial",
+                "Odour Resistant",
+                "Breathable fabric",
+                "Neo Stripes",
+            ],
+
+            productDetailsHeading: "PRODUCT DETAILS",
+            materialDetailsHeading: "Material and Care",
+            specificationsHeading: "Specifications",
+
+            specifications: "Country of Origin: India",
+
+            image: [
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/D8KLLvng8oqjSqRBpF61sdve",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/jUp7xhCzztbLjKGBH6j9pos1",
+
+                " https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4",
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/G8sQsrKVe3dvg1Qapt3HXDj4 ",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/mBenTPzGsDS261uQKNwdpcsp",
+
+                "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
+            ],
+        },
+    ];
+
+
+    // LocalStorage
+    const mensGearJSON = JSON.stringify(mensGear);
+
+    localStorage.setItem("MensGearProducts", mensGearJSON);
+
+    let MensGearProducts = localStorage.getItem("MensGearProducts");
+
+    MensGearProducts = JSON.parse(MensGearProducts);
+
+    function cultGear() {
+        let dataDiv = document.getElementById("data");
+
+        mensGear.forEach(function (product) {
+            let div = document.createElement("div");
+            div.setAttribute("class", "cultGearMenDiv");
+
+            div.addEventListener("click", sendData(product));
+
+            let heading = document.createElement("h3");
+            heading.textContent = "FAB is Back!";
+
+            let productBrand = document.createElement("p");
+            productBrand.setAttribute("class", "productBrand");
+            productBrand.textContent = product.brand;
+
+            let productName = document.createElement("p");
+            productName.setAttribute("class", "productName");
+            productName.innerHTML = product.name;
+
+            let priceDiv = document.createElement("div");
+            priceDiv.setAttribute("class", "priceDiv");
+
+            let productDiscount = document.createElement("p");
+            productDiscount.setAttribute("class", "productDiscount");
+            productDiscount.innerHTML = product.discount;
+
+            let productDiscountPrice = document.createElement("p");
+            productDiscountPrice.setAttribute("class", "productDiscountPrice");
+            productDiscountPrice.innerHTML = product.discountPrice;
+
+            let productPrice = document.createElement("p");
+            productPrice.setAttribute("class", "productPrice");
+            productPrice.innerHTML = product.price;
+
+            let productImage = document.createElement("img");
+            productImage.setAttribute("class", "productImage");
+            productImage.src = product.image[0];
+
+            div.append(productImage, productBrand, productName, priceDiv);
+
+            priceDiv.append(productPrice, productDiscountPrice, productDiscount);
+
+            dataDiv.append(div);
+        });
+    }
+
+    cultGear();
+
+    // let backToStore = document.getElementsByClassName("cultText");
+
+    function backToStorePage() {
+        window.location.pathname = "main/store/store.html";
+    }
+
+    // backToStore.addEventListener("click", backToStorePage);
+
+
+    // back to home
+    function homePage() {
+        window.location.pathname = "main/home.html"
+    }
+
+    function toCart() {
+        window.location.pathname = "main/cart_checkout/cart.html"
+    }
+
+    // send data
+    function sendData(e) {
+        return function () {
+            const mensGearJSON = JSON.stringify(e);
+
+            window.location.pathname = "main/cultsport/cultsport.html";
+            localStorage.setItem("pdetails", mensGearJSON);
+        };
+    }
+
+    console.log(sendData);
+</script>

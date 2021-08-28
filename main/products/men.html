@@ -5,6 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
+
     <link rel="stylesheet" href="men.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
@@ -84,15 +86,18 @@
 </html>
 
 <script>
-    // All Products
-      const mensGear = [
+       // All Products
+        const mensGear = [
             // 1
             {
                 id: 1,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 3439,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 849,
                 discount: 50,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -147,8 +152,11 @@
                 id: 2,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 1139,
                 discount: 30,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -203,8 +211,11 @@
                 id: 3,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 4589,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 4548,
                 discount: 40,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -260,8 +271,11 @@
                 id: 4,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 1139,
                 discount: 50,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -299,15 +313,15 @@
                 image: [
                     "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,c_fill/dpr_2/cultgear-content/U8xzQqqPXoejTQEnEGmKhgkg",
 
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/DeEhmEqMxfbEjcraDeLCUS4C",
+                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/XqiEgn7XBvFi1itZNuYAmGj3",
 
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/rJUpCbqZ7kmrSRzb1sieg6qh",
+                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/DVrztMyar1zG6z2CZu4eSwYu",
 
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/MDrHQ5JcX73yqYTEaBbxyRKY",
+                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/DVrztMyar1zG6z2CZu4eSwYu",
 
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/VDwVd4W6iVwPbZU7git5nUYN",
+                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/S2b1uK2tLbtW3YA6N6oHXWEH",
 
-                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/uxxCoBbwZowHn9jh8fFecLZK",
+                    "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/1Rev9DgLCsWNtmrSA8mWbckm",
                 ],
             },
 
@@ -315,8 +329,11 @@
                 id: 5,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 1137,
                 discount: 30,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -369,8 +386,11 @@
                 id: 6,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 3467,
                 discount: 30,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -422,8 +442,11 @@
                 id: 7,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 2318,
                 discount: 30,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -475,8 +498,11 @@
                 id: 8,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 1139,
                 discount: 40,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -528,8 +554,11 @@
                 id: 9,
                 brand: "CULTSPORT",
                 name: "FAB Men's Minimalistic Workout T-shirt",
-                price: 839,
-                discountPrice: "₹ 1199",
+                price: function () {
+                    let hold = this.discountPrice * (this.discount / 100);
+                    return this.discountPrice - hold;
+                },
+                discountPrice: 2313,
                 discount: 30,
                 description:
                     "A must-have for all everyday athletes, this striped t-shirt from cultsport combines the best of style and performance in the most simplistic manner. Made with the finest breathable polyester, featuring moisture-wicking technology and an anti-microbial finish, this t-shirt is ideal for both - high & low intensity workouts. Pair it with your favourite joggers or training shorts and get set to train against all odds!",
@@ -575,9 +604,9 @@
 
                     "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_500,ar_4:5,c_fill/dpr_2/cultgear-content/AGdtKJXs559jcqJzTaYNVXYe",
                 ],
-            },
+            }
         ];
-
+    
 
     // LocalStorage
     const mensGearJSON = JSON.stringify(mensGear);
@@ -613,15 +642,17 @@
 
             let productDiscount = document.createElement("p");
             productDiscount.setAttribute("class", "productDiscount");
-            productDiscount.innerHTML = product.discount;
+            productDiscount.innerHTML = product.discount + "% OFF";
+
 
             let productDiscountPrice = document.createElement("p");
             productDiscountPrice.setAttribute("class", "productDiscountPrice");
-            productDiscountPrice.innerHTML = product.discountPrice;
+            productDiscountPrice.innerHTML = " ₹ " + product.discountPrice;
 
             let productPrice = document.createElement("p");
             productPrice.setAttribute("class", "productPrice");
-            productPrice.innerHTML = product.price;
+             productPrice.innerHTML = " ₹ " + Math.round(product.price());
+
 
             let productImage = document.createElement("img");
             productImage.setAttribute("class", "productImage");
