@@ -41,8 +41,10 @@ We went through the website and firstly, we decided to start from landing page. 
 User need to login before purchasing cloths from cult fit. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
 ##### login page:
+![image](https://user-images.githubusercontent.com/77065070/131214057-2efde000-b44c-4f4f-8dd3-08caf186d1d6.png)
 
-![image](https://user-images.githubusercontent.com/77065070/131214038-2d698594-fab4-4614-9ab9-339dfd7ef56f.png)
-![image](https://user-images.githubusercontent.com/77065070/131214036-a75a600b-a87e-4b3f-8475-8670e5a1947b.png)
+##### Sign Up page:
+![image](https://user-images.githubusercontent.com/77065070/131214077-bb2d2843-b1e3-4c20-8977-89dca2e93678.png)
+
 
 
