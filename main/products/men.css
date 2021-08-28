@@ -44,8 +44,7 @@ body{
 
 .nav-CultFit-Logo > img {
   width: 100%;
- 
-  margin-left: 10px;
+  margin-left: 30px;
 }
 .cultText{
   font-size: 14px;
@@ -75,7 +74,7 @@ body{
   height: 60px;
   align-items: center;
   gap: 25px;
-  margin-left: 600px;
+  margin-left: 650px;
   margin-right: 5px;
 }
 

@@ -384,7 +384,7 @@
             <!-- nav bar -->
             <div id="navBar">
                 <div class="nav-CultFit-Logo">
-                    <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+                    <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
                 </div>
         
                 <!-- Nav Middle items -->
@@ -667,25 +667,25 @@
 
     //Redirection
     function subscription() {
-        window.location = "subscription.html"
+        window.location.pathname = "main/settings/subscription.html"
     }
     function support() {
-        window.location = "support.html";
+        window.location.pathname = "main/settings/support.html";
     }
     function order() {
-        window.location = "order.html";
+        window.location.pathname = "main/settings/order.html";
     }
     function main() {
-        window.location = "home.html";
+        window.location.pathname = "main/settings/home.html";
     }
     function redeem() {
-        window.location = "reedem.html";
+        window.location.pathname = "main/settings/reedem.html";
     }
     function logout() {
-        window.location = "logout.html";
+        window.location.pathname = "main/settings/logout.html";
     }
     function profile() {
-        window.location = "profile.html";
+        window.location.pathname = "main/settings/profile.html";
     }
         
       if(localStorage.getItem("logedin") == null) {
@@ -750,6 +750,14 @@
     }
     changeName();
     
+
+     // back to home
+        let backToHomePagewithLogo = document.getElementsByClassName("nav-CultFit-Logo");
+
+        function homePage() {
+            window.location.pathname = "main/home.html"
+        }
+
 
    
 // orders();

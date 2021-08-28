@@ -48,6 +48,7 @@ body {
   width: 100%;
   padding: 10px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .nav-store-Logo,
@@ -112,18 +113,38 @@ body {
 }
 
 /* Sign UP */
+
 #container-signup {
-  width: 300px;
-  height: 430px;
-  /* background-color:orangered; */
-  border: 2px solid black;
+  width: 400px;
+  height: auto;
   margin: auto;
-  border-radius: 20px;
+  margin-top: 80px;
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  /* border-top-color: #b2b2b2; */
+  padding: 20px;
+  border: 0.5px solid #9999993a;
+  border-radius: 5px;
 }
 
-#container-signup #form-signup {
-  margin: 10px;
+input {
+  width: 100%;
+  border: 1px grey;
+  border-bottom-style: solid;
+  margin-bottom: 20px;
+  font-weight: 400;
+  height: 40px;
+  margin-top: 5px;
+  padding: 10px;
+  outline: #ff306e;
 }
+
+label {
+  font-weight: 600;
+  color: #ff306e;
+  font-size: 12px;
+}
+
+
 
 #container-signup > #form-signup > input {
   width: 250px;
@@ -134,3 +155,23 @@ body {
 #container-signup > #form-signup > input[type="submit"] {
   background-color: orangered;
 }
+
+#submit {
+  background: var(--main-btn);
+  color: white;
+  width: 300px;
+  height: 40px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 20px;
+}
+
+#submit:hover{
+  background: linear-gradient(to right, #f84336, #ff306e);
+}
+
+
+
+
+
+    

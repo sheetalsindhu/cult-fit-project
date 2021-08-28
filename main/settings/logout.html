@@ -429,11 +429,14 @@
 <script>
     function logout() {
         if (localStorage.getItem("logedin") == null) {
+
             window.location.pathname = "main/home.html";
         } else {
             localStorage.removeItem("logedin");
             window.location.pathname = "main/home.html";
         }
     }
+
+
     logout();
 </script>
