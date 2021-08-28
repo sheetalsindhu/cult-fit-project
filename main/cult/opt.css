@@ -1,0 +1,473 @@
+/* nav */
+/* nav-bar */
+:root {
+    --primary-text: #000000;
+    --secondary-text: #fff;
+    --blue: #29b9ed;
+    --background: #fff;
+    --text-hover: #b2b2b2;
+    --button: #ff306e;
+    --main-btn: linear-gradient(to left, #f84336, #ff306e);
+  }
+  
+  * {
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+  }
+  
+  /* nav-bar styling */
+  #navBar {
+    width: 100%;
+    ;
+
+    position: fixed;
+    background-color: var(--secondary-text);
+    box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+    display: flex;
+    align-items: center;
+    top: 0;
+  }
+  /* cult-center */
+  .cult-center{
+      margin-left: 50px;
+
+  }
+  /* cult-logo */
+  
+  .nav-middle {
+    display: flex;
+    gap: 20%;
+    align-items: center;
+    justify-content: center;
+    margin-left: 400px;
+  }
+  
+  .nav-CultFit-Logo > img {
+    width: 100%;
+    padding: 10px;
+    margin-left: 5px;
+}
+  .cult-center>img{
+    height: 42px;
+  }
+  /* logo-cont-cult paragraph tag in nav */
+  .logo-cont-cult{
+    font-weight: 1000;
+  }
+  .nav-store-Logo,
+  .nav-live-Logo,
+  .nav-cult-Logo,
+  .nav-mind-Logo,
+  .nav-care-Logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .nav-live-Logo > img {
+    width: 30px;
+  }
+  
+  .nav-cult-Logo > img {
+    width: 30px;
+  }
+  
+  .nav-mind-Logo > img {
+    width: 30px;
+  }
+  
+  .nav-store-Logo > img {
+    width: 30px;
+  }
+  
+  
+  .nav-care-Logo > img {
+    width: 30px;
+  }
+  
+  .navText {
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  
+  /* Nav right section */
+  .nav-right {
+    display: flex;
+    width: 250px;
+    padding: 4px;
+    height: 60px;
+    align-items: center;
+    gap: 25px;
+    margin-left: 220px;
+    margin-right: 5px;
+  }
+  
+  .nav-login-Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .nav-cart-Logo > img {
+    width: 20px;
+  }
+  .nav-login-Logo > img {
+    width: 15px;
+  }
+  
+  
+
+
+
+/* nav-bar end */
+/* nav-end */
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.image1{
+   
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    margin-top: 62px;
+}
+.image1 img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.image2 img{
+    position: relative;
+    top: 76px;
+    left: 0px;
+    width: 100%;
+    border-radius: 7px;
+}
+.image2{
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+.image3{
+    max-width: 90%;
+    height: auto;
+    margin: auto;
+}
+.image3 img{
+    position: relative;
+    top: 142px;
+    left: 0px;
+    width: 100%;
+    border-radius: 7px;
+
+}
+
+.online-pt{
+    background-color: rgb(66, 66, 83);
+    margin: 40px 0px;
+    height: 500px;
+    width: 100%;
+    position: relative;
+    top: 197px;
+    
+}
+.heading-opt{
+    color: rgb(255, 255, 255);
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 34px;
+    text-align: center;
+    padding-top: 30px;
+}
+.heading-opt-member{
+    color: rgb(136, 142, 158);
+    font-size: 16px;
+    text-align: center;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin-top: 9px;
+}
+.heading-opt-enjoy
+{
+    margin: 35px 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+.container-pt{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+.container-pt div{
+    display: flex;
+    justify-content: center;
+}
+.at-home{
+    
+}
+/* css for container */
+/* start */
+.at-home img{
+   
+    margin-top: -12px;
+    width: 30px;
+    height: 40px;
+    justify-content: center;
+}
+.personalised-img{
+    margin-top: -12px;
+    width: 30px;
+    height: 40px;
+    justify-content: center;
+
+}
+
+.posture-img{
+    margin-top: -12px;
+    width: 30px;
+    height: 40px;
+    justify-content: center;
+
+}
+/* end */
+
+/* css for container text */
+/* start */
+.at-home-cont{
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+
+}
+.personalised-cont{
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.posture-cont{
+    margin-left: 0px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+/* end */
+
+
+.subscription{
+    font-size: 20px;
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 47px;
+}
+
+/* css coupon */
+.coupon{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    margin-top: 32px;
+    
+
+}
+/* coupon 1 start */
+.coupon-1{
+   
+    margin: 10px 24px;
+    width:unset ;
+    flex-direction: column;
+    outline: none;
+    /* width: 224px */
+    
+}
+.coupon-2{
+    margin: 10px 24px;
+    width: unset;
+    flex-direction: column;
+    outline: none;
+    /* width: 224px */
+    
+}
+
+.coupon-3{
+    margin: 10px 24px;
+    width: unset;
+    flex-direction: column;
+    outline: none;
+    /* width: 224px */
+    
+}
+
+.buy-and-price{
+   
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.sessions-price{
+    font-size: 20px;
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    width: 150px;
+}
+
+.para{
+    overflow: hidden;
+    font-size: 16px;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    margin: 0px;
+}
+
+.discount{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-flow: row;
+    width: fit-content;
+}
+
+.cross-rate{
+    min-width: fit-content;
+    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.34);
+    text-decoration: line-through;
+    margin-right: 6px;
+}
+
+.actual-price{
+    min-width: fit-content;
+    color: rgb(0, 0, 0);
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+.validity{
+    display: flex;
+    font-size: 16px;
+    color: rgb(155, 155, 155)
+
+}
+
+.buy{
+    border-radius: 100px;
+    align-self: center;
+    padding: 0px 0px 0px 5px;
+    text-align: center;
+   
+    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    color: rgb(255, 50, 120);
+    margin: 0px;
+    background: rgb(255, 255, 255);
+
+}
+
+.somthing{
+
+    display: grid;
+    border-radius: 10px;
+    align-items: self-start;
+    grid-template-columns: 12% auto;
+    background: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%) center top / 13px 1px repeat-x rgb(216, 232, 255);
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+.somthing-img{
+
+    transform: rotate(
+        -90deg
+        );
+            padding: 0px 5px;
+}
+
+.somthing-para p{
+    color: rgb(54, 54, 54);
+    font-family: BrandonTextWeb-Regular, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 3px 0px 0px;
+    margin: 0px;
+    /* box-sizing: border-box; */
+}
+.work-grid{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,24%);
+  gap: 1px;
+    position: relative;
+    top: 167px;
+}
+
+.workouts{
+    color: #000;
+    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    margin: 0;
+    top: 270px;
+    left: 110px;
+    position: relative;
+}
+.sc-cont{
+    position: relative;
+    z-index: 99;
+    padding: 19px;
+    width: 15%;
+    color: rgb(34,34,34);
+    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    top: -213px;
+    left: 118px;
+}
+    
+
+.yoga-cont{
+    position: relative;
+    z-index: 99;
+    padding: 19px;
+    width: 15%;
+    color: rgb(34,34,34);
+    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 22px;
+    margin: 0;
+    box-sizing: border-box;
+    display: block;
+    top: -199px;
+    left: 116px;
+}
+
+
+
