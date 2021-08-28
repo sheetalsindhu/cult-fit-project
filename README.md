@@ -72,6 +72,11 @@ You can enter your location accordingly now and then place the order.
 ![image](https://user-images.githubusercontent.com/77065070/131214219-c9ae2c6e-2b6c-49c9-82e5-78d46ddc0b05.png)
 
 ### Payment page:
+You are now on the payment page after placeing the order. You can pay using your debit or credit card by just entering card holder's name followed by the card number, Expire date and CVV. There after, click on the "Pay Now bar " to get done by payment.
+
+<img width="918" alt="payment" src="https://user-images.githubusercontent.com/87423101/131227858-1c6951f8-8926-4651-84f6-5a0968a20ac2.png">
+
+### order placed:
 
 
 
