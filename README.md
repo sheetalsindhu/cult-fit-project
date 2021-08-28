@@ -49,7 +49,7 @@ We thoroughly grasped the website and selected the key pages and functionalities
 
 # Team members :innocent:
 
-#### 1. Sheetal Sindhu
+#### 1. Sheetal Sindhu :woman:
 * [Github](https://github.com/sheetalsindhu)
 
 * [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
