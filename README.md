@@ -38,7 +38,7 @@ We thoroughly grasped the website and selected the key pages and functionalities
 
 
 
-# End Notes
+# End Notes :page_facing_up:
 
 # Video Demo
 [link]()
