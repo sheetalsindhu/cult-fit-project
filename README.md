@@ -77,21 +77,16 @@ You are now on the payment page after placeing the order. You can pay using your
 
 <img width="918" alt="payment" src="https://user-images.githubusercontent.com/87423101/131227858-1c6951f8-8926-4651-84f6-5a0968a20ac2.png">
 
-### order placed:
+### Order placed:
 
 After successful payment, this page confirms you that your order is placed.
 <img width="824" alt="thankyou" src="https://user-images.githubusercontent.com/87423101/131228049-05ba987f-94df-4ce0-914d-b3e73e67797f.png">
 
-### conclusion:
-
-That's only on the trailer side. You would see much more when you explore our website as we have tried our best. Feel free to share your thoughts and feedbacks on Our "linkdin" or "git-hub" profiles which are mentioned on the top. Reach us for any collaborations as well.
 
 ### Video link:
 
 
-### note:
 
-*As the whole website is not responsive as it might get little different in smaller screens at some places.*
 
 
 
