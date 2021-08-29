@@ -496,3 +496,12 @@ body{
 }
 
 /*modal end*/
+
+.select-Size{
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 20px;
+  padding: 5px;
+  background-color: rgb(247, 247, 247);
+}

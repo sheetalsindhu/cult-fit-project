@@ -18,6 +18,10 @@
                 onclick="homePage()" />
         </div>
 
+        <div class="nav-middle">
+            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+        </div>
+
         <!-- right -->
         <div class="nav-right">
             <div class="nav-login-Logo">
@@ -74,7 +78,7 @@
 
                 <div id="voucher">
                     <p class="implement-voucher">Implement voucher</p><span id="discountamount"></span>
-                    <button onclick="voucher()" class="voucher-btn">Check</button>
+                    <button onclick="voucher()" class="voucher-btn">Apply</button>
                 </div>
 
                 <div id="totalPayble">
@@ -537,6 +541,9 @@
         window.location.pathname = "main/orderConfirm/order.html"
     }
 
+    function backToStorePage(){
+        window.location.pathname = "main/store/store.html"
+    }
 
 
     function total() {
@@ -552,4 +559,6 @@
             total_payble_amount.innerText = "₹ " + Number(Number(price) - check);
     }
     total();
+
+
 </script>

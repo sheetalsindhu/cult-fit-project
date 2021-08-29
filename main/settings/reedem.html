@@ -779,17 +779,6 @@
 
 <script>
 
-
-    //This is for test
-    var logid = {
-        n: 8250248991
-    }
-
-localStorage.setItem("logedin", JSON.stringify(logid))
-
-
-
-
     //redirection 
     function support() {
          window.location.pathname = "main/settings/support.html";
@@ -913,8 +902,6 @@ localStorage.setItem("logedin", JSON.stringify(logid))
         })
         localStorage.setItem("user", JSON.stringify(all_user));
 
-       
-
     }
 
      // back to home
@@ -927,5 +914,31 @@ localStorage.setItem("logedin", JSON.stringify(logid))
         function toCart(){
             window.location.pathname = "main/cart_checkout/cart.html"
         }
+
+        
+            // Path location
+            function storePage() {
+                window.location.pathname = "main/store/store.html";
+            }
+
+            function toMind() {
+                window.location.pathname = "main/mindfull/mindfull.html";
+            }
+
+            function toCare() {
+                window.location.pathname = "main/care/cares.html";
+            }
+
+            function toCult() {
+                window.location.pathname = "main/cult/cult.html";
+            }
+
+            function toLive() {
+                window.location.pathname = "main/live/live.html";
+            }
+
+            function toCart() {
+                window.location.pathname = "main/cart_checkout/cart.html"
+            }
 
 </script>

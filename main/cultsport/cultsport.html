@@ -372,6 +372,7 @@
         // })
 
         var selectSize = document.createElement("select");
+        selectSize.setAttribute("class", "select-Size")
         var showSize = document.createElement("div");
         var products = JSON.parse(localStorage.getItem("pdetails"));
         if (products.size.length == 0) {

@@ -49,6 +49,7 @@ body {
   color: var(--button);
   cursor: pointer;
   text-align: center;
+  margin-left: 650px;
 }
 
 .cultText > h1 {
@@ -59,7 +60,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-left: 1420px;
+  margin-left: 690px;
   cursor: pointer;
 }
 

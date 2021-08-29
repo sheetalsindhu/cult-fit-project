@@ -30,7 +30,7 @@
     <!-- right -->
     <div class="nav-right">
       <div class="nav-login-Logo">
-        <img src="https://static.cure.fit/assets/images/user-image.svg" alt=""  />
+        <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" onclick="toProfile()" />
       </div>
 
       <div class="nav-cart-Logo">
@@ -753,4 +753,36 @@
       localStorage.setItem("pdetails", mensGearJSON);
     };
   }
+
+  
+    // Path location
+    function storePage() {
+      window.location.pathname = "main/store/store.html";
+    }
+
+    function toMind() {
+      window.location.pathname = "main/mindfull/mindfull.html";
+    }
+
+    function toCare() {
+      window.location.pathname = "main/care/cares.html";
+    }
+
+    function toCult() {
+      window.location.pathname = "main/cult/cult.html";
+    }
+
+    function toLive() {
+      window.location.pathname = "main/live/live.html";
+    }
+
+    function toCart() {
+      window.location.pathname = "main/cart_checkout/cart.html"
+    }
+
+    function toProfile(){
+      window.location.pathname = "main/settings/profile.html"
+    }
+
+
 </script>
