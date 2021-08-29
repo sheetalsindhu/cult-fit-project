@@ -84,7 +84,7 @@ After successful payment, this page confirms you that your order is placed.
 
 
 ### Video link:
-https://drive.google.com/drive/u/0/folders/1yieipIv8eQj2709IlzHnLEwuZV58g892
+https://drive.google.com/drive/folders/1yieipIv8eQj2709IlzHnLEwuZV58g892?usp=sharing
 
 
 
