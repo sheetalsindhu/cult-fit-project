@@ -779,6 +779,17 @@
 
 <script>
 
+
+    //This is for test
+    var logid = {
+        n: 8250248991
+    }
+
+localStorage.setItem("logedin", JSON.stringify(logid))
+
+
+
+
     //redirection 
     function support() {
          window.location.pathname = "main/settings/support.html";
@@ -870,28 +881,40 @@
                     for (var i = 0; i < q.voucher.length; i++) {
                         total += q.voucher[i];
                     }
-                    loged.voucher = total;
-                    localStorage.setItem("logedin", loged);
+                    q.voucher = total;
+                    // localStorage.setItem("logedin", loged);
                 }
             })
+            localStorage.setItem("user", JSON.stringify(get_data));
+
             p.innerHTML = "Total voucher price is :-  " + total;
         }
 
     function check() {
         let total_voucher_price = [];
+        var all_user = JSON.parse(localStorage.getItem("user"));
+        var loged = JSON. parse(localStorage.getItem("logedin"));
         var code = document.getElementById("voucher").value;
-        if (code == "masai30") {
-            alert("you got 100 rupees");
-            total_voucher_price.push(100);
-            localStorage.setItem("voucher", JSON.stringify(total_voucher_price));
-        } else if (code == "sheetal") {
-            total_voucher_price.push(200);
-            alert("You got 200 rupees");
-            localStorage.setItem("voucher", JSON.stringify(total_voucher_price));
+        all_user.forEach(function(p) {
+            if(p.number == loged.n) {
+                if (code == "masai30") {
+                    alert("you got 100 rupees");
+                    total_voucher_price.push(100);
+                } else if (code == "sheetal") {
+                    total_voucher_price.push(200);
+                    alert("You got 200 rupees");
 
-        } else if (code == "" || code != "masai30" || code != "sheetal") {
-            alert("Please enter a valid code");
-        }
+                } else if (code == "" || code != "masai30" || code != "sheetal") {
+                    alert("Please enter a valid code");
+                }
+                p.voucher = total_voucher_price;
+                // localStorage.setItem("user", JSON.stringify(all_user));
+            }
+        })
+        localStorage.setItem("user", JSON.stringify(all_user));
+
+       
+
     }
 
      // back to home

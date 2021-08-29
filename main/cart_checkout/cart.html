@@ -154,7 +154,7 @@
         get_voucher.forEach(function (p) {
             if (p.number == logedin.n) {
 
-                if (p.voucher.length == 0) {
+                if (p.voucher == undefined) {
                     alert("You have no voucher");
                     //  console.log("work");
 
@@ -162,16 +162,33 @@
                     var voucherApply = document.getElementById("showTotalPaybleAmount");
                     voucherApply.innerText = "";
                     var all_orders = JSON.parse(localStorage.getItem("orders"));
-                    var price;
-                    all_orders.forEach(function (p) {
-                        price = Number(Number(p.discountPrice) - Number(Number(p.discountPrice) * Number(Number(p.discount) / 100)));
+                    var price = 0;
+                    check = 0;
+                    all_orders.forEach(function (q) {
+                         price += Math.round(Number(Number(q.discountPrice) - Number(Number(q.discountPrice) * Number(q.discount) / 100)));
 
                     })
-                    voucherApply.innerText = "₹" + Number(price - Number(p.voucher[0]));
+                    // console.log(p.voucher);
+                   
+                    voucherApply.innerText = "₹ " + Number(price - Number(p.voucher));
+                    // console.log()
                 }
             }
         });
     }
+    // function total() {
+    //     var all_orders = JSON.parse(localStorage.getItem("orders"));
+    //                 var price = 0;
+    //                 check = 0;
+    //                 all_orders.forEach(function (r) {
+    //                      price += Math.round(Number(Number(r.discountPrice) - Number(Number(r.discountPrice) * Number(r.discount) / 100)));
+    //                     check +=  Number(RTCDTMFSender.discount)
+    //                 })
+    //                 var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+
+    //         total_payble_amount.innerText = "₹ " + Number(Number(price) - check);
+    // }
+    // total();
 
     // function voucher(){
     //     window.location.pathname = "main/settings/reedem.html"
@@ -519,4 +536,20 @@
     function orderPage() {
         window.location.pathname = "main/orderConfirm/order.html"
     }
+
+
+
+    function total() {
+        var all_orders = JSON.parse(localStorage.getItem("orders"));
+                    var price = 0;
+                    check = 0;
+                    all_orders.forEach(function (r) {
+                         price += Math.round(Number(Number(r.discountPrice) - Number(Number(r.discountPrice) * Number(r.discount) / 100)));
+                        check +=  Number(r.discount)
+                    })
+                    var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+
+            total_payble_amount.innerText = "₹ " + Number(Number(price) - check);
+    }
+    total();
 </script>
