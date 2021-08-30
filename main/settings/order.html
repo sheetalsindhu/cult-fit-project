@@ -372,6 +372,42 @@
             background-color: white;
         }
 
+        .orderBtn{
+            width: 200px;
+            height: 40px;
+            border: none;
+            background: var(--main-btn);
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .orderBtn:hover{
+            background: linear-gradient(to right, #f84336, #ff306e);
+            cursor: pointer;
+
+        }
+
+        .order-heading{
+            margin-top: 30px;
+            font-weight: 600;
+        }
+
+        .noOrders{
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        .noPuschasesYet{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .imageP{
+            width: 10%;
+            height: 100%;
+        }
+
 
         #order-page-style {
             display: flex;
@@ -642,20 +678,14 @@
 
 
         <div id="content">
-            <p class="order-heading">ACTIVE PACKS & SUBSCRIPTIONS</p>
+            <p class="order-heading">Your Orders</p>
             <div id="data">
                 <div class="order-image">
                     <!-- <img
                         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/mePage/no-active-packs%402x.png"> -->
                 </div>
 
-                <div id="para">
-                    <!-- <h2 class="para-heading">Your Packs Go Here</h2>
-                    <p class="para-subheading">A pack is a set of healthy activities for you to do over <br>a few days. Get packs to build
-                        healthy
-                        habitssteadily. Get started, find packs you like:</p> -->
-                    <button onclick="main()" class="explore-cart">Explore cult.fit</button>
-                </div>
+              
             </div>
 
         </div>
@@ -719,14 +749,29 @@
         var h1 = document.createElement("h2");
         h1.innerText = "NO ORDERS YET";
         var p = document.createElement("p");
+        h1.setAttribute("class", "noOrders")
         p.innerText = "You haven't made any purchases yet.";
         var btn = document.createElement("button");
+        p.setAttribute("class", "noPuschasesYet")
+
         btn.innerText = "Order Now";
+        btn.setAttribute("class", "orderBtn");
+        
+        btn.addEventListener("click", toStorePAgeForBuy);
+
         div.append(image, h1, p, btn);
         parent.append(div);
     } else {
         orders();
     }
+
+    // let orderNowTostore = document.getElementsByClassName("orderBtn");
+
+    function toStorePAgeForBuy(){
+        window.location.pathname = "main/store/store.html";
+    }
+    
+
 
 
     function changeName() {
@@ -768,6 +813,8 @@
     }
     changeName();
 
+    
+
 
     function orders() {
         var ordersa = JSON.parse(localStorage.getItem("orders"));
@@ -775,7 +822,9 @@
         ordersa.forEach(function (p) {
             let div = document.createElement("div");
             let imagea = document.createElement("img");
-            imagea.src = p.image;
+            imagea.src = p.image[0];
+            imagea.setAttribute("class", "imageP");
+
             let namea = document.createElement("p");
             namea.innerText = p.name;
             let branda = document.createElement("p");
@@ -794,6 +843,10 @@
 
     function homePage() {
         window.location.pathname = "main/home.html"
+    }
+
+    function storePage(){
+        window.location.pathname = "main/store/store.html"
     }
 
 

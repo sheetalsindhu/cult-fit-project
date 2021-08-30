@@ -238,10 +238,10 @@
         productPrice.setAttribute("class", "priceTag");
         productPrice.innerHTML =
             "₹ " +
-            Number(
-                Number(product.discountPrice) -
-                Number(product.discountPrice) * Number(product.discount / 100)
-            );
+            Math.round(Number(
+            Number(product.discountPrice) -
+            Number(product.discountPrice) * Number(product.discount / 100)
+        ));
 
         // discount price Tag
         let productDiscountPrice = document.createElement("p");
@@ -435,6 +435,7 @@
         if (localStorage.getItem("orders") == null) {
             localStorage.setItem("orders", JSON.stringify([]));
         } else {
+
             var hold = JSON.parse(localStorage.getItem("orders"));
             addToCartBtn.onclick = function () {
                 if (localStorage.getItem("logedin") == null) {

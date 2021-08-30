@@ -489,7 +489,21 @@
 
 </html>
 <script>
-    function toHome(){
-        window.location.pathname = "main/home.html"
-    }
+
+    function toHome() {
+            var users = JSON.parse(localStorage.getItem("user"));
+            var logedIn = JSON.parse(localStorage.getItem("logedin"));
+            var getOrders = JSON.parse(localStorage.getItem("orders"));
+
+            users.forEach(function (p) {
+                if (p.number == logedIn.n) {
+                    p.allOrders = getOrders;
+                    localStorage.setItem("user", JSON.stringify(users));
+                }
+            })
+            localStorage.removeItem("orders");
+
+            window.location.pathname = "main/home.html"
+        }
+
 </script>
