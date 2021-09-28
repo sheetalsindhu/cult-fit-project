@@ -650,7 +650,7 @@ body {
 
 /* nav-bar styling */
 #navBar {
-  width: 1540px;
+  width: 100%;
   height: 60px;
   position: fixed;
   background-color: var(--secondary-text);

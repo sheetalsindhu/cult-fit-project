@@ -239,9 +239,9 @@
         productPrice.innerHTML =
             "₹ " +
             Math.round(Number(
-            Number(product.discountPrice) -
-            Number(product.discountPrice) * Number(product.discount / 100)
-        ));
+                Number(product.discountPrice) -
+                Number(product.discountPrice) * Number(product.discount / 100)
+            ));
 
         // discount price Tag
         let productDiscountPrice = document.createElement("p");
@@ -437,24 +437,47 @@
         } else {
 
             var hold = JSON.parse(localStorage.getItem("orders"));
+
             addToCartBtn.onclick = function () {
                 if (localStorage.getItem("logedin") == null) {
                     alert("Firstly, Login your Account!");
                 } else {
+
                     var selectedSizea = document.getElementById("ProductSize").value;
+
                     if (selectedSizea == "N") {
                         alert("Select any Size");
                     } else {
-                        // products.selectedSize = selectedSizea;
-                        // var size = document.getElementById("ProductSize").value;
-                        product.selectedSize = selectedSizea;
 
-                        hold.push(product);
-                        window.localStorage.setItem("orders", JSON.stringify(hold));
+                        let count = 0;
+                        hold.filter(function (el) {
+                            if (el.id == product.id) {
+                                product.quantity = el.quantity + 1;
+                                count = 1;
+                            }
+                        })
+
+                        if (count == 1) {
+                            hold.forEach(function (e) {
+
+                                if (e.id == product.id) {
+                                    product.quantity = e.quantity + 1;
+                                    console.log(product.quantity);
+                                    localStorage.setItem("orders", JSON.stringify(hold));
+
+                                }
+                            })
+                        } else {
+                            product.quantity = Number(1);
+                            hold.push(product);
+                            localStorage.setItem("orders", JSON.stringify(hold));
+                        }
+                        pushData();
+
                         window.location.pathname = "main/cart_checkout/cart.html";
                     }
-                }
-            };
+                };
+            }
         }
 
         // var count = 0;
@@ -675,6 +698,21 @@
 
     function toProfile() {
         window.location.pathname = "main/settings/profile.html";
+    }
+
+
+    function pushData() {
+        let orders = JSON.parse(localStorage.getItem("orders"));
+        let login = JSON.parse(localStorage.getItem("logedin"));
+        let user = JSON.parse(localStorage.getItem("user"));
+
+        user.forEach(function (id) {
+            if (id.number == login.n) {
+                id.orders = orders;
+                localStorage.setItem("user", JSON.stringify(user));
+            }
+        })
+        localStorage.removeItem("orders");
     }
 
   // backToStore.addEventListener("click", backToStorePage);

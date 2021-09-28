@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" href="cart.css">
-    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
+<link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
 
 
 <head>
@@ -145,7 +145,7 @@
 </html>
 
 <script>
-   
+
     //modal checkout
     function checkout() {
         document.getElementById("modal1").style.display = "block";
@@ -169,11 +169,11 @@
                     var price = 0;
                     check = 0;
                     all_orders.forEach(function (q) {
-                         price += Math.round(Number(Number(q.discountPrice) - Number(Number(q.discountPrice) * Number(q.discount) / 100)));
+                        price += Math.round(Number(Number(q.discountPrice) - Number(Number(q.discountPrice) * Number(q.discount) / 100)));
 
                     })
                     // console.log(p.voucher);
-                   
+
                     voucherApply.innerText = "₹ " + Number(price - Number(p.voucher));
                     // console.log()
                 }
@@ -495,7 +495,7 @@
 
                         localStorage.setItem("orders", JSON.stringify(orders));
 
-                         window.location.pathname = "main/cart_checkout/cart.html";
+                        window.location.pathname = "main/cart_checkout/cart.html";
                     }
 
                 }
@@ -541,22 +541,22 @@
         window.location.pathname = "main/orderConfirm/order.html"
     }
 
-    function backToStorePage(){
+    function backToStorePage() {
         window.location.pathname = "main/store/store.html"
     }
 
 
     function total() {
         var all_orders = JSON.parse(localStorage.getItem("orders"));
-                    var price = 0;
-                    check = 0;
-                    all_orders.forEach(function (r) {
-                         price += Math.round(Number(Number(r.discountPrice) - Number(Number(r.discountPrice) * Number(r.discount) / 100)));
-                        check +=  Number(r.discount)
-                    })
-                    var total_payble_amount = document.getElementById("showTotalPaybleAmount");
+        var price = 0;
+        check = 0;
+        all_orders.forEach(function (r) {
+            price += Math.round(Number(Number(r.discountPrice) - Number(Number(r.discountPrice) * Number(r.discount) / 100)));
+            check += Number(r.discount)
+        })
+        var total_payble_amount = document.getElementById("showTotalPaybleAmount");
 
-            total_payble_amount.innerText = "₹ " + Number(Number(price) - check);
+        total_payble_amount.innerText = "₹ " + Number(Number(price) - check);
     }
     total();
 
