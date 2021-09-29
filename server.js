@@ -34,6 +34,15 @@ app.get("/store/mens", async (req, res) => {
   });
 });
 
+
+/* ___________ mens page to cultsport page  ____________ */
+app.get("/store/mens/cultsport/:id", async (req, res) => {
+  const product = await Product.find({ id: req.params.id }).lean().exec();
+  res.render("cultsport", {
+    product,
+  });
+});
+
 /* ___________ return api requests ____________ */
 app.use("/store", storeController);
 

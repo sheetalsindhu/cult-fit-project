@@ -15,16 +15,18 @@
     <!-- nav bar -->
     <div id="navBar">
         <a href="/">
-        <div class="nav-CultFit-Logo" onclick="homePage()">
-            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo" onclick="homePage()" />
-        </div></a>
+            <div class="nav-CultFit-Logo" onclick="homePage()">
+                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo"
+                    onclick="homePage()" />
+            </div>
+        </a>
 
         <!-- Nav Middle items -->
         <a href="/store">
-        <div class="nav-middle">
-            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
-        </div>
-</a>
+            <div class="nav-middle">
+                <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+            </div>
+        </a>
         <!-- right -->
         <div class="nav-right">
             <div class="nav-login-Logo">
@@ -70,9 +72,22 @@
                         </p><select class="select-Size" id="ProductSize">
                             <legend></legend>
                             <option value="N" disabled="">Select Any Size</option>
-                            <option value="M">M</option>
-                            <option value="S">S</option>
-                            <option value="Xl">Xl</option>
+                            <option value="">
+                                <%= el.size[0] %>
+                            </option>
+                            <option value="">
+                                <%= el.size[1] %>
+                            </option>
+                            <option value="">
+                                <%= el.size[2] %>
+                            </option>
+                            <option value="">
+                                <%= el.size[3] %>
+                            </option>
+                            <option value="">
+                                <%= el.size[4] %>
+                            </option>
+
                         </select>
                         <div class="cultSport-buttons"><button class="addToCartBtn">Add to Cart</button><button
                                 class="buyNowBtn">Buy
@@ -80,25 +95,25 @@
                         <div class="cultSport-Pdetails">
                             <h1 class="p-details-heading">PRODUCT DETAILS</h1>
                             <ul class="p-unorderded-List">
-                                <li>Colour: Black</li>
-                                <li>Flydry</li>
-                                <li>Anti Microbial</li>
-                                <li>Odour Resistant</li>
-                                <li>Breathable fabric</li>
-                                <li>Neo Stripes</li>
+                                <li><%= el.productDetails[0] %> </li>
+                                <li><%= el.productDetails[1] %></li>
+                                <li><%= el.productDetails[2] %></li>
+                                <li><%= el.productDetails[3] %></li>
+                                <li><%= el.productDetails[4] %></li>
+                                <li><%= el.productDetails[5] %></li>
                             </ul>
                             <h1 class="f-details-heading">Fabric</h1>
                             <ul class="f-unorderded-List">
-                                <li>100% Polyester</li>
+                                <li><%= el.fabric[0] %></li>
                             </ul>
                             <h1 class="m-details-heading">Material and Care</h1>
                             <ul class="m-unorderded-List">
-                                <li>Colour: Black</li>
-                                <li>Flydry</li>
-                                <li>Anti Microbial</li>
-                                <li>Odour Resistant</li>
-                                <li>Breathable fabric</li>
-                                <li>Neo Stripes</li>
+                                <li><%= el.materialCare[0] %></li>
+                                <li><%= el.materialCare[1] %></li>
+                                <li><%= el.materialCare[2] %></li>
+                                <li><%= el.materialCare[3] %></li>
+                                <li><%= el.materialCare[4] %></li>
+                                <li><%= el.materialCare[5] %></li>
                             </ul>
                             <h1 class="s-details-heading">Specifications</h1>
                             <h1 class="s-detail-heading">
