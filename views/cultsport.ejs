@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+
+    <link rel="stylesheet" href="/cultsport.css" />
+    <title>CultSport</title>
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="navBar">
+        <a href="/">
+        <div class="nav-CultFit-Logo" onclick="homePage()">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo" onclick="homePage()" />
+        </div></a>
+
+        <!-- Nav Middle items -->
+        <a href="/store">
+        <div class="nav-middle">
+            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+        </div>
+</a>
+        <!-- right -->
+        <div class="nav-right">
+            <div class="nav-login-Logo">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" onclick="toProfile()" />
+            </div>
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div id="data">
+        <% product.forEach(el=> { %>
+            <a href="/store/cultsport/<%= el.id %> ">
+                <div id="mainDiv">
+                    <div class="cultSport-images">
+                        <img src="<%= el.mainImg %>" alt="">
+                        <img src="<%= el.images[0] %>" alt="">
+                        <img src="<%= el.images[1] %>" alt="">
+                        <img src=" <%= el.images[2] %>" alt="">
+                        <img src="<%= el.images[3] %>" alt="">
+                        <img src=" <%= el.images[4] %>" alt="">
+                    </div>
+                    <div id="cultSport">
+                        <p class="brandTag">
+                            <%= el.brand %>
+                        </p>
+                        <h1 class="nameTag">
+                            <%= el.name %>
+                        </h1>
+                        <div class="discountDiv">
+                            <p class="priceTag">₹<%= el.price %>
+                            </p>
+                            <p class="discountPriceTag">₹<%= el.discountPrice %>
+                            </p>
+                            <p class="discountTag">
+                                <%= el.discount %>% OFF
+                            </p>
+                        </div>
+                        <p class="descriptionTag">
+                            <%= el.description %>
+                        </p><select class="select-Size" id="ProductSize">
+                            <legend></legend>
+                            <option value="N" disabled="">Select Any Size</option>
+                            <option value="M">M</option>
+                            <option value="S">S</option>
+                            <option value="Xl">Xl</option>
+                        </select>
+                        <div class="cultSport-buttons"><button class="addToCartBtn">Add to Cart</button><button
+                                class="buyNowBtn">Buy
+                                Now</button></div>
+                        <div class="cultSport-Pdetails">
+                            <h1 class="p-details-heading">PRODUCT DETAILS</h1>
+                            <ul class="p-unorderded-List">
+                                <li>Colour: Black</li>
+                                <li>Flydry</li>
+                                <li>Anti Microbial</li>
+                                <li>Odour Resistant</li>
+                                <li>Breathable fabric</li>
+                                <li>Neo Stripes</li>
+                            </ul>
+                            <h1 class="f-details-heading">Fabric</h1>
+                            <ul class="f-unorderded-List">
+                                <li>100% Polyester</li>
+                            </ul>
+                            <h1 class="m-details-heading">Material and Care</h1>
+                            <ul class="m-unorderded-List">
+                                <li>Colour: Black</li>
+                                <li>Flydry</li>
+                                <li>Anti Microbial</li>
+                                <li>Odour Resistant</li>
+                                <li>Breathable fabric</li>
+                                <li>Neo Stripes</li>
+                            </ul>
+                            <h1 class="s-details-heading">Specifications</h1>
+                            <h1 class="s-detail-heading">
+                                <%= el.specifications %>
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <% }) %>
+    </div>
+
+
+    <!-- Modal -->
+    <div id="modal">
+        <div id="modal-content">
+            <!-- cross icon -->
+            <div id="model-header">
+                <span onclick="clos()" class="close">&times;</span>
+            </div>
+            <div id="modal-body" class="model-body">
+                <div class="image">
+                    <img src="https://static.cure.fit/assets/images/curefit_login_logo.svg" />
+                </div>
+
+                <!-- Logo text below -->
+                <div class="logo-name">Cult fit</div>
+                <!-- Login with number -->
+                <div class="login-details">
+                    <div class="input">
+                        <input type="text" id="mobile" placeholder="Enter the mobile number" />
+                    </div>
+
+                    <!-- PAssword -->
+                    <div class="pass">
+                        <input type="text" id="password" placeholder="Enter the password" />
+                    </div>
+                </div>
+
+                <!-- countinoue button -->
+                <div class="button-continoue">
+                    <button onclick="submit()">Continue</button>
+                </div>
+
+                <!-- privacy line -->
+                <div class="terms-and-conditons">
+                    <li class="tandc-text">
+                        By Continuing you agree to the
+                        <em style="color: red" class="privacy">
+                            <br />
+                            Terms of Services</em>
+                        and
+                        <em style="color: red" class="privacy"> Privacy policy.</em>
+                    </li>
+                </div>
+
+                <!-- Create new account -->
+                <div class="create-account">
+                    <button onclick="create()" id="create">Create new Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <%- include("../components/footer") %>
+        <!-- footer ends -->
+</body>
+
+</html>

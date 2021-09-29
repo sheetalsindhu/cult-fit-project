@@ -1,0 +1,392 @@
+:root {
+  --primary-text: #000000;
+  --secondary-text: #fff;
+  --blue: #29b9ed;
+  --background: #fff;
+  --text-hover: #b2b2b2;
+  --button: #ff306e;
+  --main-btn: linear-gradient(to left, #fa6359, #ff437c);
+}
+
+* {
+  /* font-family: BrandonTextWeb-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif; */
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: var(--primary-text)
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+/* nav-bar styling */
+#navBar {
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  background-color: var(--secondary-text);
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+}
+
+/* cult-logo */
+
+.nav-CultFit-Logo > img {
+  width: 100%;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.cultText {
+  font-size: 14px;
+  color: var(--button);
+  cursor: pointer;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cultText > h1 {
+  text-align: center;
+  cursor: pointer;
+}
+.nav-middle {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 640px;
+}
+
+/* Nav right section */
+.nav-right {
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  height: 60px;
+  align-items: center;
+  gap: 25px;
+  margin-left: 680px;
+  margin-right: 5px;
+}
+
+.navText {
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.nav-login-Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.nav-cart-Logo > img {
+  width: 20px;
+  cursor: pointer;
+}
+.nav-login-Logo > img {
+  width: 15px;
+  cursor: pointer;
+}
+
+/* Upper Banner Image */
+.upper-banner > img {
+  margin-top: 60px;
+  width: 100%;
+}
+
+/*  Main Sports Page */
+
+#main-container {
+  width: 1200px;
+  margin: auto;
+  /* background-color: #e9fcff; */
+  padding: 5px;
+  margin-bottom: 100px;
+}
+
+/* categories */
+
+.categories-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Header of Products */
+.mensHeader {
+  display: flex;
+  margin-top: 30px;
+  gap: 880px;
+}
+
+.mensHeader-heading {
+  font-size: 18px;
+}
+
+.mensHeader-subHeading {
+  font-size: 12px;
+  color: var(--text-hover);
+}
+
+.mensHeader-link {
+  text-decoration: none;
+  color: var(--button);
+  cursor: pointer;
+}
+
+/* Data of mens gear */
+#data {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 5px;
+  margin-bottom: 40px;
+}
+
+#data > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.cultGearMenDiv {
+  /* background-color: #e9e9e9; */
+  width: 220px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.productImage {
+  width: 100%;
+  height: 308px;
+object-fit: cover;
+}
+
+.productName {
+  font-size: 14px;
+  color: var(--text-hover);
+  font-weight: 300;
+  margin-top: 3px;
+}
+
+.productBrand {
+  font-weight: 500;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.productDiscount {
+  color: var(--button);
+  font-weight: 400;
+}
+
+.productDiscountPrice {
+  text-decoration: line-through;
+  color: var(--text-hover);
+}
+
+.productPrice {
+  font-weight: 500;
+}
+
+.productPrice,
+.productDiscountPrice,
+.productDiscount {
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Footer section */
+#footer {
+  background-color: black;
+  display: flex;
+  gap: 200px;
+  padding: 40px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 250px;
+}
+
+.logo-footer {
+  width: 400px;
+  margin-left: 140px;
+}
+
+.text-Footer-P {
+  color: rgb(172, 172, 172);
+  text-align: left;
+  line-height: 20px;
+}
+
+.logo-footer > img {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+.fText {
+  font-size: 16px;
+  text-align: right;
+  color: white;
+  line-height: 30px;
+}
+
+.right {
+  display: flex;
+  gap: 50px;
+}
+
+.playStore {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 60px;
+}
+
+.playStore > img {
+  width: 120px;
+}
+
+@media (max-width: 992px) {
+  #navBar {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: var(--secondary-text);
+    box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    z-index: 1;
+  }
+  
+}
+
+
+
+.content {
+        margin-left: 150px;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .content>h5 {
+        color: grey;
+        margin-bottom: 30px;
+        font-weight: normal;
+    }
+
+    .content>p {
+        color: var(--button);
+    }
+
+    #cate {
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        margin: auto;
+        
+    }
+
+    .quest {
+        background-color: rgb(242, 244, 248);
+        height: 600px;
+        margin-bottom: 80px;
+    }
+
+
+    .right {
+        float: right;
+        font-size: 16px;
+        color: rgb(241, 31, 31);
+        padding-right: 60px;
+    }
+
+    #bottom {
+        padding-left: 180px;
+        line-height: 20px;
+    }
+
+    .H {
+        color: rgb(83, 82, 82);
+        font-size: 120px;
+        margin-bottom: 80px;
+        margin-top: 10px;
+
+    }
+
+    .D {
+        font-size: 80px;
+        color: rgb(146, 145, 145);
+        margin-bottom: 60px;
+    }
+
+    .L {
+        font-size: 50px;
+        color: rgb(180, 179, 179);
+        margin-bottom: 60px;
+    }
+
+
+    details {
+
+        padding-left: 180px;
+
+    }
+
+    details>summary {
+        color: rgb(106, 106, 106);
+        font-size: 14px;
+        line-height: 50px;
+    }
+
+    details p {
+        color: rgb(136, 142, 158);
+        padding-right: 50px;
+        margin-right: 50px;
+        padding-left: 5px;
+        font-size: 13px;
+        line-height: 30px;
+
+    }
+
+    #cate>img {
+        display: inline;
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    #cate>img:hover {
+        transform: scale(0.9);
+
+        transition: 1s;
+    }
