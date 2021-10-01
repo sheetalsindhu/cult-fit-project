@@ -14,7 +14,7 @@
 
     <!-- navbar -->
     <%- include("../components/navbar") %>
-    <!-- navbar ends here -->
+        <!-- navbar ends here -->
 
         <!-- Upper Conatiner -->
         <div id="home-container">
@@ -229,20 +229,22 @@
 
                     <!-- Login with number -->
                     <div class="login-details">
-                        <div class="input">
-                            <input type="text" id="mobile" placeholder="Enter the mobile number" />
-                        </div>
+                        <form action="/login" method="post">
+                            <div class="input">
+                                <input type="text" id="mobile" name="username" placeholder="Username" />
+                            </div>
 
-                        <!-- PAssword -->
-                        <div class="pass">
-                            <input type="text" id="password" placeholder="Enter the password" />
-                        </div>
+                            <!-- PAssword -->
+                            <div class="pass">
+                                <input type="text" id="password" name="password" placeholder="Password" />
+                            </div>
                     </div>
 
                     <!-- countinoue button -->
                     <div class="button-continoue">
-                        <button onclick="submit()">Continue</button>
+                        <button type="submit">Continue</button>
                     </div>
+                    </form>
 
                     <!-- privacy line -->
                     <div class="terms-and-conditons">
@@ -258,7 +260,7 @@
 
                     <!-- Create new account -->
                     <div class="create-account">
-                        <button onclick="create()" id="create">Create new Account</button>
+                        <a href="/register"><button id="create">Create new Account</button></a>
                     </div>
                 </div>
             </div>
@@ -266,7 +268,7 @@
 
         <!-- footer -->
         <%- include("../components/footer") %>
-        <!-- footer ends here -->
+            <!-- footer ends here -->
 </body>
 
 </html>
@@ -428,7 +430,6 @@
     }
     function clos() {
         var modal = document.getElementById("modal");
-
         modal.style.display = "none";
     }
 

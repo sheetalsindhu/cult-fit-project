@@ -116,7 +116,7 @@ body {
   margin: auto;
   /* background-color: #e9fcff; */
   padding: 5px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 /* categories */
@@ -124,6 +124,7 @@ body {
 .categories-text {
   font-size: 16px;
   margin-bottom: 10px;
+  margin-top: 20px;
 }
 
 .categories {
@@ -140,7 +141,7 @@ img {
 /* Header of Products */
 .mensHeader {
   display: flex;
-  margin-top: 30px;
+  margin-top: 40px;
   gap: 880px;
 }
 
@@ -164,7 +165,7 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 #data > div {
@@ -190,10 +191,13 @@ object-fit: cover;
   color: var(--text-hover);
   font-weight: 300;
   margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
 }
 
 .productBrand {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 12px;
   margin-top: 10px;
 }
@@ -387,6 +391,5 @@ object-fit: cover;
 
     #cate>img:hover {
         transform: scale(0.9);
-
         transition: 1s;
     }

@@ -1,0 +1,233 @@
+body {
+	background: #f7f7f7;
+}
+.container {
+	width: 400px;
+	margin: 20px auto;
+	border-radius: 5px;
+	border: 1px solid #95A5A6;
+	color: #515751;
+  -webkit-box-shadow: 4px 4px 6px 0px rgba(150, 150, 150, 0.301);
+  -moz-box-shadow: 4px 4px 6px 0px rgba(175, 175, 175, 0.445);
+  box-shadow: 4px 4px 6px 0px rgba(75, 75, 75, 0.308);
+  padding: 20px;
+  
+}
+
+h1 {
+	color: var(--button);
+	/* margin:0; */
+	padding: 10px 20px;
+	font-size: 24px;
+	font-weight:normal;
+}
+
+.form-top {
+	padding-top:20px;
+   text-align: left;
+   font-weight: 600;
+}
+
+.logo{
+  display: flex;
+}
+
+.input-hide {
+	float:right;
+	cursor:pointer;
+}
+
+select.form-control:hover{
+  background: #F8F9F9;
+}
+
+option select.form-control :hover {
+  background: #F8F9F9;
+}
+
+input {
+	font-size: 14px;
+	color:black;
+	background-color: #ececec;
+	width:100%;
+	padding:13px 13px 13px 20px;
+	box-sizing: border-box;
+	border: 1px solid rgba(0,0,0,0);
+    border: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    
+}
+.form-group{
+  margin-top: 10px;
+}
+
+select{
+  width: 100px;
+  margin-top: 5px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+
+.row{
+  display: flex;
+  gap: 10px;
+}
+
+
+#pay-now {
+	font-size: 20px;
+	color:#f7f7f7;
+	background: var(--main-btn);
+	width:100%;
+	padding:10px 10px 10px 20px;
+	/* box-sizing: border-box; */
+	/* border: 3px solid rgba(0,0,0,0); */
+  transition: all .3s linear;
+  border-radius: 5px;
+  box-shadow: rgba(22, 22, 22, 0.582);
+  border: none;
+}
+
+#pay-now a {
+	text-decoration: none;
+	color: #ff306e;
+}
+
+#pay-now:hover {
+	color: #f7f7f7;
+	background: linear-gradient(to right, #f84336, #ff306e);
+	outline: none;
+  transition: all .3s linear;
+ 
+}
+
+
+
+
+
+:root {
+  --primary-text: #000000;
+  --secondary-text: #fff;
+  --blue: #29b9ed;
+  --background: #fff;
+  --text-hover: #b2b2b2;
+  --button: #ff306e;
+  --main-btn: linear-gradient(to left, #f84336, #ff306e);
+}
+
+* {
+  font-family: poppins, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* position: relative; */
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+}
+
+/* nav-bar styling */
+#navBar {
+  width: 1540px;
+  height: 60px;
+  position: fixed;
+  background-color: var(--secondary-text);
+  box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 1;
+}
+
+/* cult-logo */
+
+.nav-middle {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-left: 400px;
+}
+
+.nav-CultFit-Logo > img {
+  width: 100%;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.nav-store-Logo,
+.nav-live-Logo,
+.nav-cult-Logo,
+.nav-mind-Logo,
+.nav-care-Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.nav-live-Logo > img {
+  width: 30px;
+}
+
+.nav-cult-Logo > img {
+  width: 30px;
+}
+
+.nav-mind-Logo > img {
+  width: 30px;
+}
+
+.nav-store-Logo > img {
+  width: 30px;
+}
+
+.nav-care-Logo > img {
+  width: 30px;
+}
+
+.navText {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* Nav right section */
+.nav-right {
+  display: flex;
+  width: 250px;
+  padding: 4px;
+  height: 60px;
+  align-items: center;
+  gap: 25px;
+  margin-left: 220px;
+  margin-right: 5px;
+  /* background-color: aqua; */
+}
+
+.login-text {
+  background-color: bisque;
+}
+.nav-login-Logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-cart-Logo > img {
+  width: 20px;
+}
+.nav-login-Logo > img {
+  width: 15px;
+}
+
+
+.background-image{
+  width: 100%;
+  background: url(https://static.cure.fit/assets/images/curefit-v-man.svg);
+  background: no-repeat;
+}

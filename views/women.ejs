@@ -6,27 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
-    <link rel="stylesheet" href="/mens.css" />
+    <link rel="stylesheet" href="/women.css" />
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,800&display=swap"
         rel="stylesheet" />
 
-    <title>Men</title>
+    <title>Women</title>
 </head>
 
 <body>
     <!-- nav bar -->
     <div id="navBar">
         <a href="/">
-        <div class="nav-CultFit-Logo" onclick="homePage()">
-            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo" onclick="homePage()" />
-        </div>
-</a>
+            <div class="nav-CultFit-Logo" onclick="homePage()">
+                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo"
+                    onclick="homePage()" />
+            </div>
+        </a>
         <!-- Nav Middle items -->
-        <a href="/store"><div class="nav-middle">
-            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
-        </div>
-</a>
+        <a href="/store">
+            <div class="nav-middle">
+                <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+            </div>
+        </a>
         <!-- right -->
         <div class="nav-right">
             <div class="nav-login-Logo">
@@ -41,10 +43,10 @@
 
     <!-- Main Sports Page -->
     <div id="main-container">
-        <p style="font-weight: 500;">MEN</p>
+        <p style="font-weight: 500;">WOMEN</p>
         <div id="data">
-        <% product.forEach(el=> { %>
-            <a href="/store/mens/cultsport/<%= el._id %> ">
+            <% product.forEach(el=> { %>
+                <a href="/store/women/cultsport/<%= el._id %> ">
                     <div class="cultGearMenDiv">
                         <img class="productImage" src="<%= el.mainImg %>" />
                         <p class="productBrand">
@@ -63,8 +65,8 @@
                             </p>
                         </div>
                     </div>
-                    </a>
-            <% }) %>
+                </a>
+                <% }) %>
         </div>
     </div>
 

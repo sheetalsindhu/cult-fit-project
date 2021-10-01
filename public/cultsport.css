@@ -509,3 +509,17 @@ body a {
   padding: 5px;
   background-color: rgb(247, 247, 247);
 }
+
+.cartBtn {
+  width:100%;
+  height:100%;
+  background: var(--main-btn);
+  color:white;
+  outline-style: none;
+  border:0px solid white;
+  border-radius:50%;
+  margin-top:10px;
+}
+.cartBtn:hover {
+  cursor: pointer;
+}

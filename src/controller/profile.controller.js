@@ -1,0 +1,54 @@
+const express = require("express");
+const app = express();
+
+const router = express.Router();
+const passport = require("passport");
+const bodyParser = require("body-parser");
+const LocalStrategy = require("passport-local");
+const passportLocalMongoose = require("passport-local-mongoose");
+const User = require("../models/user.models");
+
+//for login check
+//For authentication process
+app.use(
+  require("express-session")({
+    secret: "Any normal Word",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+passport.serializeUser(User.serializeUser()); //session encoding
+passport.deserializeUser(User.deserializeUser());
+passport.use(new LocalStrategy(User.authenticate()));
+app.use(passport.initialize());
+app.use(passport.session());
+
+router.get("/profile", isLoggedIn, async (req, res) => {
+  let userId = req.user._id;
+
+  let item = await User.findOne({ _id: userId }).lean().exec();
+  console.log(item);
+  res.render("./setting/profile", { item });
+});
+router.get("/order", isLoggedIn, (req, res) => {
+  res.render("./setting/order");
+});
+router.get("/reedem", isLoggedIn, (req, res) => {
+  res.render("./setting/reedem");
+});
+router.get("/subscription", isLoggedIn, (req, res) => {
+  res.render("./setting/subscription");
+});
+router.get("/support", isLoggedIn, (req, res) => {
+  res.render("./setting/support");
+});
+function isLoggedIn(req, res, next) {
+  if (req.isAuthenticated()) {
+    // console.log(req.user._id);
+    return next();
+  }
+  res.redirect("/");
+}
+
+module.exports = router;

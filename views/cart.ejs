@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart page</title>
+    <link rel="stylesheet" href="/cart.css">
+</head>
+
+<body>
+
+    <!-- nav bar -->
+    <div id="navBar">
+        <a href="/">
+            <div class="nav-CultFit-Logo" onclick="homePage()">
+                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" class="nav-CultFit-Logo"
+                    onclick="homePage()" />
+            </div>
+        </a>
+
+        <a href="/store"><div class="nav-middle">
+            <h1 class="cultText" onclick="backToStorePage()">cultsport</h1>
+        </div></a>
+
+        <!-- right -->
+        <div class="nav-right">
+          <a href="/profile"><div class="nav-login-Logo">
+            <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" onclick="toProfile()" />
+        </div></a>
+
+        </div>
+    </div>
+
+
+
+    <!-- Main container -->
+    <div id="container">
+
+        <!-- left order cart -->
+        <div id="order-content">
+            <div id="top">Cultgear Order Summary</div>
+
+
+            <!---****** container of foreach array...******* -->
+            <% let total_price=0; let total_discount=0; if(item.products.length !=0) { %>
+                <% item.products.forEach(function(el) { let total=el.quantity * el.price; let discount=el.quantity *
+                    Math.abs(el.discountPrice - el.price); total_discount=Math.abs(total_discount + discount);
+                    total_price=total_price + total; %>
+
+                    <!--total div-->
+
+                    <div id="one_content">
+
+                        <!--left div-->
+                        <div id="image_div">
+                            <img id="image" src="<%= el.image %>">
+                        </div>
+
+                        <!--Right div-->
+                        <div id="">
+                            <div id="first">
+                                <p id="name_right">
+                                    <%= el.name %>
+                                </p>
+                                <form action="/cart/delete/product/<%=el.productId%>" method="post">
+                                    <input type="submit" value="X">
+                                </form>
+                                <!-- Add event listener-->
+                            </div>
+                            <br>
+                            <p id="band">
+                                <%= el.brand %>
+                            </p><br>
+                            <p id="size">
+                                <%= el.size %>
+                            </p><br>
+                            <div id="priceQuantity">
+                                <p>₹ <%= el.price %>
+                                </p>
+                                <div id="quantity">
+                                    <a href="/cart/product/minus/<%= el.productId %>">
+                                        <p id="p_minus">-</p>
+                                    </a>
+                                    <p id="p_quantity">
+                                        <%= el.quantity %>
+                                    </p>
+                                    <a href="/cart/plus/quantity/<%= el.productId %>">
+                                        <p id="p_plus">+</p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <hr>
+                    <% }) } %>
+
+
+
+
+        </div>
+
+
+
+
+
+        <div id="address">
+
+            <!-- address select section -->
+            <div oncilck="call()" id="selectAddress">
+
+                <div class="modify-address-div">
+                    <p oncilck="call()" id="addleft">
+                        <span>
+                            <img src="https://static.cure.fit/assets/images/locationPink.svg" class="location-icon">
+                        </span> Please Add Addresses
+                    </p>
+
+                    <!-- modify address -->
+                    <p oncilck="call()" id="addright">Add/Modify</p>
+                </div>
+                <hr class="line">
+            </div>
+
+
+            <!-- Price -->
+            <div id="pricePart">
+
+                <div id="totalPrice">
+                    <p class="total-price">Total Price</p>
+                    <p id="showTotalPrice"> ₹ <%= total_price %>
+                    </p>
+                </div>
+
+                <div id="discount">
+                    <p class="discount-text">(-) Discount</p>
+                    <p id="showTotalDiscount"> ₹ <%=total_discount%>
+                    </p>
+                </div>
+
+                <div id="voucher">
+                    <p class="implement-voucher">Implement voucher</p><span id="discountamount"></span>
+                    <button onclick="voucher()" class="voucher-btn">Apply</button>
+                </div>
+
+                <div id="totalPayble">
+                    <p class="total-payable">Total Payble</p>
+                    <p id="showTotalPaybleAmount"> ₹ <%=total_price %>
+                    </p>
+                </div>
+            </div>
+
+
+            <!-- Address button -->
+            <div id="addressbutton">
+                <button onclick="call()" id="addressselectbutton">Select Address</button>
+                <button onclick="checkout()" id="checkoutbutton">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--Modal Adding address box-->
+    <div id="modal">
+        <div id="modal-content">
+            <div id="model-header">
+                <p id="model-left">Choose Delivery Address</p>
+                <span onclick="clos()" class="close">&times;</span>
+            </div>
+
+            <hr>
+
+            <div id="modal-body" class="model-body">
+                <div id="addCity">
+                    <input type="text" id="cityname" placeholder="Enter your full address....">
+                </div>
+
+                <div id="button">
+                    <button onclick="addressAdd()" id="addbtn">Add New Address</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--End modal box-->
+
+
+
+    <!--Model for checkout form-->
+    <div id="modal1">
+        <div id="modal-content">
+            <div id="model-header">
+                <p style="text-align:center" id="model-left">Payment Option</p>
+                <span onclick="closP()" class="close">&times;</span>
+            </div>
+            <hr>
+            <div id="modal-body" class="model-body">
+                <button onclick="paymentPage()">Add Debit & Credit Card</button>
+                <button onclick="orderPage()">Pay On Delivery</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

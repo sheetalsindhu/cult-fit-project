@@ -39,9 +39,11 @@
 
     <!-- Upper Banner of page -->
     <div class="upper-banner">
-        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:595/dpr_2/image/vm/bfd8b60a-9980-437f-8cd8-0c04d16ee8e3.png"
+        <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/5d245d1f-33d9-40ad-8772-bf643aa4991a.png"
             alt="" />
     </div>
+
+
 
     <!-- Main Sports Page -->
     <div id="main-container">
@@ -50,21 +52,27 @@
         <p class="categories-text">CATEGORIES</p>
         <div class="categories">
 
-          <a href="/store/mens"><div class="men" onclick="productsPage()">
-            <img
-                src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-men.png" />
-        </div></a>
+            <a href="/store/mens">
+                <div class="men" onclick="productsPage()">
+                    <img
+                        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-men.png" />
+                </div>
+            </a>
 
-            <div class="women" onclick="productsWomensPage()">
-                <img
-                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-women.png" />
-            </div>
+            <a href="/store/women">
+                <div class="women" onclick="productsWomensPage()">
+                    <img
+                        src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-women.png" />
+                </div>
+            </a>
 
             <div class="footgear">
                 <img
                     src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_250,ar_155:78,c_fit/dpr_2/cultgear-content/assets/clp-category-footgear.png" />
             </div>
         </div>
+
+
 
         <!-- Header of products -->
         <div class="mensHeader">
@@ -75,13 +83,15 @@
                 </p>
             </div>
 
-            <a href="/store/mens"><p class="mensHeader-link" onclick="mensPage()">See All ></p></a>
+            <a href="/store/mens">
+                <p class="mensHeader-link" onclick="mensPage()">See All ></p>
+            </a>
         </div>
 
         <!-- Cult Gear Sports Products -->
         <div id="data">
             <% product.forEach(el=> { %>
-                <a href="/store/cultsport/<%= el.id %> ">
+                <a href="/store/cultsport/<%= el._id %> ">
                     <div class="cultGearMenDiv">
                         <img class="productImage" src="<%= el.mainImg %>" />
                         <p class="productBrand">
@@ -103,6 +113,46 @@
                 </a>
                 <% }) %>
         </div>
+<!-- Header of products -->
+<div class="mensHeader">
+    <div class="mensHeader-MainText">
+        <p class="mensHeader-heading">Bestsellers in Women</p>
+        <p class="mensHeader-subHeading">
+            Flydry, Anti-microbial and Breathable
+        </p>
+    </div>
+
+    <a href="/store/women">
+        <p class="mensHeader-link" onclick="mensPage()">See All ></p>
+    </a>
+</div>
+
+        <div id="data">
+            <% womenProduct.forEach(el=> { %>
+                <a href="/store/cultsport/<%= el._id %> ">
+                    <div class="cultGearMenDiv">
+                        <img class="productImage" src="<%= el.mainImg %>" />
+                        <p class="productBrand">
+                            <%= el.brand %>
+                        </p>
+                        <p class="productName">
+                            <%= el.name %>
+                        </p>
+                        <div class="priceDiv">
+                            <p class="productPrice">₹<%= el.price %>
+                            </p>
+                            <p class="productDiscountPrice">₹<%= el.discountPrice %>
+                            </p>
+                            <p class="productDiscount">
+                                <%= el.discount %>% OFF
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                <% }) %>
+        </div>
+
+       
     </div>
 
     <!-- Lower questions part -->
@@ -202,7 +252,7 @@
             </div>
         </details>
     </div>
-<!-- Questions part ends here -->
+    <!-- Questions part ends here -->
 
     <!-- footer -->
     <%- include("../components/footer") %>

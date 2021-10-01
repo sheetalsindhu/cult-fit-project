@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logout</title>
+    <link rel = "stylesheet" href = "./css/logout.css">
+</head>
+
+<body>
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" />
+        </div>
+
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <div class="nav-live-Logo">
+                <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                <p class="navText">LIVE</p>
+            </div>
+
+            <div class="nav-cult-Logo">
+                <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                <p class="navText">CULT</p>
+            </div>
+
+            <div class="nav-mind-Logo">
+                <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                <p class="navText">MIND</p>
+            </div>
+
+            <div class="nav-care-Logo">
+                <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                <p class="navText">CARE</p>
+            </div>
+
+            <div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
+            </div>
+        </div>
+
+        <div class="nav-right">
+            <div class="location">
+                <p class="navText">Delhi, INDIA</p>
+            </div>
+
+            <!-- Login page -->
+            <div class="nav-login-Logo" onclick="call()" id="login">
+                <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <p onclick="call()" class="navText login-text">LOGIN</p>
+
+                <!-- Dropdown Div -->
+                <div id="dropdown" class="dropdown">
+                    <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        class="dropbtn" />
+
+                    <span>
+                        <img class="dropbtna"
+                            src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+                    </span>
+
+                    <div class="dropdown-content">
+                        <a href="setting/profile"><span>
+                                <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
+                            Profile</a>
+
+                        <a href="setting/order"><span><img
+                                    src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
+
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
+                            Records</a>
+
+                        <a href="setting/subscription"><span><img
+                                    src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
+                            Packs</a>
+
+                        <a href="setting/reedem"><span><img
+                                    src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
+                            Voucher</a>
+
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
+
+                        <a href="setting/support"><span><img
+                                    src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
+
+                        <a href="setting/logout"><span><img
+                                    src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cart button -->
+            <div class="nav-cart-Logo">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Dropdown -->
+    <div id="dropdown" class="dropdown">
+        <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+            class="profie-icon" />
+
+        <!-- arrow icon -->
+        <span>
+            <img class="dropdown-arrow"
+                src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+        </span>
+
+        <div class="dropdown-content">
+            <!-- profile-->
+            <a href="./profile">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/profile-icon.svg" />
+                </span>
+                Profile
+            </a>
+
+            <!-- orders -->
+            <a href="./order">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/cart-black.svg" /> </span>Orders
+            </a>
+
+            <!-- medical records -->
+            <a href="#">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/health-profile-black.svg" /> </span>Medical Records
+            </a>
+
+            <!-- subscrption -->
+            <a href="./subscription">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/combined-shape-black.svg" /> </span>Active Packs
+            </a>
+
+            <!-- redeem -->
+            <a href="./reedem">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/coupon-black.svg" /> </span>Redeem Voucher
+            </a>
+
+            <!-- account -->
+            <a href="#">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/settings-black.svg" /> </span>Account
+            </a>
+
+            <!-- support -->
+            <a href="./support">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/support-black.svg" /> </span>Support
+            </a>
+
+            <!-- logout -->
+            <a href="./logout">
+                <span>
+                    <img src="https://static.cure.fit/assets/images/logout-black.svg" /> </span>Logout
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src = "./js/logout.js">
+  
+</script>
