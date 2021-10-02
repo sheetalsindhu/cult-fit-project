@@ -377,3 +377,26 @@
         .left-sidebar-profile > a {
             text-decoration: none;
         }
+
+
+
+
+        .image {
+            height: 250px;
+            width:150px;
+        }
+
+        .content {
+            display: grid;
+            /* grid-template-rows: 90%; */
+            /* grid-template-columns : 20% 40% 20%; */
+            grid-gap: 3%;
+            
+        }
+        .main {
+            display: grid;
+            margin-top:20px;
+            grid-template-columns : 20% 40% 20%;
+
+
+        }

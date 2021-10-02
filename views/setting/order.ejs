@@ -281,19 +281,32 @@
 
 
         <div id="content">
-            <p class="order-heading">ACTIVE PACKS & SUBSCRIPTIONS</p>
-            <div id="data">
-                <div class="order-image">
+            <!--<p class="order-heading">ACTIVE PACKS & SUBSCRIPTIONS</p>
+            <div id="data"> -->
+                <!-- <div class="order-image"> -->
+                    <% item.orders.forEach(el => {
+                        
+                        el.forEach(p => { %>
+                        <div class = "main">
+                        <img class = "image" src = "<%= p.image %>">
+                        <p class = "name">Name : <%= p.name %></p>
+                        <p class = "price">Price : <%= p.price %></p>
+                        <p>status: On the way</p>
+                        </div>
+                    <% 
+                        });
+                
+                }) %>
                     <!-- <img
                         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/mePage/no-active-packs%402x.png"> -->
-                </div>
+                <!--</div> -->
 
                 <div id="para">
                     <!-- <h2 class="para-heading">Your Packs Go Here</h2>
                     <p class="para-subheading">A pack is a set of healthy activities for you to do over <br>a few days. Get packs to build
                         healthy
                         habitssteadily. Get started, find packs you like:</p> -->
-                    <button onclick="main()" class="explore-cart">Explore cult.fit</button>
+                   <!-- <button onclick="main()" class="explore-cart">Explore cult.fit</button>-->
                 </div>
             </div>
 
