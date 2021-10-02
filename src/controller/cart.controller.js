@@ -31,11 +31,17 @@ app.use(passport.session());
 
 router.post("", isLoggedIn, async (req, res) => {
   // const product = req.body;
-  const { productId, price, quantity, name, brand, image, discountPrice} =
-    req.body;
-  // console.log(req.body);
+  const {
+    productId,
+    price,
+    quantity,
+    name,
+    brand,
+    image,
+    discountPrice,
+    size,
+  } = req.body;
 
-  // const userId = "6154be4984d19270d58df2fb";
   const userId = req.user._id;
 
   let cart = await Cart.findOne({ userId });
@@ -44,9 +50,22 @@ router.post("", isLoggedIn, async (req, res) => {
     let index = cart.products.findIndex((p) => p.productId == productId);
 
     if (index > -1) {
-      let productItem = cart.products[index];
-      productItem.quantity = productItem.quantity + 1;
-      cart.products[index] = productItem;
+      if (cart.products[index].size === size) {
+        let productItem = cart.products[index];
+        productItem.quantity = productItem.quantity + 1;
+        cart.products[index] = productItem;
+      } else {
+        cart.products.push({
+          productId,
+          quantity,
+          price,
+          name,
+          brand,
+          image,
+          discountPrice,
+          size,
+        });
+      }
     } else {
       cart.products.push({
         productId,
@@ -56,18 +75,21 @@ router.post("", isLoggedIn, async (req, res) => {
         brand,
         image,
         discountPrice,
+        size,
       });
     }
     cart = await cart.save();
-    return res.redirect("cart/");
+    res.send({});
+    // return res.redirect("/cart");
   } else {
     const newCart = await Cart.create({
       userId,
       products: [
-        { productId, quantity, price, name, brand, image, discountPrice },
+        { productId, quantity, price, name, brand, image, discountPrice, size },
       ],
     });
-    return res.redirect("cart/");
+    // return res.redirect("cart/");
+    res.send({});
   }
 });
 
@@ -79,15 +101,13 @@ router.get("", isLoggedIn, async (req, res) => {
     .populate("userId")
     .lean()
     .exec();
-   console.log(item.products);
+  console.log(item.products);
   return res.render("./cart.ejs", { item });
 });
 
-
-
 router.patch("", isLoggedIn, async (req, res) => {
-  const voucher = await Cart.findOneAndUpdate(req.params._id)
-})
+  const voucher = await Cart.findOneAndUpdate(req.params._id);
+});
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
