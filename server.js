@@ -37,7 +37,7 @@ app.use(passport.session());
 const Product = require("../cult-fit-project/src/models/store.model");
 const WomenProduct = require("../cult-fit-project/src/models/women.model");
 const Cart = require("../cult-fit-project/src/models/cart.model");
-
+const Order = require("../cult-fit-project/src/models/order.model")
 
 /* ___________ Controllers ____________ */
 const storeController = require("./src/controller/store.controller");
@@ -259,6 +259,23 @@ app.post("/address", isLoggedIn, async (req, res) => {
   }
 });
 
+
+
+app.post("/orders", isLoggedIn, async(req, res) => {
+  const userId = req.user._id;
+  const {orderId} = req.body.orders;
+  console.log(orderId);
+  let order = await Order.findOne({userId});
+  if(order) {
+      // let index = order.orders.findIndex(p = p.product == orderId);
+     order.orders = orderId;
+     order = await order.save();
+  } else {
+      const neworder = await Order.create({userId, order})
+      // res.redirect("/cart");
+  }
+
+})
 
 
 /* ___________ return api requests ____________ */
