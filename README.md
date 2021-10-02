@@ -21,24 +21,11 @@
 5. NodeJS
 6. DB collections 
 
+# Features
+1. You will get fitness related products.
 
-# Team members 
 
-#### 1. Sheetal Sindhu :woman:
-* [Github](https://github.com/sheetalsindhu)
-* [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
 
-#### 2. Mansur Devan :boy:
-* [Github](https://github.com/mansur3)
-* [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
-
-#### 3. Ranu Ranjan :boy:
-* [Github](https://github.com/gaurav16-lang)
-* [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
-
-#### 4. Rajnish Kumar :boy:
-* [Github](https://github.com/harishreyya)
-* [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
 
 
 # Roles and Responsibilities
@@ -99,5 +86,23 @@ You are now on the payment page after placeing the order. You can pay using your
 
 After successful payment, this page confirms you that your order is placed.
 <img width="824" alt="thankyou" src="https://user-images.githubusercontent.com/87423101/131228049-05ba987f-94df-4ce0-914d-b3e73e67797f.png">
+
+# Team members 
+
+#### 1. Sheetal Sindhu :woman:
+* [Github](https://github.com/sheetalsindhu)
+* [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
+
+#### 2. Mansur Devan :boy:
+* [Github](https://github.com/mansur3)
+* [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
+
+#### 3. Ranu Ranjan :boy:
+* [Github](https://github.com/gaurav16-lang)
+* [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
+
+#### 4. Rajnish Kumar :boy:
+* [Github](https://github.com/harishreyya)
+* [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
 
 
