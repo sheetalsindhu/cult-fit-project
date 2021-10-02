@@ -35,6 +35,7 @@ const Product = require("../cult-fit-project/src/models/store.model");
 const WomenProduct = require("../cult-fit-project/src/models/women.model");
 const FootwearProduct = require("../cult-fit-project/src/models/footwear.model");
 const Cart = require("../cult-fit-project/src/models/cart.model");
+const Order = require("../cult-fit-project/src/models/order.model")
 
 /* ___________ Controllers ____________ */
 const storeController = require("./src/controller/store.controller");
@@ -304,6 +305,28 @@ app.get("/logout", (req, res) => {
   req.logout();
   res.redirect("/");
 });
+
+app.get("/orders", isLoggedIn, async (req, res) => {
+  const userId = req.user._id;
+  const cart = await Cart.findOne({ userId });
+  const order = await Order.findOne({userId});
+  if (cart) {
+    let c =  cart.products.splice(0, cart.products.length);
+
+    if(order) {
+      // let c =  cart.products.splice(0, cart.products.length);
+      order.orders.push(c);
+    } else{
+      
+      let newOrder = await Order.create({userId, orders: [c] })
+    }
+  
+    await order.save();
+    await cart.save();
+    return res.redirect("/thankyou");
+  }
+});
+
 
 /* ___________ return api requests ____________ */
 app.use("/store", storeController);

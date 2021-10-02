@@ -8,6 +8,8 @@ const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
 const User = require("../models/user.models");
 const Cart = require("../models/cart.model")
+const Order = require("../models/order.model");
+
 
 //for login check
 //For authentication process
@@ -32,8 +34,12 @@ router.get("/profile", isLoggedIn, async (req, res) => {
   console.log(item);
   res.render("./setting/profile", { item });
 });
-router.get("/order", isLoggedIn, (req, res) => {
-  res.render("./setting/order");
+router.get("/order", isLoggedIn, async  (req, res) => {
+  let userId = req.user._id;
+  let item = await Order.findOne({ userId}).lean().exec();
+  console.log(item.orders);
+
+  res.render("./setting/order", {item});
 });
 // router.get("/reedem", isLoggedIn, (req, res) => {
 //   res.render("./setting/reedem");
