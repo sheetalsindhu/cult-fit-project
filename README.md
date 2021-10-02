@@ -1,4 +1,5 @@
-# Cult Fit 
+# Cult Fit  
+![image](https://m.coruscatesolution.com/wp-content/uploads/2019/06/Cult-fit.png)
 
 #### About Cult Fit
 > At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Cult.fiuses the best in technology to give you a world-class experience. You can book classes, follow workout videos, order cult mens and women gear, order healthy food.
