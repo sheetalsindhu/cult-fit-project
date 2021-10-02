@@ -7,13 +7,13 @@
 > At cult.fit, we strive to keep you fit & healthy through a range of holistic offerings that include fitness and yoga, healthy meals, mental wellbeing and primary care. Now anyone can now stay healthy from the safety of their homes with just a single app that helps you to #BeBetterEveryDay
 
 # Technology We Used :computer:
-Tech Stack in Frontend:
+> Tech Stack in Frontend:
 1. HTML5
 2. CSS
 3. JavaScript
-   * DOM
-   * LocalStorage
-Tech Stack in Backend:
+
+
+> Tech Stack in Backend:
 1. EJS
 2. CSS
 3. Mongo DB
