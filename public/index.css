@@ -154,9 +154,10 @@
   margin-bottom: 10px;
 }
 
-.fourth-Part, .fivth-Part {
-/* border: 1px solid red; */
-margin-bottom: 40px;
+.fourth-Part,
+.fivth-Part {
+  /* border: 1px solid red; */
+  margin-bottom: 40px;
 }
 
 .fourth-Part > img {
@@ -169,14 +170,11 @@ margin-bottom: 40px;
   margin-bottom: 12px;
 }
 
-
-
 .part-middle {
   display: flex;
   gap: 500px;
   align-items: center;
   margin-bottom: 15px;
-  
 }
 
 .explore-link {
@@ -219,7 +217,6 @@ margin-bottom: 40px;
   margin-bottom: 60px;
 }
 
-
 .carousel-container {
   display: flex;
   height: 500px;
@@ -237,7 +234,6 @@ margin-bottom: 40px;
   width: 100%;
 }
 
-
 /* second slider */
 
 .carousel-parent1 {
@@ -250,7 +246,6 @@ margin-bottom: 40px;
   margin-bottom: 60px;
 }
 
-
 .carousel-container1 {
   display: flex;
   height: 500px;
@@ -261,14 +256,12 @@ margin-bottom: 40px;
 .carousel-item1 {
   flex-shrink: 0;
   width: 100%;
-
 }
 
 .carousel-item1 > img {
   border-radius: 20px;
   width: 100%;
 }
-
 
 /* third slider */
 
@@ -281,7 +274,6 @@ margin-bottom: 40px;
   justify-content: center;
   margin-bottom: 60px;
 }
-
 
 .carousel-container2 {
   display: flex;
@@ -299,20 +291,6 @@ margin-bottom: 40px;
   border-radius: 20px;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .lower-part {
   margin-top: 2200px;
@@ -461,7 +439,6 @@ margin-bottom: 40px;
   border-right: 0px solid black;
   outline: none;
   margin-right: 15px;
-
 }
 
 .pass input {
@@ -504,11 +481,9 @@ margin-bottom: 40px;
   border: none;
 }
 
-.button-continoue >button:hover{
+.button-continoue > button:hover {
   background-color: rgb(175, 175, 175);
 }
-
-
 
 .tandc-text {
   font-size: 12px;
@@ -558,7 +533,7 @@ margin-bottom: 40px;
 
 /*dropdown*/
 
-.dropbtn-image  {
+.dropbtn-image {
   width: 20px;
   height: 20px;
 }
@@ -572,7 +547,6 @@ margin-bottom: 40px;
   width: 20px;
   height: 20px;
   margin-top: 2px;
- 
 }
 .dropdown-arrow > img {
   width: 10px;
@@ -582,20 +556,20 @@ margin-bottom: 40px;
   display: flex;
   align-items: center;
 }
-/* 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        } */
+
+.dropdown-content  {
+  right: 0;
+  position: relative;
+}
 
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 400px;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.103);
   z-index: 1;
-  margin-right: 400px;
-  /* margin-top: 400px; */
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .dropdown-content a {
@@ -635,10 +609,6 @@ margin-bottom: 40px;
   border-radius: 40px;
   background-color: white;
 }
-
-
-
-
 
 :root {
   --primary-text: #000000;
@@ -707,7 +677,6 @@ body {
   cursor: pointer;
 }
 
-
 .nav-live-Logo > img {
   width: 20px;
   cursor: pointer;
@@ -772,13 +741,11 @@ body {
   cursor: pointer;
 }
 
-
 body a {
   text-decoration: none;
   color: var(--primary-text);
 }
 
-
-.location{
+.location {
   color: white;
 }

@@ -272,19 +272,21 @@ body {
 }
 
 .location-icon {
-  width: 8%;
+  width: 20px;
+  height: 20px;
 }
 
 .line {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .modify-address-div {
   display: flex;
   margin-left: 20px;
-  gap: 160px;
+  gap: 20px;
   align-items: center;
+  text-transform: uppercase;
   /* background-color: #fa6359; */
 }
 
@@ -372,10 +374,9 @@ body {
   /* margin-top: 5px; */
 }
 
-/* #size {
-  margin-top: 15px;
-  height: 20px;
-} */
+#size {
+  margin-left: 10px;
+}
 
 input {
   /* background-color: black; */

@@ -422,20 +422,19 @@ body a {
   display: flex;
   align-items: center;
 }
-/* 
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        } */
+.dropdown-content  {
+  right: 0;
+  position: relative;
+}
 
 .dropdown-content {
   display: none;
   position: absolute;
-  width: 400px;
+  width: 200px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.103);
   z-index: 1;
-  margin-right: 70px;
-  /* margin-top: 400px; */
+  margin-right: 5px;
+  margin-top: 10px;
 }
 
 .dropdown-content a {
