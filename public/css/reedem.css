@@ -37,6 +37,7 @@ body a {
     display: flex;
     align-items: center;
     top: 0;
+    z-index: 1;
 }
 
 /* cult-logo */
@@ -68,23 +69,23 @@ body a {
 }
 
 .nav-live-Logo>img {
-    width: 30px;
+    width: 20px;
 }
 
 .nav-cult-Logo>img {
-    width: 30px;
+    width: 20px;
 }
 
 .nav-mind-Logo>img {
-    width: 30px;
+    width: 20px;
 }
 
 .nav-store-Logo>img {
-    width: 30px;
+    width: 20px;
 }
 
 .nav-care-Logo>img {
-    width: 30px;
+    width: 20px;
 }
 
 .navText {
@@ -118,6 +119,9 @@ body a {
     width: 15px;
 }
 
+.location{
+    color: white;
+}
 
 
 
