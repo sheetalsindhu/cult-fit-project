@@ -3,18 +3,19 @@
 
 <head>
     <title>Homepage</title>
-    <link rel = "stylesheet" href = "./css/profile.css">
-    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
+    <link rel="stylesheet" href="./css/profile.css" />
+    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg" />
 </head>
 
 <body>
-
     <div id="profile-page-style">
         <!-- nav bar -->
         <div id="navBar">
-            <a href="/"><div class="nav-CultFit-Logo">
-                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
-            </div></a>
+            <a href="/">
+                <div class="nav-CultFit-Logo">
+                    <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
+                </div>
+            </a>
 
             <!-- Nav Middle items -->
             <div class="nav-middle">
@@ -38,10 +39,12 @@
                     <p class="navText">CARE</p>
                 </div>
 
-               <a href="/store"><div class="nav-store-Logo">
-                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
-                <p class="navText" id="store" onclick="storePage()">STORE</p>
-            </div></a>
+                <a href="/store">
+                    <div class="nav-store-Logo">
+                        <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                        <p class="navText" id="store" onclick="storePage()">STORE</p>
+                    </div>
+                </a>
             </div>
 
             <div class="nav-right">
@@ -51,10 +54,8 @@
 
                 <!-- Login page -->
                 <div class="nav-login-Logo" onclick="call()" id="login">
-                    <img id = "icon" src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                    <img id="icon" src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
                     <!-- <p onclick="call()" class="navText login-text">LOGIN</p> -->
-
-
 
                     <!-- Dropdown Div -->
                     <div id="dropdown" class="dropdown">
@@ -92,24 +93,20 @@
                             <a href="./support"><span><img
                                         src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
 
-                            <a href="setting/logout.html"><span><img
+                            <a href="/logout"><span><img
                                         src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Cart button -->
-               <a href="/cart">
-            <div class="nav-cart-Logo" onclick="toCart()">
-                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
-            </div></a>
+                <a href="/cart">
+                    <div class="nav-cart-Logo" onclick="toCart()">
+                        <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                    </div>
+                </a>
             </div>
         </div>
-
-
-
-
-
 
         <!-- info section after nav -->
 
@@ -117,7 +114,7 @@
             <!-- sidebar -->
             <div class="left-sidebar-profile">
                 <!-- upper profile section of sidebar -->
-                <a href = "./profile">
+                <a href="./profile">
                     <div onclick="profile()" class="profile-section">
                         <div class="profile-photo">
                             <!-- <img
@@ -133,11 +130,10 @@
                     </div>
                 </a>
 
-                <hr class="line">
-
+                <hr class="line" />
 
                 <!--order section -->
-                <a href = "./order">
+                <a href="./order">
                     <div onclick="redirect()" class="sidebar-div">
                         <div class="sidebar-text">Orders</div>
                         <div class="sidebar-icon">
@@ -156,7 +152,7 @@
                 </div>
 
                 <!-- sucsrption -->
-                <a href = "./subscription">
+                <a href="./subscription">
                     <div onclick="subscription()" class="sidebar-div">
                         <div class="sidebar-text">Active Packs and Subscription</div>
                         <div class="sidebar-icon">
@@ -166,7 +162,7 @@
                 </a>
                 <!-- redeem voucher -->
 
-                <a href = "./reedem">
+                <a href="./reedem">
                     <div onclick="govoucher()" class="sidebar-div">
                         <div class="sidebar-text">Redeem Voucher</div>
                         <div class="sidebar-icon">
@@ -174,7 +170,6 @@
                         </div>
                     </div>
                 </a>
-
 
                 <!-- account -->
 
@@ -186,7 +181,7 @@
                 </div>
 
                 <!-- support -->
-                <a href = "./support">
+                <a href="./support">
                     <div onclick="support()" class="sidebar-div">
                         <div class="sidebar-text">Support</div>
                         <div class="sidebar-icon">
@@ -196,70 +191,59 @@
                 </a>
 
                 <!-- logout -->
-                <div onclick="logout()" class="sidebar-div">
-                    <div class="sidebar-text">Logout</div>
-                    <div class="sidebar-icon">
-                        <img src="https://static.cure.fit/assets/images/logout-black.svg" />
+                <a href="/logout">
+                    <div class="sidebar-div">
+                        <div class="sidebar-text">Logout</div>
+                        <div class="sidebar-icon">
+                            <img src="https://static.cure.fit/assets/images/logout-black.svg" />
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
 
-
-
         <div id="content-inside-profile">
-
             <div id="profile">
-
                 <div id="image">
                     <!-- <img
                             src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" /> -->
                 </div>
 
                 <div>
-
-
                     <div id="profile-data">
                         <p class="heading-profile">PROFILE</p>
 
                         <div class="name-div">
                             <label class="label-name">NAME</label>
-                            <input type="text" value = "<%= item.username %>" id="name" placeholder="Enter your name" />
+                            <input type="text" value="<%= item.username %>" id="name" placeholder="Enter your name" />
                         </div>
 
                         <div class="number-div">
                             <label class="label-number">PHONE NUMBER</label>
-                            <input type="number" value = "<%= item.phone_no %>" id="number" placeholder="Add phone number" />
+                            <input type="number" value="<%= item.phone_no %>" id="number"
+                                placeholder="Add phone number" />
                         </div>
 
                         <div>
                             <label class="label-email">EMAIL</label>
-                            <input type="text" value = "<%= item.email %>" id="email" placeholder="Enter Your Email" />
+                            <input type="text" value="<%= item.email %>" id="email" placeholder="Enter Your Email" />
                         </div>
-                       
 
                         <div>
                             <label class="label-age">Age</label>
-                            <input type="number" value = "<%= item.age %>" id="date" placeholder="Age" />
+                            <input type="number" value="<%= item.age %>" id="date" placeholder="Age" />
                         </div>
-
 
                         <div>
                             <label class="label-gender">Gender</label>
                             <input type="text" value="<%= item.gender %>" id="email" placeholder="Gender" />
                         </div>
-
-                        
                     </div>
-
-                  
                 </div>
-
             </div>
-
         </div>
     </div>
 </body>
 
 </html>
-<script src = "./js/profile.js"></script>
+<script src="./js/profile.js"></script>

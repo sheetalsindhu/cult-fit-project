@@ -4,40 +4,37 @@ const connect = require("./src/configs/db");
 app.use(express.json());
 
 //for authentication process
-const passport              =  require("passport");
-const bodyParser            =  require("body-parser");
-const LocalStrategy         =  require("passport-local");
-const passportLocalMongoose =  require("passport-local-mongoose");
-const User                  =  require("../cult-fit-project/src/models/user.models");
-
-
+const passport = require("passport");
+const bodyParser = require("body-parser");
+const LocalStrategy = require("passport-local");
+const passportLocalMongoose = require("passport-local-mongoose");
+const User = require("../cult-fit-project/src/models/user.models");
 
 /* ___________ ejs connection  ____________ */
 app.use(express.urlencoded());
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 
-
 //For authentication process
-app.use(require("express-session")({
-  secret:"Any normal Word",       
-  resave: false,          
-  saveUninitialized:false    
-}));
+app.use(
+  require("express-session")({
+    secret: "Any normal Word",
+    resave: false,
+    saveUninitialized: false,
+  })
+);
 
-passport.serializeUser(User.serializeUser());       //session encoding
-passport.deserializeUser(User.deserializeUser());  
+passport.serializeUser(User.serializeUser()); //session encoding
+passport.deserializeUser(User.deserializeUser());
 passport.use(new LocalStrategy(User.authenticate()));
 app.use(passport.initialize());
 app.use(passport.session());
-
-
 
 // model
 const Product = require("../cult-fit-project/src/models/store.model");
 const WomenProduct = require("../cult-fit-project/src/models/women.model");
 const Cart = require("../cult-fit-project/src/models/cart.model");
-
+const Order = require("../cult-fit-project/src/models/order.model");
 
 /* ___________ Controllers ____________ */
 const storeController = require("./src/controller/store.controller");
@@ -48,7 +45,6 @@ const profileController = require("./src/controller/profile.controller");
 app.get("/", (req, res) => {
   res.render("index");
 });
-
 
 /* ___________ store page to cultsport page  ____________ */
 app.get("/store/cultsport/:_id", async (req, res) => {
@@ -69,7 +65,6 @@ app.get("/store/mens", async (req, res) => {
 app.post("/store/women", async (req, res) => {
   const womenProduct = await WomenProduct.create(req.body);
   return res.status(201).send({ womenProduct });
-
 });
 
 /* ___________ store page to mens page  ____________ */
@@ -79,7 +74,6 @@ app.get("/store/women", async (req, res) => {
     product,
   });
 });
-
 
 /* ___________ mens page to cultsport page  ____________ */
 app.get("/store/mens/cultsport/:_id", async (req, res) => {
@@ -125,28 +119,26 @@ app.get("/care", (req, res) => {
   res.render("care");
 });
 
-
-
 //user authentication required
-app.get("/login",(req,res)=>{
+app.get("/login", (req, res) => {
   res.render("login");
 });
 
-
-app.get("/userprofile",isLoggedIn ,(req,res) =>{
+app.get("/userprofile", isLoggedIn, (req, res) => {
   // console.log(req.user._id);
   res.render("cart");
-})
-
-
-app.post("/login",passport.authenticate("local",{
-  successRedirect:"/",
-  failureRedirect:"/login"
-}),function (req, res){
-
 });
 
-app.get("/register",(req,res)=>{
+app.post(
+  "/login",
+  passport.authenticate("local", {
+    successRedirect: "/",
+    failureRedirect: "/login",
+  }),
+  function (req, res) {}
+);
+
+app.get("/register", (req, res) => {
   res.render("register");
 });
 
@@ -173,10 +165,7 @@ app.post("/register", (req, res) => {
   );
 });
 
-app.get("/logout", (req, res) => {
-  req.logout();
-  res.redirect("/");
-});
+
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
@@ -185,7 +174,6 @@ function isLoggedIn(req, res, next) {
   }
   res.redirect("/");
 }
-
 
 app.get("/cart/product/minus/:ad", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
@@ -203,12 +191,11 @@ app.get("/cart/product/minus/:ad", isLoggedIn, async (req, res) => {
   return res.redirect("/cart/");
 });
 
-
 app.get("/cart/plus/quantity/:cd", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
   let productI = req.params.cd;
   let cart = await Cart.findOne({ userId });
-  
+
   if (cart) {
     let index = cart.products.findIndex((p) => p._id == productI);
     if (index > -1) {
@@ -259,13 +246,36 @@ app.post("/address", isLoggedIn, async (req, res) => {
   }
 });
 
+app.get("/orders", isLoggedIn, async (req, res) => {
+  const userId = req.user._id;
+  const cart = await Cart.findOne({ userId });
+  if (cart) {
+    cart.products.splice(0, cart.products.length);
+    await cart.save();
+    return res.redirect("/thankyou");
+  }
+});
+
+app.get("/logout", (req, res) => {
+  req.logout();
+  res.redirect("/");
+});
+
+app.get("/store/w_cultsport/:_id", async (req, res) => {
+  const product = await WomenProduct.find({ _id: req.params._id })
+    .lean()
+    .exec();
+  res.render("cultsport", {
+    product,
+  });
+});
+
 
 
 /* ___________ return api requests ____________ */
 app.use("/store", storeController);
 app.use("/cart", cartController);
 app.use("", profileController);
-
 
 app.listen(3000, async () => {
   await connect();

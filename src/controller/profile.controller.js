@@ -46,7 +46,6 @@ router.get("/support", isLoggedIn, (req, res) => {
 });
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
-    // console.log(req.user._id);
     return next();
   }
   res.redirect("/");
