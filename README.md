@@ -100,7 +100,7 @@ After successful payment, this page confirms you that your order is placed.
 
 #### 3. Ranu Ranjan :boy:
 * [Github](https://github.com/gaurav16-lang)
-* [Linkedin](https://www.linkedin.com/in/gaurav-maihuria-734b2120a/)
+* [Linkedin](https://www.linkedin.com/in/ranuranjan25/)
 
 #### 4. Rajnish Kumar :boy:
 * [Github](https://github.com/harishreyya)
