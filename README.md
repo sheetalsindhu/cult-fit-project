@@ -50,28 +50,37 @@ User need to login before purchasing cloths from cult fit. If user's are existin
 ##### login page:
 To login User has to enter their username and password to log into the website.
 
-![image](https://user-images.githubusercontent.com/77065070/131214057-2efde000-b44c-4f4f-8dd3-08caf186d1d6.png)
+![image](https://user-images.githubusercontent.com/77065070/135727344-092d6a70-00a6-4b79-9bbc-28883ecd875e.png)
 
 ##### Sign Up page:
 To signup User has to register the by entering their name , email, phone number, password and then click on the "create account" button. You are now succesfully logged In.
 
-![image](https://user-images.githubusercontent.com/77065070/131214077-bb2d2843-b1e3-4c20-8977-89dca2e93678.png)
+![image](https://user-images.githubusercontent.com/77065070/135727421-92964190-9b75-49bd-b418-2c5eb5852b82.png)
 
 ### Landing Page:
 You are on our Landing page now. you get to see what are things our website provides you like exploring live sessions , clothings and many more.
 
-![image](https://user-images.githubusercontent.com/77065070/131214146-682d67d8-e712-4145-9b7e-fc55f5e1fb9e.png)
+![image](https://user-images.githubusercontent.com/77065070/135727441-b17b02f4-2910-4ef0-81f9-308b170ae00c.png)
 ![image](https://user-images.githubusercontent.com/77065070/131214176-f83284e4-e2c3-4add-827e-b8bc160417b5.png)
 
 ### Store Page:
 You can see the store page by just clicking on the "store icon" on the navigation bar. On store you can get yourself the latest stuff of clothings. click on the item and by selecting the size, just add to cart by clicking on "add cart icon".
 
-![image](https://user-images.githubusercontent.com/77065070/131214264-0fd6499d-a612-4ca0-9175-f3e0e800fb19.png)
+![image](https://user-images.githubusercontent.com/77065070/135727465-0bb9f66c-ed8f-4941-8eb6-ec395433a572.png)
+![image](https://user-images.githubusercontent.com/77065070/135727479-e44cd120-57ba-4feb-9fae-4bf08fec71ff.png)
+![image](https://user-images.githubusercontent.com/77065070/135727484-50b222b7-3d52-4b2a-9122-6da7460b9f4c.png)
+
+##### Categories of store page
+![image](https://user-images.githubusercontent.com/77065070/135727513-a877f7d4-7b61-4bd0-85dd-556b08b30b5a.png)
+![image](https://user-images.githubusercontent.com/77065070/135727517-627cbdfd-324e-4cd6-9c4f-22dd18065893.png)
+![image](https://user-images.githubusercontent.com/77065070/135727530-4fc1fd72-b4a1-495c-91c4-ce17cffaca5e.png)
+
+
 
 ### Cart Page:
 Now you are on the cart page. After adding to cart you are now able to see the order summary. you can here increase the item quantity as well as use coupon code to get discount on selected products. Thereafter, click on the "select address bar" to add you address.
 
-![image](https://user-images.githubusercontent.com/77065070/131214199-c476956a-4f21-49fd-b407-31ff77467f4d.png)
+![image](https://user-images.githubusercontent.com/77065070/135727606-fa3e2e38-0174-423a-99fd-e75ba3b5ab71.png)
 
 ### Add Address:
 You can enter your location accordingly now and then place the order.
@@ -82,6 +91,9 @@ You can enter your location accordingly now and then place the order.
 You are now on the payment page after placeing the order. You can pay using your debit or credit card by just entering card holder's name followed by the card number, Expire date and CVV. There after, click on the "Pay Now bar " to get done by payment.
 
 <img width="918" alt="payment" src="https://user-images.githubusercontent.com/87423101/131227858-1c6951f8-8926-4651-84f6-5a0968a20ac2.png">
+![image](https://user-images.githubusercontent.com/77065070/135727624-bfe57cb1-7c44-48f7-84d0-9d0b3f38bf1e.png)
+![image](https://user-images.githubusercontent.com/77065070/135727634-60505a50-6f3f-4b41-a5b1-cbb102bf91de.png)
+
 
 ### Order placed:
 
