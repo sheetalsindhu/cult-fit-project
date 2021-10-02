@@ -124,7 +124,7 @@ body a {
 /* Profile page */
 #profile-sidebar {
     display: flex;
-    height: 1000px;
+    height: 690px;
     gap: 100px;
     margin-top: 30px;
     background-color: #ff306e;
@@ -445,7 +445,12 @@ hr {
 
 #redeem-page-style {
     display: flex;
+    height: 200px;
 }
 .left-sidebar-profile > a {
     text-decoration: none;
+}
+
+#show{
+    display: none;
 }

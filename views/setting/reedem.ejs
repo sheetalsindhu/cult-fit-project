@@ -8,100 +8,102 @@
 
 <body>
     <div id="redeem-page-style">
-        <!-- nav bar -->
-        <div id="navBar">
-            <div class="nav-CultFit-Logo">
-                <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
+    <!-- nav bar -->
+    <div id="navBar">
+        <div class="nav-CultFit-Logo">
+            <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
+        </div>
+    
+        <!-- Nav Middle items -->
+        <div class="nav-middle">
+            <div class="nav-live-Logo">
+                <img src="https://static.cure.fit/assets/images/Livefit.svg" />
+                <p class="navText">LIVE</p>
             </div>
-
-            <!-- Nav Middle items -->
-            <div class="nav-middle">
-                <div class="nav-live-Logo">
-                    <img src="https://static.cure.fit/assets/images/Livefit.svg" onclick="toLive()"/>
-                    <p class="navText">LIVE</p>
-                </div>
-
-                <div class="nav-cult-Logo">
-                    <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" onclick="toCult()" />
-                    <p class="navText">CULT</p>
-                </div>
-
-                <div class="nav-mind-Logo">
-                    <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" onclick="toMind()" />
-                    <p class="navText">MIND</p>
-                </div>
-
-                <div class="nav-care-Logo">
-                    <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" onclick="toCare()"/>
-                    <p class="navText">CARE</p>
-                </div>
-
-                <div class="nav-store-Logo">
-                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" onclick="toStore()" alt=""  />
-                    <p class="navText" id="store" onclick="storePage()">STORE</p>
-                </div>
+    
+            <div class="nav-cult-Logo">
+                <img src="https://static.cure.fit/assets/images/cult-icon.svg" alt="cult_logo" />
+                <p class="navText">CULT</p>
             </div>
-
-            <div class="nav-right">
-                <div class="location">
-                    <p class="navText">Delhi, INDIA</p>
-                </div>
-
-                <!-- Login page -->
-                <div class="nav-login-Logo" onclick="call()" id="login">
-                    <img src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
-                    <p onclick="call()" class="navText login-text">LOGIN</p>
-
-
-
-                    <!-- Dropdown Div -->
-                    <div id="dropdown" class="dropdown">
-                        <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
-                            class="dropbtn" />
-
-                        <span>
-                            <img class="dropbtna"
-                                src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
-                        </span>
-
-                        <div class="dropdown-content">
-                            <a href="./profile"><span>
-                                    <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
-                                Profile</a>
-
-                            <a href="./order"><span><img
-                                        src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
-
-                            <a href="#"><span><img
-                                        src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
-                                Records</a>
-
-                            <a href="./subscription"><span><img
-                                        src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
-                                Packs</a>
-
-                            <a href="./reedem"><span><img
-                                        src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
-                                Voucher</a>
-
-                            <a href="#"><span><img
-                                        src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
-
-                            <a href="./support"><span><img
-                                        src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
-
-                            <a href="./logout"><span><img
-                                        src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cart button -->
-                <div class="nav-cart-Logo">
-                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" onclick="toCart()" />
-                </div>
+    
+            <div class="nav-mind-Logo">
+                <img src="https://static.cure.fit/assets/images/mind-icon.svg" alt="" />
+                <p class="navText">MIND</p>
+            </div>
+    
+            <div class="nav-care-Logo">
+                <img src="https://static.cure.fit/assets/images/carefit-blk.svg" alt="" />
+                <p class="navText">CARE</p>
+            </div>
+    
+            <div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
             </div>
         </div>
+    
+        <div class="nav-right">
+            <div class="location">
+                <p class="navText">Delhi, INDIA</p>
+            </div>
+    
+            <!-- Login page -->
+            <div class="nav-login-Logo" onclick="call()" id="login">
+                <img id="icon" src="https://static.cure.fit/assets/images/user-image.svg" alt="" />
+                <!-- <p onclick="call()" class="navText login-text">LOGIN</p> -->
+    
+    
+    
+                <!-- Dropdown Div -->
+                <div id="dropdown" class="dropdown">
+                    <img src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2"
+                        class="dropbtn" />
+    
+                    <span>
+                        <img class="dropbtna"
+                            src="https://www.bing.com/th?id=OIP.HapMrLcuA7ELRyK2rnaZaAHaHa&w=100&h=100&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" />
+                    </span>
+    
+                    <div class="dropdown-content">
+                        <a href="./profile"><span>
+                                <img src="https://static.cure.fit/assets/images/profile-icon.svg" /></span>
+                            Profile</a>
+    
+                        <a href="./order"><span><img
+                                    src="https://static.cure.fit/assets/images/cart-black.svg" /></span>Orders</a>
+    
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/health-profile-black.svg" /></span>Medical
+                            Records</a>
+    
+                        <a href="./subscription"><span><img
+                                    src="https://static.cure.fit/assets/images/combined-shape-black.svg" /></span>Active
+                            Packs</a>
+    
+                        <a href="./reedem"><span><img
+                                    src="https://static.cure.fit/assets/images/coupon-black.svg" /></span>Redeem
+                            Voucher</a>
+    
+                        <a href="#"><span><img
+                                    src="https://static.cure.fit/assets/images/settings-black.svg" /></span>Account</a>
+    
+                        <a href="./support"><span><img
+                                    src="https://static.cure.fit/assets/images/support-black.svg" /></span>Support</a>
+    
+                        <a href="setting/logout.html"><span><img
+                                    src="https://static.cure.fit/assets/images/logout-black.svg" /></span>Logout</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Cart button -->
+            <a href="/cart">
+                <div class="nav-cart-Logo" onclick="toCart()">
+                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+                </div>
+            </a>
+        </div>
+    </div>
 
 
         <!-- Dropdown -->
@@ -193,8 +195,6 @@
                 <a href = "./profile">
                     <div onclick="profile()" class="profile-section">
                         <div class="profile-photo">
-                            <!-- <img
-                            src="https://www.bing.com/th?id=OIP.2hAVCZRMcBjsE8AGQfWCVQHaHa&w=100&h=106&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" /> -->
                         </div>
 
                         <!-- name and link of view profile -->
@@ -250,7 +250,6 @@
 
 
                 <!-- account -->
-
                 <div class="sidebar-div">
                     <div class="sidebar-text">Account</div>
                     <div class="sidebar-icon">
@@ -280,68 +279,56 @@
 
 
 
-
-
-        <div id="content">
-            <div id="container">
-                <p class="redeem-heading">REDEEM VOUCHER</p>
-
-                <p class="redeem-subheading">Vouchers unlock special benefits on cults. fit app and website! These are
-                    available only through
-                    select
-                    corporate partners or events. </p>
-
-                <input type="text" id="voucher" class="input-box" placeholder="Enter voucher code here">
-
-                <button onclick="check()" class="check-availability">CHECK VALIDITY</button>
-                <!-- check button -->
-                <div id="check-box">
-                    <p id="show"></p>
-
-                    <button onclick="totalVoucher()" class="total-voucher">Click here to check total price in
-                        voucher</button>
-                </div>
-
-
-                <p class="voucher-points-heading">HOW TO REDEEM A VOUCHER</p>
-
-                <div class="voucher-points">
-                    <span>
-                        <img
-                            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/input.png">
-                    </span>
-                    <p>Enter voucher code</p>
-                </div>
-
-                <div class="voucher-points"><span><img
-                            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/review.png"></span>
-                    <p> Review benefits and terms & condition carefully</p>
-                </div>
-
-
-                <div class="voucher-points">
-                    <span>
-                        <img
-                            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/activate.png"></span>
-                    <p> Confirm and redeem your voucher</p>
-                </div>
-
-
-                <div class="voucher-points"><span><img
-                            src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/enjoy.png"></span>
-                    <p>Enjoy the voucher benefits</p>
-                </div>
-            </div>
+<div id="content">
+    <div id="container">
+        <p class="redeem-heading">REDEEM VOUCHER</p>
+        <p class="redeem-subheading">Vouchers unlock special benefits on cults. fit app and website! These are
+            available only through
+            select
+            corporate partners or events. </p>
+        <form action="./voucher" method="post">
+            <input type="text" id="voucher" name="voucher" class="input-box" placeholder="Enter voucher code here">
+            <button onclick="check()" class="check-availability">CHECK VALIDITY</button>
+        </form>
+        <!-- check button -->
+        <div id="check-box">
+            <button onclick="totalVoucher()" class="total-voucher">Click here to check total price in
+                voucher</button>
+                <p id="show">
+                    You got total <%= item.voucher %> Price. 
+                </p>
+        </div>
+        <p class="voucher-points-heading">HOW TO REDEEM A VOUCHER</p>
+        <div class="voucher-points">
+            <span>
+                <img
+                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/input.png">
+            </span>
+            <p>Enter voucher code</p>
+        </div>
+        <div class="voucher-points"><span><img
+                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/review.png"></span>
+            <p> Review benefits and terms & condition carefully</p>
+        </div>
+        <div class="voucher-points">
+            <span>
+                <img
+                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/activate.png"></span>
+            <p> Confirm and redeem your voucher</p>
+        </div>
+        <div class="voucher-points"><span><img
+                    src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,c_fit/dpr_2/image/icons/coupons/howItWorks/enjoy.png"></span>
+            <p>Enjoy the voucher benefits</p>
         </div>
     </div>
-
+</div>
+</div>
 </body>
 
 </html>
 
-
-<script src = "./js/reedem.js">
-
-    
-
+<script>
+    function totalVoucher() {
+        document.getElementById("show").style.display = "block";
+    }
 </script>

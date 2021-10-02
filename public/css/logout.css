@@ -117,7 +117,7 @@ body {
 /* Profile page */
 #profile-sidebar {
     display: flex;
-    height: 1000px;
+    height: 690px;
     gap: 100px;
     margin-top: 30px;
     background-color: #ff306e;

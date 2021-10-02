@@ -50,7 +50,6 @@ app.get("/", (req, res) => {
 });
 
 
-
 /* ___________ store page to cultsport page  ____________ */
 app.get("/store/cultsport/:_id", async (req, res) => {
   const product = await Product.find({ _id: req.params._id }).lean().exec();
@@ -105,11 +104,27 @@ app.get("/payment", async (req, res) => {
   res.render("payment");
 });
 
-
 /* ___________  payment to thanks ____________ */
 app.get("/thankyou", async (req, res) => {
   res.render("thankyou");
 });
+
+app.get("/live", (req, res) => {
+  res.render("live");
+});
+
+app.get("/mind", (req, res) => {
+  res.render("mind");
+});
+
+app.get("/cult", (req, res) => {
+  res.render("cult");
+});
+
+app.get("/care", (req, res) => {
+  res.render("care");
+});
+
 
 
 //user authentication required
@@ -117,18 +132,18 @@ app.get("/login",(req,res)=>{
   res.render("login");
 });
 
-// //////////////////////////////////////////////
+
 app.get("/userprofile",isLoggedIn ,(req,res) =>{
-  console.log(req.user._id);
+  // console.log(req.user._id);
   res.render("cart");
 })
-///////////////////
+
 
 app.post("/login",passport.authenticate("local",{
   successRedirect:"/",
   failureRedirect:"/login"
 }),function (req, res){
-  //  console.log(req);
+
 });
 
 app.get("/register",(req,res)=>{
@@ -148,7 +163,7 @@ app.post("/register", (req, res) => {
     req.body.password,
     function (err, user) {
       if (err) {
-        console.log(err);
+        // console.log(err);
         res.render("register");
       }
       passport.authenticate("local")(req, res, function () {
@@ -165,7 +180,7 @@ app.get("/logout", (req, res) => {
 
 function isLoggedIn(req, res, next) {
   if (req.isAuthenticated()) {
-    console.log(req.user._id);
+    // console.log(req.user._id);
     return next();
   }
   res.redirect("/");
@@ -174,9 +189,7 @@ function isLoggedIn(req, res, next) {
 
 app.get("/cart/product/minus/:ad", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
-  console.log(userId);
   let productd = req.params.ad;
-  console.log(productd);
   let cart = await Cart.findOne({ userId });
   if (cart) {
     let index = cart.products.findIndex((p) => p.productId == productd);
@@ -195,11 +208,9 @@ app.get("/cart/plus/quantity/:cd", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
   let productI = req.params.cd;
   let cart = await Cart.findOne({ userId });
-  console.log(productI);
-
+  
   if (cart) {
     let index = cart.products.findIndex((p) => p.productId == productI);
-    console.log(index);
     if (index > -1) {
       let productItem = cart.products[index];
       productItem.quantity = productItem.quantity + 1;
@@ -213,18 +224,41 @@ app.get("/cart/plus/quantity/:cd", isLoggedIn, async (req, res) => {
 app.post("/cart/delete/product/:id", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
   let productId = req.params.id;
-  console.log(productId);
   const cart = await Cart.findOne({ userId: userId });
-
   if (cart) {
     let index = cart.products.findIndex((p) => p.productId == productId);
-    console.log(index);
     cart.products.splice(index, 1);
     await cart.save();
   }
-  // return res.render("./cart.ejs");
   return res.redirect("/cart/");
 });
+
+app.post("/voucher", isLoggedIn, async (req, res) => {
+  const userId = req.user._id;
+  const { voucher } = req.body;
+  const cart = await Cart.findOne({ userId });
+  if (cart) {
+    if (voucher == "masai30") {
+      cart.voucher = 200;
+    } else if (voucher == "masai20") {
+      cart.voucher = 300;
+    }
+    await cart.save();
+    return res.redirect("./reedem");
+  }
+});
+
+app.post("/address", isLoggedIn, async (req, res) => {
+  const userId = req.user._id;
+  const { address } = req.body;
+  const cart = await Cart.findOne({ userId });
+  if (cart) {
+    cart.address = address;
+    await cart.save();
+    return res.redirect("./cart");
+  }
+});
+
 
 
 /* ___________ return api requests ____________ */

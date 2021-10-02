@@ -4,7 +4,7 @@
 <head>
     <title>Homepage</title>
     <link rel = "stylesheet" href = "./css/profile.css">
-    
+    <link rel="shortcut icon" href="https://static.cure.fit/assets/images/curefit-v-man.svg">
 </head>
 
 <body>
@@ -12,9 +12,9 @@
     <div id="profile-page-style">
         <!-- nav bar -->
         <div id="navBar">
-            <div class="nav-CultFit-Logo">
+            <a href="/"><div class="nav-CultFit-Logo">
                 <img src="https://static.cure.fit/assets/images/curefit-v-man.svg" onclick="homePage()" />
-            </div>
+            </div></a>
 
             <!-- Nav Middle items -->
             <div class="nav-middle">
@@ -38,10 +38,10 @@
                     <p class="navText">CARE</p>
                 </div>
 
-                <div class="nav-store-Logo">
-                    <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
-                    <p class="navText" id="store" onclick="storePage()">STORE</p>
-                </div>
+               <a href="/store"><div class="nav-store-Logo">
+                <img src="https://static.cure.fit/assets/images/store-icon.svg" onclick="storePage()" alt="" />
+                <p class="navText" id="store" onclick="storePage()">STORE</p>
+            </div></a>
             </div>
 
             <div class="nav-right">
@@ -99,9 +99,10 @@
                 </div>
 
                 <!-- Cart button -->
-                <div class="nav-cart-Logo" onclick="toCart()">
-                    <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
-                </div>
+               <a href="/cart">
+            <div class="nav-cart-Logo" onclick="toCart()">
+                <img src="https://static.cure.fit/assets/images/cart-image.svg" alt="" />
+            </div></a>
             </div>
         </div>
 
@@ -180,7 +181,7 @@
                 <div class="sidebar-div">
                     <div class="sidebar-text">Account</div>
                     <div class="sidebar-icon">
-                        <img src="https://static.cure.fit/assets/images/setting-black.svg" />
+                        <img src="https://static.cure.fit/assets/images/settings-black.svg" />
                     </div>
                 </div>
 
@@ -231,18 +232,22 @@
                             <input type="number" value = "<%= item.phone_no %>" id="number" placeholder="Add phone number" />
                         </div>
 
-                       
-
-                        <div>
-                            <label class="label-dob">Date Of Birth</label>
-                            <input type="date" value = "<%= item.age %>" id="date" placeholder="MM/DD/YYYY" />
-                        </div>
-
                         <div>
                             <label class="label-email">EMAIL</label>
                             <input type="text" value = "<%= item.email %>" id="email" placeholder="Enter Your Email" />
                         </div>
+                       
 
+                        <div>
+                            <label class="label-age">Age</label>
+                            <input type="number" value = "<%= item.age %>" id="date" placeholder="Age" />
+                        </div>
+
+
+                        <div>
+                            <label class="label-gender">Gender</label>
+                            <input type="text" value="<%= item.gender %>" id="email" placeholder="Gender" />
+                        </div>
 
                         
                     </div>

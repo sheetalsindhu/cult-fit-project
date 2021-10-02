@@ -1,0 +1,299 @@
+
+    :root {
+        --primary-text: #000000;
+        --secondary-text: #fff;
+        --blue: #29b9ed;
+        --background: #fff;
+        --text-hover: #b2b2b2;
+        --button: #ff306e;
+        --main-btn: linear-gradient(to left, #f84336, #ff306e);
+    }
+
+    * {
+        font-family: poppins, sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body a {
+  text-decoration: none;
+  color: var(--primary-text);
+}
+
+
+    body {
+        /* position: relative; */
+        margin: 0;
+        padding-bottom: 6rem;
+        min-height: 100%;
+    }
+
+    /* nav-bar styling */
+    #navBar {
+        width: 1540px;
+        height: 60px;
+        position: fixed;
+        background-color: var(--secondary-text);
+        box-shadow: 5px 5px 10px rgba(223, 223, 223, 0.404);
+        display: flex;
+        align-items: center;
+        top: 0;
+        z-index: 1;
+    }
+
+    /* cult-logo */
+
+    .nav-middle {
+        display: flex;
+        gap: 100px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 400px;
+    }
+
+    .nav-CultFit-Logo>img {
+        width: 80%;
+        padding: 10px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .nav-store-Logo,
+    .nav-live-Logo,
+    .nav-cult-Logo,
+    .nav-mind-Logo,
+    .nav-care-Logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .nav-live-Logo>img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .nav-cult-Logo>img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .nav-mind-Logo>img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .nav-store-Logo>img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .nav-care-Logo>img {
+        width: 20px;
+        cursor: pointer;
+    }
+
+    .navText {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    /* Nav right section */
+    .nav-right {
+        display: flex;
+        width: 250px;
+        padding: 4px;
+        height: 60px;
+        align-items: center;
+        gap: 25px;
+        margin-left: 220px;
+        margin-right: 5px;
+        /* background-color: aqua; */
+    }
+
+    .login-text {
+        background-color: bisque;
+    }
+
+    .nav-login-Logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav-cart-Logo>img {
+        width: 20px;
+    }
+
+    .nav-login-Logo>img {
+        width: 15px;
+    }
+
+    .slide {
+        max-width: 100%;
+        margin-top: 60px;
+    }
+
+    .slide>img {
+        max-width: 100%;
+
+    }
+
+    .timebox {
+        max-width: 80%;
+        margin-left: 120px;
+    }
+
+    .timebox>img {
+        width: 100%;
+        /* border-radius: 6px; */
+        margin-top: 30px;
+        /* margin: auto; */
+    }
+
+
+    .timebox>h1 {
+        padding-left: 80px;
+        font-size: 20px;
+        font-weight: 900;
+         /* text-align: center;  */
+        margin-top: 70px;
+        margin-bottom: 5px;
+        font-weight: 500;
+        /* background-color: #f84336; */
+        
+    }
+
+    .Workouts {
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+        /* margin-left: 90px; */
+    }
+
+    .Workouts>img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .downpics {
+        width: 100%;
+        background: rgb(245, 244, 244);
+        margin-top: 40px;
+    }
+
+    .downpics>h1 {
+        padding-top: 20px;
+        padding-left: 150px;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .down {
+
+        max-width: 80%;
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-gap: 60px;
+        margin: auto;
+    }
+
+    .down>img {
+        border-radius: 8px;
+        margin-top: 20px;
+        margin-left: 120px;
+    }
+
+    details {
+
+        padding-left: 180px;
+
+    }
+
+    details>summary {
+        color: grey;
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    details p {
+        color: grey;
+        padding-right: 50px;
+        background-color: rgb(228, 225, 225);
+        margin-right: 50px;
+        padding-left: 5px;
+
+    }
+
+    .clear {
+        clear: both;
+        margin-bottom: 50px;
+    }
+
+    .content {
+        margin-left: 150px;
+        padding-top: 30px;
+        font-size: 20px;
+    }
+
+    .content>h1 {
+        color: grey;
+    }
+
+    .content>p {
+        color: grey;
+    }
+
+    .right {
+        float: right;
+        font-size: 16px;
+        color: rgb(241, 31, 31);
+        padding-right: 60px;
+    }
+
+    .down>img:hover {
+        transform: scale(0.9);
+        transition: 1s;
+    }
+
+    .Workouts>img:hover {
+        transform: scale(0.9);
+        transition: 1s;
+    }
+
+    #bottom {
+        padding-left: 180px;
+        line-height: 20px;
+    }
+
+    .H {
+        color: rgb(83, 82, 82);
+        font-size: 120px;
+        margin-top: 50px;
+        margin-bottom: 64px;
+        
+
+    }
+
+    .D {
+        font-size: 80px;
+        color: rgb(146, 145, 145);
+        margin-bottom: 40px;
+    }
+
+    .L {
+        font-size: 50px;
+        color: rgb(180, 179, 179);
+    }
+
+    .container-div {
+        margin-top: 60px;
+        /* background-color: #29b9ed; */
+        width: 1200px;
+        margin: auto;
+    }

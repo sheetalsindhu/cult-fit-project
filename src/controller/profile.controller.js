@@ -7,6 +7,7 @@ const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
 const User = require("../models/user.models");
+const Cart = require("../models/cart.model")
 
 //for login check
 //For authentication process
@@ -34,9 +35,9 @@ router.get("/profile", isLoggedIn, async (req, res) => {
 router.get("/order", isLoggedIn, (req, res) => {
   res.render("./setting/order");
 });
-router.get("/reedem", isLoggedIn, (req, res) => {
-  res.render("./setting/reedem");
-});
+// router.get("/reedem", isLoggedIn, (req, res) => {
+//   res.render("./setting/reedem");
+// });
 router.get("/subscription", isLoggedIn, (req, res) => {
   res.render("./setting/subscription");
 });
@@ -50,5 +51,11 @@ function isLoggedIn(req, res, next) {
   }
   res.redirect("/");
 }
+router.get("/reedem", isLoggedIn, async (req, res) => {
+  let userId = req.user._id;
+  let item = await Cart.findOne({ userId: userId }).lean().exec();
+
+  res.render("./setting/reedem", { item });
+});
 
 module.exports = router;

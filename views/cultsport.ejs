@@ -41,131 +41,129 @@
     <!-- Content -->
     <div id="data">
         <% product.forEach(el=> { %>
-            <a href="/store/cultsport/<%= el.id %> ">
-                <div id="mainDiv">
-                    <div class="cultSport-images">
-                        <img src="<%= el.mainImg %>" alt="" />
-                        <img src="<%= el.images[0] %>" alt="" />
-                        <img src="<%= el.images[1] %>" alt="" />
-                        <img src=" <%= el.images[2] %>" alt="" />
-                        <img src="<%= el.images[3] %>" alt="" />
-                        <img src=" <%= el.images[4] %>" alt="" />
+            <div id="mainDiv">
+                <div class="cultSport-images">
+                    <img src="<%= el.mainImg %>" alt="" />
+                    <img src="<%= el.images[0] %>" alt="" />
+                    <img src="<%= el.images[1] %>" alt="" />
+                    <img src=" <%= el.images[2] %>" alt="" />
+                    <img src="<%= el.images[3] %>" alt="" />
+                    <img src=" <%= el.images[4] %>" alt="" />
+                </div>
+                <div id="cultSport">
+                    <p class="brandTag">
+                        <%= el.brand %>
+                    </p>
+                    <h1 class="nameTag">
+                        <%= el.name %>
+                    </h1>
+                    <div class="discountDiv">
+                        <p class="priceTag">₹<%= el.price %>
+                        </p>
+                        <p class="discountPriceTag">₹<%= el.discountPrice %>
+                        </p>
+                        <p class="discountTag">
+                            <%= el.discount %>% OFF
+                        </p>
                     </div>
-                    <div id="cultSport">
-                        <p class="brandTag">
-                            <%= el.brand %>
-                        </p>
-                        <h1 class="nameTag">
-                            <%= el.name %>
-                        </h1>
-                        <div class="discountDiv">
-                            <p class="priceTag">₹<%= el.price %>
-                            </p>
-                            <p class="discountPriceTag">₹<%= el.discountPrice %>
-                            </p>
-                            <p class="discountTag">
-                                <%= el.discount %>% OFF
-                            </p>
-                        </div>
-                        <p class="descriptionTag">
-                            <%= el.description %>
+                    <p class="descriptionTag">
+                        <%= el.description %>
 
-                                <!-- <form action = "/cart" method = "post"> -->
-                        </p>
-                        <select name="size" class="select-Size" id="ProductSize">
-                            <legend></legend>
-                            <option value="N" disabled selected>Select Any Size</option>
-                            <option value="<%= el.size[0] %>">
-                                <%= el.size[0] %>
-                            </option>
-                            <option value="<%= el.size[1] %>">
-                                <%= el.size[1] %>
-                            </option>
-                            <option value="<%= el.size[2] %>">
-                                <%= el.size[2] %>
-                            </option>
-                            <option value="<%= el.size[3] %>">
-                                <%= el.size[3] %>
-                            </option>
-                            <option value=" <%= el.size[4] %>">
-                                <%= el.size[4] %>
-                            </option>
-                        </select>
-                        <div class="cultSport-buttons">
-                            <div class="addToCartBtn">
-                                <form action="/cart" method="post">
-                                    <input type="hidden" name="productId" value="<%= el._id %>" />
-                                    <input type="hidden" name="price" value="<%= el.price %>" />
-                                    <input type="hidden" name="quantity" value="1" />
-                                    <input type="hidden" name="name" value="<%= el.name %>" />
-                                    <input type="hidden" name="brand" value="<%= el.brand %>" />
-                                    <input type="hidden" name="image" value="<%= el.mainImg %>" />
-                                    <input type="hidden" name="discountPrice" value="<%= el.discountPrice %>" />
-                                    <!-- <input type = "hidden" name = "size" value = ""> -->
-                                    <input class="cartBtn" type="submit" value="ADD to cart" />
-                                </form>
-                                <!-- <a href = "/cart/">Add To Cart</a> -->
-                                <!-- addToCart -->
-                            </div>
-                            <button class="buyNowBtn">Buy Now</button>
+                            <!-- <form action = "/cart" method = "post"> -->
+                    </p>
+                    <select name="size" class="select-Size" id="ProductSize">
+                        <legend></legend>
+                        <option value="N" disabled selected>Select Any Size</option>
+                        <option value="<%= el.size[0] %>">
+                            <%= el.size[0] %>
+                        </option>
+                        <option value="<%= el.size[1] %>">
+                            <%= el.size[1] %>
+                        </option>
+                        <option value="<%= el.size[2] %>">
+                            <%= el.size[2] %>
+                        </option>
+                        <option value="<%= el.size[3] %>">
+                            <%= el.size[3] %>
+                        </option>
+                        <option value=" <%= el.size[4] %>">
+                            <%= el.size[4] %>
+                        </option>
+                    </select>
+                    <div class="cultSport-buttons">
+                        <div class="addToCartBtn">
+                            <form>
+                                <input type="hidden" name="productId" value="<%= el._id %>" />
+                                <input type="hidden" name="price" value="<%= el.price %>" />
+                                <input type="hidden" name="quantity" value="1" />
+                                <input type="hidden" name="name" value="<%= el.name %>" />
+                                <input type="hidden" name="brand" value="<%= el.brand %>" />
+                                <input type="hidden" name="image" value="<%= el.mainImg %>" />
+                                <input type="hidden" name="discountPrice" value="<%= el.discountPrice %>" />
+                                <!-- <input type = "hidden" name = "size" value = ""> -->
+                                <input class="cartBtn" type="submit" value="ADD to cart" />
+                            </form>
+                            <!-- <a href = "/cart/">Add To Cart</a> -->
+                            <!-- addToCart -->
                         </div>
-                        <div class="cultSport-Pdetails">
-                            <h1 class="p-details-heading">PRODUCT DETAILS</h1>
-                            <ul class="p-unorderded-List">
-                                <li>
-                                    <%= el.productDetails[0] %>
-                                </li>
-                                <li>
-                                    <%= el.productDetails[1] %>
-                                </li>
-                                <li>
-                                    <%= el.productDetails[2] %>
-                                </li>
-                                <li>
-                                    <%= el.productDetails[3] %>
-                                </li>
-                                <li>
-                                    <%= el.productDetails[4] %>
-                                </li>
-                                <li>
-                                    <%= el.productDetails[5] %>
-                                </li>
-                            </ul>
-                            <h1 class="f-details-heading">Fabric</h1>
-                            <ul class="f-unorderded-List">
-                                <li>
-                                    <%= el.fabric[0] %>
-                                </li>
-                            </ul>
-                            <h1 class="m-details-heading">Material and Care</h1>
-                            <ul class="m-unorderded-List">
-                                <li>
-                                    <%= el.materialCare[0] %>
-                                </li>
-                                <li>
-                                    <%= el.materialCare[1] %>
-                                </li>
-                                <li>
-                                    <%= el.materialCare[2] %>
-                                </li>
-                                <li>
-                                    <%= el.materialCare[3] %>
-                                </li>
-                                <li>
-                                    <%= el.materialCare[4] %>
-                                </li>
-                                <li>
-                                    <%= el.materialCare[5] %>
-                                </li>
-                            </ul>
-                            <h1 class="s-details-heading">Specifications</h1>
-                            <h1 class="s-detail-heading">
-                                <%= el.specifications %>
-                            </h1>
-                        </div>
+                        <button class="buyNowBtn">Buy Now</button>
+                    </div>
+                    <div class="cultSport-Pdetails">
+                        <h1 class="p-details-heading">PRODUCT DETAILS</h1>
+                        <ul class="p-unorderded-List">
+                            <li>
+                                <%= el.productDetails[0] %>
+                            </li>
+                            <li>
+                                <%= el.productDetails[1] %>
+                            </li>
+                            <li>
+                                <%= el.productDetails[2] %>
+                            </li>
+                            <li>
+                                <%= el.productDetails[3] %>
+                            </li>
+                            <li>
+                                <%= el.productDetails[4] %>
+                            </li>
+                            <li>
+                                <%= el.productDetails[5] %>
+                            </li>
+                        </ul>
+                        <h1 class="f-details-heading">Fabric</h1>
+                        <ul class="f-unorderded-List">
+                            <li>
+                                <%= el.fabric[0] %>
+                            </li>
+                        </ul>
+                        <h1 class="m-details-heading">Material and Care</h1>
+                        <ul class="m-unorderded-List">
+                            <li>
+                                <%= el.materialCare[0] %>
+                            </li>
+                            <li>
+                                <%= el.materialCare[1] %>
+                            </li>
+                            <li>
+                                <%= el.materialCare[2] %>
+                            </li>
+                            <li>
+                                <%= el.materialCare[3] %>
+                            </li>
+                            <li>
+                                <%= el.materialCare[4] %>
+                            </li>
+                            <li>
+                                <%= el.materialCare[5] %>
+                            </li>
+                        </ul>
+                        <h1 class="s-details-heading">Specifications</h1>
+                        <h1 class="s-detail-heading">
+                            <%= el.specifications %>
+                        </h1>
                     </div>
                 </div>
-            </a>
+            </div>
             <% }) %>
     </div>
 
@@ -223,6 +221,38 @@
     <!-- footer -->
     <%- include("../components/footer") %>
         <!-- footer ends -->
+
+        <script>
+            function addToCart(e) {
+                e.preventDefault();
+
+                const body = {};
+
+                const sizeElement = document.getElementById("ProductSize")
+                body.size = sizeElement.value;
+                Object.keys(e.target).forEach(key => {
+                    body[e.target[key].name] = e.target[key].value
+                })
+
+                fetch("/cart", {
+                    method: "POST",
+                    body: JSON.stringify(body),
+                    headers: {
+                        'content-type': "application/json"
+                    }
+                })
+                    .then(rs => rs.json())
+                    .then(res => {
+                        debugger
+                        window.location.href = '/cart'
+                    })
+                    .catch(e => console.log(e))
+
+                console.log(body);
+            }
+
+            document.querySelector('form').addEventListener('submit', addToCart)
+        </script>
 </body>
 
 </html>

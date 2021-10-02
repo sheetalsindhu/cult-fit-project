@@ -19,7 +19,8 @@ const cartSchema = new mongoose.Schema({
       // size : {type : String, required : true}
     },
   ],
-  voucher: {type: Number, required: false},
+  voucher : {type : Number, required : false},
+  address: {type: String, required: false},
   userId: { type: mongoose.Schema.Types.ObjectId, ref: "user", required: true },
 });
 

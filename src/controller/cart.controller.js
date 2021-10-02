@@ -83,14 +83,7 @@ router.get("", isLoggedIn, async (req, res) => {
   return res.render("./cart.ejs", { item });
 });
 
-// function loggedIn(req, res, next)  {
-//     if(req.user) {
-//         console.log("google");
-//       next();
-//     } else {
-//       res.redirect("/");
-//     }
-//   }
+
 
 router.patch("", isLoggedIn, async (req, res) => {
   const voucher = await Cart.findOneAndUpdate(req.params._id)
