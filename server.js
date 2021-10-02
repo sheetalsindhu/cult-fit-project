@@ -192,7 +192,7 @@ app.get("/cart/product/minus/:ad", isLoggedIn, async (req, res) => {
   let productd = req.params.ad;
   let cart = await Cart.findOne({ userId });
   if (cart) {
-    let index = cart.products.findIndex((p) => p.productId == productd);
+    let index = cart.products.findIndex((p) => p._id == productd);
     if (index > -1) {
       let productItem = cart.products[index];
       productItem.quantity = productItem.quantity - 1;
@@ -210,7 +210,7 @@ app.get("/cart/plus/quantity/:cd", isLoggedIn, async (req, res) => {
   let cart = await Cart.findOne({ userId });
   
   if (cart) {
-    let index = cart.products.findIndex((p) => p.productId == productI);
+    let index = cart.products.findIndex((p) => p._id == productI);
     if (index > -1) {
       let productItem = cart.products[index];
       productItem.quantity = productItem.quantity + 1;
@@ -226,7 +226,7 @@ app.post("/cart/delete/product/:id", isLoggedIn, async (req, res) => {
   let productId = req.params.id;
   const cart = await Cart.findOne({ userId: userId });
   if (cart) {
-    let index = cart.products.findIndex((p) => p.productId == productId);
+    let index = cart.products.findIndex((p) => p._id == productId);
     cart.products.splice(index, 1);
     await cart.save();
   }
