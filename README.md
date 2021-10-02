@@ -90,16 +90,16 @@ After successful payment, this page confirms you that your order is placed.
 
 # Authors
 
-#### 1. Sheetal Sindhu :woman:
+## Sheetal Sindhu :woman:
 >  [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
 
-#### 2. Mansur Devan :boy:
+## Mansur Devan :boy:
 > [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
 
-#### 3. Ranu Ranjan :boy:
+## Ranu Ranjan :boy:
 > [Linkedin](https://www.linkedin.com/in/ranuranjan25/)
 
-#### 4. Rajnish Kumar :boy:
+## Rajnish Kumar :boy:
 > [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
 
 
