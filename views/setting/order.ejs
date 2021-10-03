@@ -3,7 +3,7 @@
 
 <head>
     <title>Homepage</title>
-   <link rel="stylesheet" href = "./css/order.css">
+    <link rel="stylesheet" href="./css/order.css">
 </head>
 
 <body>
@@ -190,7 +190,7 @@
             <!-- sidebar -->
             <div class="left-sidebar-profile">
                 <!-- upper profile section of sidebar -->
-                <a href = "./profile">
+                <a href="./profile">
                     <div onclick="profile()" class="profile-section">
                         <div class="profile-photo">
                             <!-- <img
@@ -210,7 +210,7 @@
 
 
                 <!--order section -->
-                <a href = "./order">
+                <a href="./order">
                     <div onclick="redirect()" class="sidebar-div">
                         <div class="sidebar-text">Orders</div>
                         <div class="sidebar-icon">
@@ -229,7 +229,7 @@
                 </div>
 
                 <!-- sucsrption -->
-                <a href = "./subscription">
+                <a href="./subscription">
                     <div onclick="subscription()" class="sidebar-div">
                         <div class="sidebar-text">Active Packs and Subscription</div>
                         <div class="sidebar-icon">
@@ -239,7 +239,7 @@
                 </a>
                 <!-- redeem voucher -->
 
-                <a href = "./reedem">
+                <a href="./reedem">
                     <div onclick="govoucher()" class="sidebar-div">
                         <div class="sidebar-text">Redeem Voucher</div>
                         <div class="sidebar-icon">
@@ -259,7 +259,7 @@
                 </div>
 
                 <!-- support -->
-                <a href = "./support">
+                <a href="./support">
                     <div onclick="support()" class="sidebar-div">
                         <div class="sidebar-text">Support</div>
                         <div class="sidebar-icon">
@@ -283,36 +283,35 @@
         <div id="content">
             <!--<p class="order-heading">ACTIVE PACKS & SUBSCRIPTIONS</p>
             <div id="data"> -->
-                <!-- <div class="order-image"> -->
-                    <% item.orders.forEach(el => {
-                        
-                        el.forEach(p => { %>
-                        <div class = "main">
-                        <img class = "image" src = "<%= p.image %>">
-                        <p class = "name">Name : <%= p.name %></p>
-                        <p class = "price">Price : <%= p.price %></p>
-                        <p>status: On the way</p>
-                        </div>
-                    <% 
-                        });
-                
-                }) %>
+            <!-- <div class="order-image"> -->
+            <% item.orders.forEach(el=> {
+
+                el.forEach(p => { %>
+                <div class="main">
+                    <img class="image" src="<%= p.image %>">
+                    <p class="name">Name : <%= p.name %>
+                    </p>
+                    <p class="price">Price : <%= p.price %>
+                    </p>
+                    <p>status: On the way</p>
+                </div>
+                <% }); }) %>
                     <!-- <img
                         src="https://cdn-images.cure.fit/www-curefit-com/image/upload/image/mePage/no-active-packs%402x.png"> -->
-                <!--</div> -->
+                    <!--</div> -->
 
-                <div id="para">
-                    <!-- <h2 class="para-heading">Your Packs Go Here</h2>
+                    <div id="para">
+                        <!-- <h2 class="para-heading">Your Packs Go Here</h2>
                     <p class="para-subheading">A pack is a set of healthy activities for you to do over <br>a few days. Get packs to build
                         healthy
                         habitssteadily. Get started, find packs you like:</p> -->
-                   <!-- <button onclick="main()" class="explore-cart">Explore cult.fit</button>-->
-                </div>
-            </div>
-
+                        <!-- <button onclick="main()" class="explore-cart">Explore cult.fit</button>-->
+                    </div>
         </div>
 
-        <!-- <div id="content"> </div> -->
+    </div>
+
+    <!-- <div id="content"> </div> -->
     </div>
 
 
@@ -322,8 +321,8 @@
 </body>
 
 </html>
-<script src = "./js/order.js">
-   
+<script src="./js/order.js">
+
 
 
 </script>
