@@ -306,27 +306,40 @@ app.get("/logout", (req, res) => {
   res.redirect("/");
 });
 
+app.post("/orders", isLoggedIn, async (req, res) => {
+  const userId = req.user._id;
+  const { orderId } = req.body.orders;
+  console.log(orderId);
+  let order = await Order.findOne({ userId });
+  if (order) {
+    // let index = order.orders.findIndex(p = p.product == orderId);
+    order.orders = orderId;
+    order = await order.save();
+  } else {
+    const neworder = await Order.create({ userId, order });
+    // res.redirect("/cart");
+  }
+});
+
+
 app.get("/orders", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
   const cart = await Cart.findOne({ userId });
-  const order = await Order.findOne({userId});
+  const order = await Order.findOne({ userId });
   if (cart) {
-    let c =  cart.products.splice(0, cart.products.length);
+    let c = cart.products.splice(0, cart.products.length);
 
-    if(order) {
-      // let c =  cart.products.splice(0, cart.products.length);
+    if (order) {
       order.orders.push(c);
-    } else{
-      
-      let newOrder = await Order.create({userId, orders: [c] })
+    } else {
+      let newOrder = await Order.create({ userId, orders: [c] });
     }
-  
+
     await order.save();
     await cart.save();
     return res.redirect("/thankyou");
   }
 });
-
 
 /* ___________ return api requests ____________ */
 app.use("/store", storeController);
