@@ -34,16 +34,15 @@ router.get("/profile", isLoggedIn, async (req, res) => {
   console.log(item);
   res.render("./setting/profile", { item });
 });
-router.get("/order", isLoggedIn, async  (req, res) => {
-  let userId = req.user._id;
-  let item = await Order.findOne({ userId}).lean().exec();
-  console.log(item.orders);
 
-  res.render("./setting/order", {item});
+
+router.get("/order", isLoggedIn, async (req, res) => {
+  let userId = req.user._id;
+  let item = await Order.findOne({ userId }).lean().exec();
+  console.log(item.orders);
+  res.render("./setting/order", { item });
 });
-// router.get("/reedem", isLoggedIn, (req, res) => {
-//   res.render("./setting/reedem");
-// });
+
 router.get("/subscription", isLoggedIn, (req, res) => {
   res.render("./setting/subscription");
 });
@@ -62,5 +61,7 @@ router.get("/reedem", isLoggedIn, async (req, res) => {
 
   res.render("./setting/reedem", { item });
 });
+
+
 
 module.exports = router;
