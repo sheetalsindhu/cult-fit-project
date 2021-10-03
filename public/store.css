@@ -112,7 +112,7 @@ body {
 /*  Main Sports Page */
 
 #main-container {
-  width: 1200px;
+  width: 1100px;
   margin: auto;
   /* background-color: #e9fcff; */
   padding: 5px;
@@ -142,7 +142,7 @@ img {
 .mensHeader {
   display: flex;
   margin-top: 40px;
-  gap: 880px;
+  gap: 800px;
 }
 
 .mensHeader-heading {
@@ -164,7 +164,7 @@ img {
 #data {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
+  grid-gap: 8px;
   margin-bottom: 20px;
 }
 
@@ -393,3 +393,41 @@ object-fit: cover;
         transform: scale(0.9);
         transition: 1s;
     }
+
+    .middle-banner > img {
+    width: 100%;
+}
+
+
+/* slider */
+.carousel-parent {
+  overflow: hidden;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s linear;
+}
+
+.carousel-item {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.carousel-item > img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
