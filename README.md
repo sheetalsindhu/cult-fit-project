@@ -98,6 +98,6 @@ After successful payment, this page confirms you that your order is placed.
 > [Linkedin](https://www.linkedin.com/in/ranuranjan25/)
 
 ### Rajnish Kumar :boy:
-> [Linkedin](https://www.linkedin.com/in/r-harish-832793218)
+> [Linkedin](https://www.linkedin.com/in/rajnish-kumar-320745175/)
 
 
