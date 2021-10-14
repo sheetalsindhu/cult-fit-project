@@ -1,4 +1,4 @@
-
+At Cult.fit, Make fitness fun and easy.
 ![image](https://m.coruscatesolution.com/wp-content/uploads/2019/06/Cult-fit.png)
 
 #### About Cult Fit
