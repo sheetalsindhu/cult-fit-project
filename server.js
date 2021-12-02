@@ -31,11 +31,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // model
-const Product = require("../cult-fit-project/src/models/store.model");
-const WomenProduct = require("../cult-fit-project/src/models/women.model");
-const FootwearProduct = require("../cult-fit-project/src/models/footwear.model");
-const Cart = require("../cult-fit-project/src/models/cart.model");
-const Order = require("../cult-fit-project/src/models/order.model");
+const Product = require("./src/models/store.model");
+const WomenProduct = require("./src/models/women.model");
+const FootwearProduct = require("./src/models/footwear.model");
+const Cart = require("./src/models/cart.model");
+const Order = require("./src/models/order.model");
 
 /* ___________ Controllers ____________ */
 const storeController = require("./src/controller/store.controller");
