@@ -1,6 +1,6 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 body a {
@@ -8,338 +8,290 @@ body a {
   color: var(--primary-text);
 }
 
-.image1{
-   
-    width: 100%;
-    height: 250px;
-    border: 1px solid black;
+.image1 {
+  width: 110%;
+  background-color: black;
 }
-.image1 img{
-    width: 100%;
-    height: 250px;
-    position: relative;
-    top: 0px;
-    left: 0px;
-    width: 100%;
+
+.image1 img {
+  margin-top: 60px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
 }
-.image2 img{
-    position: relative;
-    top: 76px;
-    left: 0px;
-    width: 100%;
-    border-radius: 7px;
+
+.cont {
+  width: 1300px;
+  margin: auto;
 }
-.image2{
-    max-width: 90%;
-    height: auto;
-    margin: auto;
+
+.image2 {
+  margin-top: 40px;
+
 }
+
 .image3{
-    max-width: 90%;
-    height: auto;
-    margin: auto;
+  margin-top: 20px;
 }
-.image3 img{
-    position: relative;
-    top: 142px;
-    left: 0px;
-    width: 100%;
-    border-radius: 7px;
-
+.image2 img, .image3 img {
+  width: 100%;
 }
-
-.online-pt{
-    background-color: rgb(66, 66, 83);
-    margin: 40px 0px;
-    height: 500px;
-    width: 100%;
-    position: relative;
-    top: 197px;
-    
+.online-pt {
+  background-color: rgb(66, 66, 83);
+  /* margin: 40px 0px; */
+  width: 100%;
+  position: relative;
+  top: 50px;
+  bottom: 50px;
+  
 }
-.heading-opt{
-    color: rgb(255, 255, 255);
-    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 34px;
-    text-align: center;
-    padding-top: 30px;
+.heading-opt {
+  color: rgb(255, 255, 255);
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 34px;
+  text-align: center;
+  padding-top: 30px;
 }
-.heading-opt-member{
-    color: rgb(136, 142, 158);
-    font-size: 16px;
-    text-align: center;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    margin-top: 9px;
+.heading-opt-member {
+  color: rgb(136, 142, 158);
+  font-size: 16px;
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  margin-top: 9px;
 }
-.heading-opt-enjoy
-{
-    margin: 35px 10px;
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+.heading-opt-enjoy {
+  margin: 35px 10px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
 }
-.container-pt{
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
+.container-pt {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
 }
-.container-pt div{
-    display: flex;
-    justify-content: center;
+.container-pt div {
+  display: flex;
+  justify-content: center;
 }
-.at-home{
-    
+.at-home {
 }
 /* css for container */
 /* start */
-.at-home img{
-   
-    margin-top: -12px;
-    width: 30px;
-    height: 40px;
-    justify-content: center;
+.at-home img {
+  margin-top: -12px;
+  width: 30px;
+  height: 40px;
+  justify-content: center;
 }
-.personalised-img{
-    margin-top: -12px;
-    width: 30px;
-    height: 40px;
-    justify-content: center;
-
+.personalised-img {
+  margin-top: -12px;
+  width: 30px;
+  height: 40px;
+  justify-content: center;
 }
 
-.posture-img{
-    margin-top: -12px;
-    width: 30px;
-    height: 40px;
-    justify-content: center;
-
+.posture-img {
+  margin-top: -12px;
+  width: 30px;
+  height: 40px;
+  justify-content: center;
 }
 /* end */
 
 /* css for container text */
 /* start */
-.at-home-cont{
-    margin-left: 0px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-
+.at-home-cont {
+  margin-left: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
 }
-.personalised-cont{
-    margin-left: 0px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+.personalised-cont {
+  margin-left: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
 }
 
-.posture-cont{
-    margin-left: 0px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+.posture-cont {
+  margin-left: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
 }
 /* end */
 
-
-.subscription{
-    font-size: 20px;
-    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin-top: 47px;
+.subscription {
+  font-size: 20px;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-top: 47px;
 }
 
 /* css coupon */
-.coupon{
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-    margin-top: 32px;
-    
-
+.coupon {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
 /* coupon 1 start */
-.coupon-1{
-   
-    margin: 10px 24px;
-    width:unset ;
-    flex-direction: column;
-    outline: none;
-    /* width: 224px */
-    
+.coupon-1 {
+  margin: 10px 24px;
+  width: unset;
+  flex-direction: column;
+  outline: none;
+  /* width: 224px */
 }
-.coupon-2{
-    margin: 10px 24px;
-    width: unset;
-    flex-direction: column;
-    outline: none;
-    /* width: 224px */
-    
+.coupon-2 {
+  margin: 10px 24px;
+  width: unset;
+  flex-direction: column;
+  outline: none;
+  /* width: 224px */
 }
 
-.coupon-3{
-    margin: 10px 24px;
-    width: unset;
-    flex-direction: column;
-    outline: none;
-    /* width: 224px */
-    
+.coupon-3 {
+  margin: 10px 24px;
+  width: unset;
+  flex-direction: column;
+  outline: none;
+  /* width: 224px */
 }
 
-.buy-and-price{
-   
-    background: rgb(255, 255, 255);
-    border-radius: 10px;
-    box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+.buy-and-price {
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 13%) 0px 2px 4px 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
-.sessions-price{
-    font-size: 20px;
-    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    width: 150px;
+.sessions-price {
+  font-size: 20px;
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  width: 150px;
 }
 
-.para{
-    overflow: hidden;
-    font-size: 16px;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    margin: 0px;
+.para {
+  overflow: hidden;
+  font-size: 16px;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  margin: 0px;
 }
 
-.discount{
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-flow: row;
-    width: fit-content;
+.discount {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-flow: row;
+  width: fit-content;
 }
 
-.cross-rate{
-    min-width: fit-content;
-    font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    color: rgba(0, 0, 0, 0.34);
-    text-decoration: line-through;
-    margin-right: 6px;
+.cross-rate {
+  min-width: fit-content;
+  font-family: BrandonTextWeb-Medium, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  color: rgba(0, 0, 0, 0.34);
+  text-decoration: line-through;
+  margin-right: 6px;
 }
 
-.actual-price{
-    min-width: fit-content;
-    color: rgb(0, 0, 0);
-    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+.actual-price {
+  min-width: fit-content;
+  color: rgb(0, 0, 0);
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
 }
 
-.validity{
-    display: flex;
-    font-size: 16px;
-    color: rgb(155, 155, 155)
-
+.validity {
+  display: flex;
+  font-size: 16px;
+  color: rgb(155, 155, 155);
 }
 
-.buy{
-    border-radius: 100px;
-    align-self: center;
-    padding: 0px 0px 0px 5px;
-    text-align: center;
-   
-    font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 16px;
-    cursor: pointer;
-    color: rgb(255, 50, 120);
-    margin: 0px;
-    background: rgb(255, 255, 255);
+.buy {
+  border-radius: 100px;
+  align-self: center;
+  padding: 0px 0px 0px 5px;
+  text-align: center;
 
+  font-family: BrandonTextWeb-Bold, "Helvetica Neue", Helvetica, Roboto, Arial,
+    sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(255, 50, 120);
+  margin: 0px;
+  background: rgb(255, 255, 255);
 }
 
-.somthing{
-
-    display: grid;
-    border-radius: 10px;
-    align-items: self-start;
-    grid-template-columns: 12% auto;
-    background: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%) center top / 13px 1px repeat-x rgb(216, 232, 255);
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
+.somthing {
+  display: grid;
+  border-radius: 10px;
+  align-items: self-start;
+  grid-template-columns: 12% auto;
+  background: linear-gradient(to right, black 33%, rgba(255, 255, 255, 0) 0%)
+    center top / 13px 1px repeat-x rgb(216, 232, 255);
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-
-.somthing-img{
-
-    transform: rotate(
-        -90deg
-        );
-            padding: 0px 5px;
+.somthing-img {
+  transform: rotate(-90deg);
+  padding: 0px 5px;
 }
 
-.somthing-para p{
-    color: rgb(54, 54, 54);
-    font-family: BrandonTextWeb-Regular, "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    padding: 3px 0px 0px;
-    margin: 0px;
-    /* box-sizing: border-box; */
+.somthing-para p {
+  color: rgb(54, 54, 54);
+  font-family: BrandonTextWeb-Regular, "Helvetica Neue", Helvetica, Roboto,
+    Arial, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 3px 0px 0px;
+  margin: 0px;
+  /* box-sizing: border-box; */
 }
-.work-grid{
-    display: grid;
-    align-items: center;
-    grid-template-columns: repeat(4,24%);
-  gap: 1px;
-    position: relative;
-    top: 167px;
+.categories {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+ 
 }
-
-.workouts{
-    color: #000;
-    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    padding-bottom: 20px;
-    margin: 0;
-    top: 270px;
-    left: 110px;
-    position: relative;
+img {
+  width: 100%;
+  cursor: pointer;
 }
-.sc-cont{
-    position: relative;
-    z-index: 99;
-    padding: 19px;
-    width: 15%;
-    color: rgb(34,34,34);
-    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-    font-size: 22px;
-    margin: 0;
-    box-sizing: border-box;
-    display: block;
-    top: -213px;
-    left: 118px;
-}
-    
-
-.yoga-cont{
-    position: relative;
-    z-index: 99;
-    padding: 19px;
-    width: 15%;
-    color: rgb(34,34,34);
-    font-family: BrandonTextWeb-Bold,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
-    font-size: 22px;
-    margin: 0;
-    box-sizing: border-box;
-    display: block;
-    top: -199px;
-    left: 116px;
+.container {
+  position: relative;
+  text-align: center;
+  color: black;
 }
 
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 10px;
 
-
-
+}
 
 
 /* Footer section */
@@ -353,7 +305,7 @@ body a {
   left: 0px;
   right: 0px;
   width: 100%;
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 .logo-footer {
@@ -396,9 +348,6 @@ body a {
   width: 120px;
 }
 
-
-
- 
 /*dropdown*/
 
 .dropbtn-image {
@@ -415,14 +364,13 @@ body a {
   width: 20px;
   height: 20px;
   margin-top: 2px;
- 
 }
 
 .after-login {
   display: flex;
   align-items: center;
 }
-.dropdown-content  {
+.dropdown-content {
   right: 0;
   position: relative;
 }
@@ -475,10 +423,6 @@ body a {
   background-color: white;
 }
 
-
-
-
-
 :root {
   --primary-text: #000000;
   --secondary-text: #fff;
@@ -496,12 +440,7 @@ body a {
   padding: 0;
 }
 
-body {
-  /* position: relative; */
-  margin: 0;
-  padding-bottom: 6rem;
-  min-height: 100%;
-}
+
 
 /* nav-bar styling */
 #navBar {
@@ -609,8 +548,6 @@ body {
   cursor: pointer;
 }
 
-
-
-.cult-cont{
-    margin-top: 60px;
+.cult-cont {
+  margin-top: 60px;
 }
