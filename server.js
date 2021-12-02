@@ -342,7 +342,7 @@ app.use("/store", storeController);
 app.use("/cart", cartController);
 app.use("", profileController);
 
-app.listen(3000, async () => {
+app.listen(process.env.PORT || 3000, async () => {
   await connect();
   console.log("Listening on port 3000");
 });
