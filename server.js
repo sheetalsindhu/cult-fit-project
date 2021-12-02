@@ -8,7 +8,7 @@ const passport = require("passport");
 const bodyParser = require("body-parser");
 const LocalStrategy = require("passport-local");
 const passportLocalMongoose = require("passport-local-mongoose");
-const User = require("../cult-fit-project/src/models/user.models");
+const User = require("./src/models/user.models");
 
 /* ___________ ejs connection  ____________ */
 app.use(express.urlencoded());
@@ -35,7 +35,7 @@ const Product = require("../cult-fit-project/src/models/store.model");
 const WomenProduct = require("../cult-fit-project/src/models/women.model");
 const FootwearProduct = require("../cult-fit-project/src/models/footwear.model");
 const Cart = require("../cult-fit-project/src/models/cart.model");
-const Order = require("../cult-fit-project/src/models/order.model")
+const Order = require("../cult-fit-project/src/models/order.model");
 
 /* ___________ Controllers ____________ */
 const storeController = require("./src/controller/store.controller");
@@ -86,7 +86,6 @@ app.get("/store/footwear", async (req, res) => {
   });
 });
 
-
 /* ___________ mens page to cultsport page  ____________ */
 app.get("/store/mens/cultsport/:_id", async (req, res) => {
   const product = await Product.find({ _id: req.params._id }).lean().exec();
@@ -105,7 +104,6 @@ app.get("/store/women/cultsport/:_id", async (req, res) => {
   });
 });
 
-
 /* ___________ footwear page to cultsport page  ____________ */
 app.get("/store/footwear/cultsport/:_id", async (req, res) => {
   const product = await FootwearProduct.find({ _id: req.params._id })
@@ -115,7 +113,6 @@ app.get("/store/footwear/cultsport/:_id", async (req, res) => {
     product,
   });
 });
-
 
 /* ___________ cart to payment ____________ */
 app.get("/payment", async (req, res) => {
@@ -320,7 +317,6 @@ app.post("/orders", isLoggedIn, async (req, res) => {
     // res.redirect("/cart");
   }
 });
-
 
 app.get("/orders", isLoggedIn, async (req, res) => {
   const userId = req.user._id;
