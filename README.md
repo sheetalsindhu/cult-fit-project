@@ -94,7 +94,7 @@ After successful payment, this page confirms you that your order is placed.
 ### Mansur Devan :boy:
 > [Linkedin](https://www.linkedin.com/in/mansur-dewan-989751170/)
 
-### Ranu Ranjan :boy:
+### RanuRanjan :boy:
 > [Linkedin](https://www.linkedin.com/in/ranuranjan25/)
 
 ### Rajnish Kumar :boy:
