@@ -10,13 +10,13 @@ At Cult.fit, Make fitness fun and easy.
 # Technology We Used :computer:
 > Tech Stack in Frontend:
 1. HTML5
-2. CSS
+2. CSS3
 3. JavaScript
 
 
 > Tech Stack in Backend:
 1. EJS
-2. CSS
+2. CSS3
 3. Mongo DB
 4. Express
 5. NodeJS
