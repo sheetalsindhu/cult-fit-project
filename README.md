@@ -35,7 +35,7 @@ At Cult.fit, Make fitness fun and easy.
 ### Login and Sign up Page:
 User need to login before purchasing cloths from cult fit. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
-##### login page:
+##### Login page:
 To login User has to enter their username and password to log into the website.
 
 ![image](https://user-images.githubusercontent.com/77065070/135727344-092d6a70-00a6-4b79-9bbc-28883ecd875e.png)
@@ -86,7 +86,7 @@ You are now on the payment page after placeing the order. You can pay using your
 After successful payment, this page confirms you that your order is placed.
 <img width="824" alt="thankyou" src="https://user-images.githubusercontent.com/87423101/131228049-05ba987f-94df-4ce0-914d-b3e73e67797f.png">
 
-# Authors
+# Authors:
 
 ### Sheetal Sindhu :woman:
 >  [Linkedin](https://www.linkedin.com/in/sheetalsindhu)
